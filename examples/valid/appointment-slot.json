@@ -1,0 +1,18 @@
+{
+  "slotId": "slot-contract-test",
+  "practiceId": "practice-contract-test",
+  "doctorId": "doctor-contract-test",
+  "departmentId": "dept-gastroenterology",
+  "date": "2026-08-13",
+  "period": "上午",
+  "startTime": "09:00",
+  "endTime": "09:30",
+  "status": "AVAILABLE",
+  "capacity": 2,
+  "bookedCount": 1,
+  "remaining": 1,
+  "feeAmount": 20,
+  "currency": "CNY",
+  "createdAt": "2026-08-12T10:00:00+08:00",
+  "updatedAt": "2026-08-12T10:00:00+08:00"
+}

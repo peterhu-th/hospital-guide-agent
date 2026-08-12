@@ -1,0 +1,11 @@
+{
+  "requestId": "request-demo-001",
+  "turnId": "turn-demo-002",
+  "sessionId": "session-demo-001",
+  "baseRevision": 3,
+  "message": "医生让我交完钱去做B超，下一步去哪？",
+  "entryContext": "PAYMENT_OR_EXAMINATION",
+  "clientTime": "2026-08-12T10:11:00+08:00",
+  "locale": "zh-CN",
+  "sessionSnapshot": null
+}

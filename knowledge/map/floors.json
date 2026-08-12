@@ -1,0 +1,43 @@
+{
+  "hospitalId": "hospital-mianyang-central",
+  "hospitalDisplayName": "绵阳市中心医院",
+  "mapId": "90872",
+  "mapName": "绵阳中心医院",
+  "floors": [
+    {
+      "floorId": "B1",
+      "floorLabel": "地下1层",
+      "poiCount": 70,
+      "sourceId": "map-90872",
+      "dataOrigin": "map_data"
+    },
+    {
+      "floorId": "F1",
+      "floorLabel": "1层",
+      "poiCount": 157,
+      "sourceId": "map-90872",
+      "dataOrigin": "map_data"
+    },
+    {
+      "floorId": "F2",
+      "floorLabel": "2层",
+      "poiCount": 130,
+      "sourceId": "map-90872",
+      "dataOrigin": "map_data"
+    },
+    {
+      "floorId": "F3",
+      "floorLabel": "3层",
+      "poiCount": 197,
+      "sourceId": "map-90872",
+      "dataOrigin": "map_data"
+    },
+    {
+      "floorId": "F4",
+      "floorLabel": "4层",
+      "poiCount": 70,
+      "sourceId": "map-90872",
+      "dataOrigin": "map_data"
+    }
+  ]
+}

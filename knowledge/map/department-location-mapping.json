@@ -1,0 +1,1066 @@
+{
+  "mapId": "90872",
+  "rule": "地图优先；未找到不猜测",
+  "mappings": [
+    {
+      "departmentId": "dept-f5846a42d8d4",
+      "departmentName": "呼吸与危重症医学科",
+      "departmentDisplayName": "呼吸与危重症医学科",
+      "locationIds": [
+        "location-map-907230201146"
+      ],
+      "matchedMapLabels": [
+        "呼吸科"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-a0458b883836",
+      "departmentName": "内分泌科",
+      "departmentDisplayName": "内分泌科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-8c63dfb82259",
+      "departmentName": "皮肤科",
+      "departmentDisplayName": "皮肤科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-92d9deea497c",
+      "departmentName": "神经内科",
+      "departmentDisplayName": "神经内科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-d87037453a1a",
+      "departmentName": "肾病内科",
+      "departmentDisplayName": "肾病内科",
+      "locationIds": [
+        "location-map-907230201148"
+      ],
+      "matchedMapLabels": [
+        "肾病内科"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-64800e429762",
+      "departmentName": "血透中心",
+      "departmentDisplayName": "血透中心",
+      "locationIds": [
+        "location-map-907230101120",
+        "location-map-907230301334"
+      ],
+      "matchedMapLabels": [
+        "血透中心"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-a7b2973e7172",
+      "departmentName": "消化内科",
+      "departmentDisplayName": "消化内科",
+      "locationIds": [
+        "location-map-907230201145"
+      ],
+      "matchedMapLabels": [
+        "消化内科"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-a0160de6d9ff",
+      "departmentName": "心血管内科",
+      "departmentDisplayName": "心血管内科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-948bacda4a9b",
+      "departmentName": "风湿免疫科",
+      "departmentDisplayName": "风湿免疫科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-63dbbc719408",
+      "departmentName": "血液内科",
+      "departmentDisplayName": "血液内科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-4db23d582307",
+      "departmentName": "中西医结合科",
+      "departmentDisplayName": "中西医结合科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-f754e8e16c80",
+      "departmentName": "老年综合科",
+      "departmentDisplayName": "老年综合科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-6aa3481cbd67",
+      "departmentName": "感染科",
+      "departmentDisplayName": "感染科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-bf652c010e9a",
+      "departmentName": "全科医学科",
+      "departmentDisplayName": "全科医学科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-604e27429eff",
+      "departmentName": "心身医学科",
+      "departmentDisplayName": "心身医学科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-a247129da41b",
+      "departmentName": "发热门诊",
+      "departmentDisplayName": "发热门诊",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-b8957ac1e012",
+      "departmentName": "健康管理中心",
+      "departmentDisplayName": "健康管理中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-07a507ab6051",
+      "departmentName": "临床介入放射专业",
+      "departmentDisplayName": "临床介入放射专业",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-11916b32f21a",
+      "departmentName": "泌尿外科",
+      "departmentDisplayName": "泌尿外科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-42a6893f09bc",
+      "departmentName": "普通外科",
+      "departmentDisplayName": "普通外科",
+      "locationIds": [
+        "location-map-907230201166",
+        "location-map-907230401121",
+        "location-map-907230201245",
+        "location-map-907230201247",
+        "location-map-907230201249",
+        "location-map-907230201250",
+        "location-map-907230201252",
+        "location-map-907230201253",
+        "location-map-907230201258",
+        "location-map-907230201261",
+        "location-map-907230201268",
+        "location-map-907230201269",
+        "location-map-907230201278",
+        "location-map-907230201301",
+        "location-map-907230201316",
+        "location-map-907230201322"
+      ],
+      "matchedMapLabels": [
+        "普外科",
+        "外科"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-308dc64d18d8",
+      "departmentName": "乳腺外科",
+      "departmentDisplayName": "乳腺外科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-19a5d3329b35",
+      "departmentName": "肝胆外科",
+      "departmentDisplayName": "肝胆外科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-cb3861a9759c",
+      "departmentName": "烧伤整形外科",
+      "departmentDisplayName": "烧伤整形外科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-3831df9d1a2a",
+      "departmentName": "骨科",
+      "departmentDisplayName": "骨科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-ebde108e3b59",
+      "departmentName": "脊柱外科",
+      "departmentDisplayName": "脊柱外科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-ae030b887c0f",
+      "departmentName": "神经外科",
+      "departmentDisplayName": "神经外科",
+      "locationIds": [
+        "location-map-907230201350"
+      ],
+      "matchedMapLabels": [
+        "神经外科"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-27043e3aa6d2",
+      "departmentName": "血管外科",
+      "departmentDisplayName": "血管外科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-d6b76928d03b",
+      "departmentName": "心胸外科",
+      "departmentDisplayName": "心胸外科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-c6512529b527",
+      "departmentName": "眼科",
+      "departmentDisplayName": "眼科",
+      "locationIds": [
+        "location-map-907230301413"
+      ],
+      "matchedMapLabels": [
+        "眼科"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-e0aa451611fb",
+      "departmentName": "耳鼻咽喉颌面外科病区",
+      "departmentDisplayName": "耳鼻咽喉颌面外科病区",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-0f390764b20c",
+      "departmentName": "小儿外科",
+      "departmentDisplayName": "小儿外科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-def606b438f3",
+      "departmentName": "妇产科",
+      "departmentDisplayName": "妇产科",
+      "locationIds": [
+        "location-map-90723040139",
+        "location-map-907230201188",
+        "location-map-907230201264",
+        "location-map-907230201274",
+        "location-map-907230201275",
+        "location-map-907230201282",
+        "location-map-907230201284",
+        "location-map-907230201285",
+        "location-map-907230201286",
+        "location-map-907230201291",
+        "location-map-907230201292",
+        "location-map-907230201297",
+        "location-map-907230201298",
+        "location-map-907230201299",
+        "location-map-907230201300",
+        "location-map-907230201307",
+        "location-map-907230201325",
+        "location-map-907230201336",
+        "location-map-907230201337",
+        "location-map-907230201338",
+        "location-map-907230201339",
+        "location-map-907230201341",
+        "location-map-907230201342",
+        "location-map-907230201343",
+        "location-map-907230201344",
+        "location-map-90723040115",
+        "location-map-907230401115"
+      ],
+      "matchedMapLabels": [
+        "妇产科",
+        "妇科",
+        "产科"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-65bbd0eaf0de",
+      "departmentName": "儿科",
+      "departmentDisplayName": "儿科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-72f4cf7a6d26",
+      "departmentName": "肿瘤科",
+      "departmentDisplayName": "肿瘤科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-e3dd4c5936fb",
+      "departmentName": "康复医学科",
+      "departmentDisplayName": "康复医学科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-8f120795f91a",
+      "departmentName": "生殖医学中心",
+      "departmentDisplayName": "生殖医学中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-4fd21a176632",
+      "departmentName": "疼痛科",
+      "departmentDisplayName": "疼痛科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-e8eafd1155b8",
+      "departmentName": "门诊部",
+      "departmentDisplayName": "门诊部",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-0cef3b56e1ce",
+      "departmentName": "急诊医学科",
+      "departmentDisplayName": "急诊医学科",
+      "locationIds": [
+        "location-map-90723030118"
+      ],
+      "matchedMapLabels": [
+        "急诊科"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-fbb0e6a3d4e3",
+      "departmentName": "超声医学科",
+      "departmentDisplayName": "超声医学科",
+      "locationIds": [
+        "location-map-907230101201",
+        "location-map-90723010165",
+        "location-map-90723010170",
+        "location-map-907230301144",
+        "location-map-907230301146",
+        "location-map-907230301147",
+        "location-map-907230301149",
+        "location-map-907230301160",
+        "location-map-907230301166",
+        "location-map-907230301172",
+        "location-map-907230301177"
+      ],
+      "matchedMapLabels": [
+        "超声科",
+        "B超室",
+        "彩超室"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-0397040827c3",
+      "departmentName": "患者服务中心",
+      "departmentDisplayName": "患者服务中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-5dcf4d72befd",
+      "departmentName": "伤口治疗中心",
+      "departmentDisplayName": "伤口治疗中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-46e57e4aa848",
+      "departmentName": "MDT平台中心",
+      "departmentDisplayName": "MDT平台中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-82437c3beb9d",
+      "departmentName": "口腔科",
+      "departmentDisplayName": "口腔科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-b9578f5451d1",
+      "departmentName": "放射科",
+      "departmentDisplayName": "放射科",
+      "locationIds": [
+        "location-map-90723990165",
+        "location-map-907230101203",
+        "location-map-90723020191",
+        "location-map-907230301295",
+        "location-map-907230301326",
+        "location-map-907230301327",
+        "location-map-907230301343",
+        "location-map-907230301345",
+        "location-map-907230301346",
+        "location-map-907230301362",
+        "location-map-907230301363",
+        "location-map-907230301366",
+        "location-map-907230301368",
+        "location-map-907230301370"
+      ],
+      "matchedMapLabels": [
+        "放射科",
+        "CT室"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-a9a650e0f66f",
+      "departmentName": "医学检验科",
+      "departmentDisplayName": "医学检验科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-a17efd84c976",
+      "departmentName": "输血科",
+      "departmentDisplayName": "输血科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-2154bdb83c54",
+      "departmentName": "药学部",
+      "departmentDisplayName": "药学部",
+      "locationIds": [
+        "location-map-907230101452",
+        "location-map-907230101480",
+        "location-map-907230201243"
+      ],
+      "matchedMapLabels": [
+        "药房"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-13f12d07d37c",
+      "departmentName": "病理科",
+      "departmentDisplayName": "病理科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-bffe90d090de",
+      "departmentName": "临床营养科",
+      "departmentDisplayName": "临床营养科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-c8bbd56cd9fc",
+      "departmentName": "核医学科",
+      "departmentDisplayName": "核医学科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-3bd6dec14305",
+      "departmentName": "重症医学科",
+      "departmentDisplayName": "重症医学科",
+      "locationIds": [
+        "location-map-90723010176",
+        "location-map-907230101329",
+        "location-map-907230301600"
+      ],
+      "matchedMapLabels": [
+        "重症监护室"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-560c28b7b4f0",
+      "departmentName": "内镜中心",
+      "departmentDisplayName": "内镜中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-3a38acd7f9a6",
+      "departmentName": "麻醉科",
+      "departmentDisplayName": "麻醉科",
+      "locationIds": [
+        "location-map-907230301355"
+      ],
+      "matchedMapLabels": [
+        "麻醉科"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-bca58d92f561",
+      "departmentName": "手术室",
+      "departmentDisplayName": "手术室",
+      "locationIds": [
+        "location-map-907230101393",
+        "location-map-907230101397"
+      ],
+      "matchedMapLabels": [
+        "手术室"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-78370cdaa4ce",
+      "departmentName": "消毒供应中心",
+      "departmentDisplayName": "消毒供应中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-a30aeb1ae0a7",
+      "departmentName": "洗涤供应中心",
+      "departmentDisplayName": "洗涤供应中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-169a2b83be32",
+      "departmentName": "介入中心",
+      "departmentDisplayName": "介入中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-08386ea84fde",
+      "departmentName": "医保科",
+      "departmentDisplayName": "医保部",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-1d632ba79106",
+      "departmentName": "党委办公室",
+      "departmentDisplayName": "党委办公室",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-c531493a6309",
+      "departmentName": "纪委办公室",
+      "departmentDisplayName": "纪委办公室",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-ea27922426a3",
+      "departmentName": "宣传科",
+      "departmentDisplayName": "宣传科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-ff0c072d3cba",
+      "departmentName": "社会工作科",
+      "departmentDisplayName": "社会工作科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-a15ec9cb49cb",
+      "departmentName": "院办公室",
+      "departmentDisplayName": "院办公室",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-360eb55c7cc0",
+      "departmentName": "运营管理科",
+      "departmentDisplayName": "运营管理科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-c2d8f9207e96",
+      "departmentName": "人力资源科",
+      "departmentDisplayName": "人力资源科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-e8e564b9f16b",
+      "departmentName": "离退休管理科",
+      "departmentDisplayName": "离退休管理科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-95f56f0e6a51",
+      "departmentName": "医务科",
+      "departmentDisplayName": "医务科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-c3faa753e64e",
+      "departmentName": "医院感染管理科",
+      "departmentDisplayName": "医院感染管理科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-5e6136daf5eb",
+      "departmentName": "教学科",
+      "departmentDisplayName": "教学科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-32c930c8305a",
+      "departmentName": "护理部",
+      "departmentDisplayName": "护理部",
+      "locationIds": [
+        "location-map-907230301599"
+      ],
+      "matchedMapLabels": [
+        "护理部"
+      ],
+      "mapStatus": "mapped",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-246e03e57227",
+      "departmentName": "财务科",
+      "departmentDisplayName": "财务科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-1c780ca1e641",
+      "departmentName": "收费科",
+      "departmentDisplayName": "收费科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-eac067d7c67b",
+      "departmentName": "信息中心",
+      "departmentDisplayName": "信息中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-215ebb6bcab7",
+      "departmentName": "病案管理科",
+      "departmentDisplayName": "病案管理科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-c1e65333eb67",
+      "departmentName": "安全保卫科",
+      "departmentDisplayName": "安全保卫科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-001100cab5ca",
+      "departmentName": "公共卫生和预防保健科",
+      "departmentDisplayName": "公共卫生和预防保健科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-c382002a07be",
+      "departmentName": "审计科",
+      "departmentDisplayName": "审计科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-b5110e8f8f80",
+      "departmentName": "资产管理科",
+      "departmentDisplayName": "资产管理科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-83951e2ac8a8",
+      "departmentName": "技能培训中心",
+      "departmentDisplayName": "技能培训中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-377f95523497",
+      "departmentName": "科技科",
+      "departmentDisplayName": "科技科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-46b1a31c7ff5",
+      "departmentName": "医院管理研究所",
+      "departmentDisplayName": "医院管理研究所",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-edc255bef249",
+      "departmentName": "工会办公室",
+      "departmentDisplayName": "工会办公室",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-199fbc8cd16f",
+      "departmentName": "医患关系办公室",
+      "departmentDisplayName": "医患关系办公室",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-b73f2f3dccdb",
+      "departmentName": "中心实验室",
+      "departmentDisplayName": "中心实验室",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-ee52a9dddc45",
+      "departmentName": "医学装备科",
+      "departmentDisplayName": "医学装备科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-8d9628bf26a2",
+      "departmentName": "采购科",
+      "departmentDisplayName": "采购科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-213e1b64b866",
+      "departmentName": "后勤保障科",
+      "departmentDisplayName": "后勤保障科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-5feb7547f379",
+      "departmentName": "基本建设科",
+      "departmentDisplayName": "基本建设科",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-5f8884c39d9f",
+      "departmentName": "物资调配与供应中心",
+      "departmentDisplayName": "物资调配与供应中心",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-2f10c1723a15",
+      "departmentName": "医院伦理委员会",
+      "departmentDisplayName": "医院伦理委员会",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    },
+    {
+      "departmentId": "dept-7e2fec788b07",
+      "departmentName": "药物（医疗器械）临床试验机构",
+      "departmentDisplayName": "药物（医疗器械）临床试验机构",
+      "locationIds": [],
+      "matchedMapLabels": [],
+      "mapStatus": "not_found",
+      "matchingRule": "exact_official_name_or_curated_alias",
+      "conflictRule": "地点或楼层冲突时以地图 90872 为准"
+    }
+  ]
+}

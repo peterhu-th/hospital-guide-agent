@@ -1,0 +1,1434 @@
+{
+  "generatedAt": "2026-08-12T21:08:40+08:00",
+  "sources": [
+    {
+      "sourceId": "official-hospital-introduction",
+      "title": "医院简介-医院概况-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/into_hos/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "hospital_profile",
+        "address"
+      ],
+      "notes": "官网当前医院简介；组织规模等数字会变化，运行时仅作离线参考。"
+    },
+    {
+      "sourceId": "official-department-directory",
+      "title": "科室介绍-就医指南-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_catalog",
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "采集时官网列出 92 个科室；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-guider-index",
+      "title": "就医指南-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/guider/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "guide_index",
+        "service_entry"
+      ],
+      "notes": "离线知识入口，不在运行时联网读取。"
+    },
+    {
+      "sourceId": "official-patient-flow",
+      "title": "流程须知-就医指南-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/patient_flow/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "visit_process"
+      ],
+      "notes": "栏目公开条目有限；缺失流程已记录为未确认。"
+    },
+    {
+      "sourceId": "official-outpatient-schedule",
+      "title": "门诊时间-就医指南-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/guider_mzsj_/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "hospital_official",
+      "freshness": "volatile",
+      "usage": [
+        "outpatient_schedule_reference"
+      ],
+      "notes": "主要以图片发布，不能作为实时出诊或号源依据。"
+    },
+    {
+      "sourceId": "official-campus-navigation",
+      "title": "交通导航-院区分布-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/guider_jtdh_yqfb/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "campus",
+        "building_reference"
+      ],
+      "notes": "室内地点与楼层冲突时以 90872 地图数据为准。"
+    },
+    {
+      "sourceId": "official-patient-service-center",
+      "title": "科室简介-患者服务中心-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_cryfwzxa0_ksjj/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "patient_service",
+        "manual_fallback"
+      ],
+      "notes": "包含咨询、求助、投诉和入出院一站式服务职责。"
+    },
+    {
+      "sourceId": "official-insurance-2022",
+      "title": "绵阳市中心医院医保病人住院政策指南",
+      "url": "https://www.myszxyy.cn/patient_insurance/2022/qaQn6qbn.html",
+      "publishedAt": "2022-07-27",
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "hospital_official",
+      "freshness": "volatile",
+      "usage": [
+        "insurance_reference",
+        "historical_inpatient_process"
+      ],
+      "notes": "历史政策材料；比例、窗口、材料和电话均需当前确认。"
+    },
+    {
+      "sourceId": "map-90872",
+      "title": "assets/maps/90872.fmap 室内地图包",
+      "url": null,
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "provided_map",
+      "freshness": "unknown",
+      "usage": [
+        "floor",
+        "poi",
+        "indoor_navigation"
+      ],
+      "notes": "用户指定地图；地点和楼层冲突以此数据为准。"
+    },
+    {
+      "sourceId": "project-department-curation",
+      "title": "项目导诊增强数据",
+      "url": null,
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T21:08:40+08:00",
+      "authority": "project_curated",
+      "freshness": "periodic",
+      "usage": [
+        "aliases",
+        "routing_context",
+        "clarifying_questions"
+      ],
+      "notes": "项目整理，不是医院发布的诊断或分科规则。"
+    },
+    {
+      "sourceId": "official-department-f5846a42d8d4",
+      "title": "呼吸与危重症医学科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_huxineikea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-a0458b883836",
+      "title": "内分泌科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_nfmka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-8c63dfb82259",
+      "title": "皮肤科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_pifukea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-92d9deea497c",
+      "title": "神经内科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_sjnka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-d87037453a1a",
+      "title": "肾病内科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_sbka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-64800e429762",
+      "title": "血透中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xytxzxa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-a7b2973e7172",
+      "title": "消化内科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xhnka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-a0160de6d9ff",
+      "title": "心血管内科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xxgnka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-948bacda4a9b",
+      "title": "风湿免疫科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_mianyikea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-63dbbc719408",
+      "title": "血液内科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xynka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-4db23d582307",
+      "title": "中西医结合科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_zxyjhka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-f754e8e16c80",
+      "title": "老年综合科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_lnzhkxzdslzxa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-6aa3481cbd67",
+      "title": "感染科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_ganranke/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-bf652c010e9a",
+      "title": "全科医学科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_qkyxka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-604e27429eff",
+      "title": "心身医学科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xsyxk/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-a247129da41b",
+      "title": "发热门诊-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_frmz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-b8957ac1e012",
+      "title": "健康管理中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_jkglzxa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-07a507ab6051",
+      "title": "临床介入放射专业-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_lcjrzya0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-11916b32f21a",
+      "title": "泌尿外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_mnwka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-42a6893f09bc",
+      "title": "普通外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_ptwka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-308dc64d18d8",
+      "title": "乳腺外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_rxwka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-19a5d3329b35",
+      "title": "肝胆外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_gdwka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-cb3861a9759c",
+      "title": "烧伤整形外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_sszxwka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-3831df9d1a2a",
+      "title": "骨科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_gukea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-ebde108e3b59",
+      "title": "脊柱外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_jzwka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-ae030b887c0f",
+      "title": "神经外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_sjwka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-27043e3aa6d2",
+      "title": "血管外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xgwka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-d6b76928d03b",
+      "title": "心胸外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xwka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-c6512529b527",
+      "title": "眼科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yankea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-e0aa451611fb",
+      "title": "耳鼻咽喉颌面外科病区-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_ebyhka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-0f390764b20c",
+      "title": "小儿外科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xewka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-def606b438f3",
+      "title": "妇产科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_fuchankea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-65bbd0eaf0de",
+      "title": "儿科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_erkea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-72f4cf7a6d26",
+      "title": "肿瘤科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_zlka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-e3dd4c5936fb",
+      "title": "康复医学科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_kfyxka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-8f120795f91a",
+      "title": "生殖医学中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_szyxzxa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-4fd21a176632",
+      "title": "疼痛科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_ttka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-e8eafd1155b8",
+      "title": "门诊部-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_mzbgsa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-0cef3b56e1ce",
+      "title": "急诊医学科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_jzyxka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-fbb0e6a3d4e3",
+      "title": "超声医学科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_cska0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-0397040827c3",
+      "title": "患者服务中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_cryfwzxa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-5dcf4d72befd",
+      "title": "伤口治疗中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_skzlzxa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-46e57e4aa848",
+      "title": "MDT平台中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_MDTptzx/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-82437c3beb9d",
+      "title": "口腔科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_kqka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-b9578f5451d1",
+      "title": "放射科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_fangshekea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-a9a650e0f66f",
+      "title": "医学检验科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yxjyka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-a17efd84c976",
+      "title": "输血科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_shuxuekea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-2154bdb83c54",
+      "title": "药学部-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yaoxuebua0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-13f12d07d37c",
+      "title": "病理科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_binglikea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-bffe90d090de",
+      "title": "临床营养科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_lcyyka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-c8bbd56cd9fc",
+      "title": "核医学科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_heyixuekea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-3bd6dec14305",
+      "title": "重症医学科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_zzyxka0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-560c28b7b4f0",
+      "title": "内镜中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_njzxa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-3a38acd7f9a6",
+      "title": "麻醉科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_mazuikea0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-bca58d92f561",
+      "title": "手术室-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_sssa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-78370cdaa4ce",
+      "title": "消毒供应中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xdgyzxa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-a30aeb1ae0a7",
+      "title": "洗涤供应中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xdgyzx/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-169a2b83be32",
+      "title": "介入中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_jrzx/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-08386ea84fde",
+      "title": "医保科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_ybglbgsa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-1d632ba79106",
+      "title": "党委办公室-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_djwbgsa0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-c531493a6309",
+      "title": "纪委办公室-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_jjjck_gzzz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-ea27922426a3",
+      "title": "宣传科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xcka0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-ff0c072d3cba",
+      "title": "社会工作科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_shgzk_gzzz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-a15ec9cb49cb",
+      "title": "院办公室-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_ycbgsa0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-360eb55c7cc0",
+      "title": "运营管理科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yunyingbua0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-c2d8f9207e96",
+      "title": "人力资源科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_rlzyba0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-e8e564b9f16b",
+      "title": "离退休管理科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_ltxglka0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-95f56f0e6a51",
+      "title": "医务科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yijiaobua0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-c3faa753e64e",
+      "title": "医院感染管理科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yygrglka0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-5e6136daf5eb",
+      "title": "教学科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_kejiaokea0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-32c930c8305a",
+      "title": "护理部-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_hlbcwba0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-246e03e57227",
+      "title": "财务科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_caiwubu_gzzz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-1c780ca1e641",
+      "title": "收费科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_shoufeikea0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-eac067d7c67b",
+      "title": "信息中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_xxzxa0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-215ebb6bcab7",
+      "title": "病案管理科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_baglk_gzzz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-c1e65333eb67",
+      "title": "安全保卫科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_aqbwba0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-001100cab5ca",
+      "title": "公共卫生和预防保健科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yfbjk_gzzz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-c382002a07be",
+      "title": "审计科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_shenjikea0_gzz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-b5110e8f8f80",
+      "title": "资产管理科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_zichankea0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-83951e2ac8a8",
+      "title": "技能培训中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_jnpxzxa0_zz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-377f95523497",
+      "title": "科技科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_lcyxyjzxa0/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-46b1a31c7ff5",
+      "title": "医院管理研究所-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yyglyjs/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-edc255bef249",
+      "title": "工会办公室-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_ghbgs/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-199fbc8cd16f",
+      "title": "医患关系办公室-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yhgxbgs/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-b73f2f3dccdb",
+      "title": "中心实验室-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_zxsys/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-ee52a9dddc45",
+      "title": "医学装备科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_yxgcka0_ksjj/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-8d9628bf26a2",
+      "title": "采购科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_caigongkea0_ksjj/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-213e1b64b866",
+      "title": "后勤保障科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_houqinbua0_ksjj/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-5feb7547f379",
+      "title": "基本建设科-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_jbjska0_ksjj/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-5f8884c39d9f",
+      "title": "物资调配与供应中心-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_wzdpygyzx_gzzz/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-2f10c1723a15",
+      "title": "医院伦理委员会-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_wyh_ksjs/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    },
+    {
+      "sourceId": "official-department-7e2fec788b07",
+      "title": "药物（医疗器械）临床试验机构-科室介绍-绵阳市中心医院",
+      "url": "https://www.myszxyy.cn/departments_ywylqxlcsyjg_ksjs/",
+      "publishedAt": null,
+      "fetchedAt": "2026-08-12T20:11:00.115286+08:00",
+      "authority": "hospital_official",
+      "freshness": "periodic",
+      "usage": [
+        "department_introduction",
+        "doctor_reference"
+      ],
+      "notes": "官网科室详情页；医生信息不代表实时排班。"
+    }
+  ]
+}

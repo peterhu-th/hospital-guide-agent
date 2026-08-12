@@ -1,0 +1,32 @@
+{
+  "hospitalId": "hospital-mianyang-central",
+  "notice": "本文件是 2022-07-27 官网文章的历史参考，不作为 2026 年实时医保政策或结算承诺。",
+  "displayNotice": "信息发布时间：2022-07-27。仅作历史参考，当前政策、比例、材料、窗口和办理时限请向医保部确认。",
+  "confirmationDestination": "医保部",
+  "publishedAt": "2022-07-27",
+  "freshness": "volatile",
+  "requiresCurrentConfirmation": true,
+  "historicalReference": {
+    "topics": [
+      "住院登记",
+      "医保结算",
+      "异地就医",
+      "医保政策咨询"
+    ],
+    "locationReferences": [
+      "负一楼收费科",
+      "医保政策咨询窗口",
+      "第一住院大楼负一楼医保结算中心"
+    ],
+    "excludedFromAgentCommitments": [
+      "报销比例",
+      "起付线",
+      "封顶线",
+      "窗口编号",
+      "办理时限",
+      "材料清单"
+    ]
+  },
+  "sourceId": "official-insurance-2022",
+  "dataOrigin": "official_public"
+}

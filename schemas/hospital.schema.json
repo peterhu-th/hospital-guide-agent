@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/hospital.schema.json",
+  "title": "Hospital",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["hospitalId", "mapId", "name", "type", "address", "campuses", "sources", "dataOrigin"],
+  "properties": {
+    "hospitalId": { "$ref": "common.schema.json#/$defs/hospitalId" },
+    "mapId": { "type": "string", "pattern": "^[0-9]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "type": { "type": "string", "minLength": 1 },
+    "address": { "type": "string", "minLength": 1 },
+    "contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "label", "value"],
+        "properties": {
+          "type": { "type": "string", "enum": ["service", "emergency", "insurance", "complaint", "other"] },
+          "label": { "type": "string", "minLength": 1 },
+          "value": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "campuses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["campusId", "name", "buildings"],
+        "properties": {
+          "campusId": { "type": "string", "pattern": "^campus-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "buildings": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+        }
+      }
+    },
+    "sources": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/sourceReference" } },
+    "dataOrigin": { "const": "official_public" },
+    "version": { "type": "string", "minLength": 1 }
+  }
+}

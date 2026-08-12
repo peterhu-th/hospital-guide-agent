@@ -1,0 +1,21 @@
+[Unit]
+Description=Hospital Guide Agent
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=hospital_app
+Group=hospital_app
+WorkingDirectory=/opt/hospital-guide/current
+EnvironmentFile=/etc/hospital-guide/agent.env
+ExecStart=/usr/local/bin/node --disable-warning=ExperimentalWarning apps/server/main.js
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

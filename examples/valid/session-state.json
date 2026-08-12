@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "2.0.0",
+  "sessionId": "session-contract-test",
+  "revision": 3,
+  "createdAt": "2026-08-12T10:00:00+08:00",
+  "lastActiveAt": "2026-08-12T10:10:00+08:00",
+  "expiresAt": "2026-08-15T10:10:00+08:00",
+  "patientId": "patient-contract-test",
+  "userRole": "patient",
+  "currentStage": "APPOINTMENT",
+  "facts": [{ "factId": "fact-contract-test", "field": "chief_complaint", "rawValue": "吃完饭肚子胀", "normalizedValue": "饭后腹胀", "status": "confirmed", "source": { "type": "user_message", "turnId": "turn-contract-test" }, "createdAt": "2026-08-12T10:01:00+08:00" }],
+  "appointmentIds": ["appointment-contract-test"],
+  "medicalOrderIds": [],
+  "billIds": [],
+  "medicalRecordIds": ["record-contract-test"],
+  "tasks": [],
+  "pendingActions": [{ "actionId": "action-contract-appointment", "actionType": "CREATE_APPOINTMENT", "status": "PENDING_CONFIRMATION", "parameters": { "slotId": "slot-contract-test" }, "createdAt": "2026-08-12T10:10:00+08:00", "expiresAt": "2026-08-12T10:20:00+08:00" }],
+  "conversationSummary": "用户正在确认挂号。"
+}

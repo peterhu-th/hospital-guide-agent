@@ -1,0 +1,20 @@
+# Local planning documents, notes and server access records
+docs/
+tests/
+.env
+.env.*
+environment.local.ps1
+*.key
+*.pem
+
+# Build and dependency output
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+
+# Local runtime state (database, generated key, review code and logs)
+.local/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

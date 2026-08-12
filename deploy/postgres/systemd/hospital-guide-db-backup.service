@@ -1,0 +1,9 @@
+[Unit]
+Description=Back up hospital guide PostgreSQL database
+After=postgresql.service
+
+[Service]
+Type=oneshot
+User=hospital_app
+ExecStart=/usr/local/sbin/hospital-guide-db-backup
+

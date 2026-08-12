@@ -1,0 +1,17 @@
+{
+  "contractType": "medical_record_extraction_response",
+  "task": "MEDICAL_RECORD_EXTRACTION",
+  "candidateFacts": [
+    {
+      "field": "doctorAssessment",
+      "normalizedValue": "Agent 修改医生判断",
+      "patientWords": "患者原话",
+      "certainty": "PATIENT_REPORTED",
+      "sourceTurnId": "turn-example",
+      "createdBy": "AGENT",
+      "verifiedByDoctor": true
+    }
+  ],
+  "clarificationQuestions": [],
+  "diagnosis": "不允许生成诊断"
+}

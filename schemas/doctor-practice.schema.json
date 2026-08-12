@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/doctor-practice.schema.json",
+  "title": "Doctor Practice",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["practiceId", "doctorId", "departmentId", "status", "validFrom", "createdAt", "updatedAt"],
+  "properties": {
+    "practiceId": { "$ref": "common.schema.json#/$defs/practiceId" },
+    "doctorId": { "$ref": "common.schema.json#/$defs/doctorId" },
+    "departmentId": { "$ref": "common.schema.json#/$defs/departmentId" },
+    "status": { "type": "string", "enum": ["ACTIVE", "SUSPENDED"] },
+    "validFrom": { "type": "string", "format": "date" },
+    "validUntil": { "type": ["string", "null"], "format": "date" },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  }
+}

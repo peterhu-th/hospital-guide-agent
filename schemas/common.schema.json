@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/common.schema.json",
+  "title": "Hospital Guide Common Definitions",
+  "$defs": {
+    "hospitalId": { "type": "string", "pattern": "^hospital-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "departmentId": { "type": "string", "pattern": "^dept-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "locationId": { "type": "string", "pattern": "^location-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "doctorId": { "type": "string", "pattern": "^doctor-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "doctorAccountId": { "type": "string", "pattern": "^doctor-account-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "doctorSessionId": { "type": "string", "pattern": "^doctor-session-[a-zA-Z0-9-]+$" },
+    "practiceId": { "type": "string", "pattern": "^practice-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "slotId": { "type": "string", "pattern": "^slot-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "patientId": { "type": "string", "pattern": "^patient-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "encounterId": { "type": "string", "pattern": "^encounter-[a-zA-Z0-9-]+$" },
+    "medicalRecordId": { "type": "string", "pattern": "^record-[a-zA-Z0-9-]+$" },
+    "statementId": { "type": "string", "pattern": "^statement-[a-zA-Z0-9-]+$" },
+    "sessionId": { "type": "string", "pattern": "^session-[a-zA-Z0-9-]+$" },
+    "appointmentId": { "type": "string", "pattern": "^appointment-[a-zA-Z0-9-]+$" },
+    "orderId": { "type": "string", "pattern": "^order-[a-zA-Z0-9-]+$" },
+    "billId": { "type": "string", "pattern": "^bill-[a-zA-Z0-9-]+$" },
+    "taskId": { "type": "string", "pattern": "^task-[a-zA-Z0-9-]+$" },
+    "turnId": { "type": "string", "pattern": "^turn-[a-zA-Z0-9-]+$" },
+    "actionId": { "type": "string", "pattern": "^action-[a-zA-Z0-9-]+$" },
+    "eventId": { "type": "string", "pattern": "^event-[a-zA-Z0-9-]+$" },
+    "isoDateTime": { "type": "string", "format": "date-time" },
+    "dataOrigin": {
+      "type": "string",
+      "enum": ["official_public", "map_data", "project_curated", "simulated", "user_provided", "agent_inferred", "hospital_runtime"]
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": ["unreviewed", "official_public", "project_reviewed", "hospital_reviewed", "requires_current_confirmation"]
+    },
+    "freshness": {
+      "type": "string",
+      "enum": ["stable", "periodic", "volatile", "runtime_only", "unknown"]
+    },
+    "sourceReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceId", "dataOrigin"],
+      "properties": {
+        "sourceId": { "type": "string", "minLength": 1 },
+        "dataOrigin": { "$ref": "#/$defs/dataOrigin" },
+        "url": { "type": "string", "format": "uri" },
+        "publishedAt": { "type": ["string", "null"], "format": "date" },
+        "fetchedAt": { "type": ["string", "null"], "format": "date-time" },
+        "freshness": { "$ref": "#/$defs/freshness" },
+        "reviewStatus": { "$ref": "#/$defs/reviewStatus" }
+      }
+    },
+    "simulationMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["simulationScenario", "simulationNotice"],
+      "properties": {
+        "simulationScenario": { "type": "string", "minLength": 1 },
+        "simulationNotice": { "const": "演示数据，不产生真实挂号、扣款或医疗行为" }
+      }
+    },
+    "statePatchOperation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["op", "path"],
+      "properties": {
+        "op": { "type": "string", "enum": ["add", "remove", "replace", "test"] },
+        "path": { "type": "string", "pattern": "^/" },
+        "value": {},
+        "expectedValue": {}
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "op": { "enum": ["add", "replace"] } } },
+          "then": { "required": ["value"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "test" } } },
+          "then": { "required": ["expectedValue"] }
+        }
+      ]
+    },
+    "entityReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entityType", "entityId"],
+      "properties": {
+        "entityType": { "type": "string", "enum": ["patient", "department", "doctor", "practice", "slot", "appointment", "encounter", "medical_record", "order", "bill", "task", "location", "prescription", "simulated_result"] },
+        "entityId": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "auditEventId": 1,
+  "actorType": "DOCTOR",
+  "actorId": "doctor-contract-test",
+  "action": "VIEW",
+  "entityType": "medical_record",
+  "entityId": "record-contract-test",
+  "patientId": "patient-contract-test",
+  "doctorId": "doctor-contract-test",
+  "reason": null,
+  "metadata": {},
+  "occurredAt": "2026-08-12T10:05:00+08:00"
+}

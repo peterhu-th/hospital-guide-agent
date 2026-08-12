@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/bill.schema.json",
+  "title": "Offline-Payment Bill",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["billId", "patientId", "relatedEntities", "items", "totalAmount", "insuranceAmount", "personalAmount", "currency", "status", "paymentGuidance", "createdAt", "updatedAt"],
+  "properties": {
+    "billId": { "$ref": "common.schema.json#/$defs/billId" },
+    "patientId": { "$ref": "common.schema.json#/$defs/patientId" },
+    "encounterId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/encounterId" }, { "type": "null" }] },
+    "relatedEntities": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/entityReference" }, "uniqueItems": true },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["itemId", "name", "amount"],
+        "properties": {
+          "itemId": { "type": "string", "pattern": "^bill-item-[a-zA-Z0-9-]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "amount": { "type": "number", "minimum": 0 }
+        }
+      }
+    },
+    "totalAmount": { "type": "number", "minimum": 0 },
+    "insuranceAmount": { "type": "number", "minimum": 0 },
+    "personalAmount": { "type": "number", "minimum": 0 },
+    "currency": { "const": "CNY" },
+    "status": { "type": "string", "enum": ["UNPAID", "CANCELLED"] },
+    "paymentGuidance": { "const": "请前往收费窗口或医保部办理缴费" },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  },
+  "description": "Until a real payment provider is connected, PAID and refund states are deliberately impossible."
+}

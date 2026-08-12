@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/session-state.schema.json",
+  "title": "Server-Side Patient Session State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "sessionId", "revision", "createdAt", "lastActiveAt", "expiresAt", "patientId", "userRole", "currentStage", "facts", "appointmentIds", "medicalOrderIds", "billIds", "medicalRecordIds", "tasks", "pendingActions", "conversationSummary"],
+  "properties": {
+    "schemaVersion": { "const": "2.0.0" },
+    "sessionId": { "$ref": "common.schema.json#/$defs/sessionId" },
+    "revision": { "type": "integer", "minimum": 0 },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "lastActiveAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "expiresAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "patientId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/patientId" }, { "type": "null" }] },
+    "userRole": { "type": "string", "enum": ["patient", "family"] },
+    "currentStage": { "type": "string", "enum": ["UNKNOWN", "PRE_VISIT", "APPOINTMENT", "ARRIVAL", "CHECK_IN", "WAITING", "CONSULTATION", "AFTER_CONSULTATION", "PAYMENT", "EXAMINATION", "RETURN_VISIT", "PHARMACY", "COMPLETED"] },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["factId", "field", "rawValue", "status", "source", "createdAt"],
+        "properties": {
+          "factId": { "type": "string", "pattern": "^fact-[a-zA-Z0-9-]+$" },
+          "field": { "type": "string", "minLength": 1 },
+          "rawValue": {},
+          "normalizedValue": {},
+          "status": { "type": "string", "enum": ["candidate", "confirmed", "rejected", "unknown", "conflicted", "not_applicable", "unwilling"] },
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "turnId"],
+            "properties": {
+              "type": { "type": "string", "enum": ["user_message", "agent_inference", "business_tool"] },
+              "turnId": { "$ref": "common.schema.json#/$defs/turnId" }
+            }
+          },
+          "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+        }
+      }
+    },
+    "appointmentIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/appointmentId" }, "uniqueItems": true },
+    "medicalOrderIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/orderId" }, "uniqueItems": true },
+    "billIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/billId" }, "uniqueItems": true },
+    "medicalRecordIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/medicalRecordId" }, "uniqueItems": true },
+    "tasks": { "type": "array", "items": { "$ref": "task.schema.json" } },
+    "pendingActions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["actionId", "actionType", "status", "parameters", "createdAt", "expiresAt"],
+        "properties": {
+          "actionId": { "$ref": "common.schema.json#/$defs/actionId" },
+          "actionType": { "type": "string", "enum": ["CREATE_APPOINTMENT", "CANCEL_APPOINTMENT", "CHANGE_APPOINTMENT"] },
+          "status": { "type": "string", "enum": ["PENDING_CONFIRMATION", "CONFIRMED", "REJECTED", "EXECUTED", "EXPIRED"] },
+          "parameters": { "type": "object" },
+          "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+          "expiresAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+        }
+      }
+    },
+    "conversationSummary": { "type": "string" }
+  },
+  "description": "This is server-side state. Application validation must enforce expiresAt = lastActiveAt + 72 hours."
+}

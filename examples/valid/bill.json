@@ -1,0 +1,15 @@
+{
+  "billId": "bill-contract-test",
+  "patientId": "patient-contract-test",
+  "encounterId": "encounter-contract-test",
+  "relatedEntities": [{ "entityType": "order", "entityId": "order-contract-ultrasound" }],
+  "items": [{ "itemId": "bill-item-ultrasound", "name": "腹部超声检查", "amount": 120 }],
+  "totalAmount": 120,
+  "insuranceAmount": 0,
+  "personalAmount": 120,
+  "currency": "CNY",
+  "status": "UNPAID",
+  "paymentGuidance": "请前往收费窗口或医保部办理缴费",
+  "createdAt": "2026-08-12T10:10:00+08:00",
+  "updatedAt": "2026-08-12T10:10:00+08:00"
+}

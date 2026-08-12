@@ -1,0 +1,19 @@
+{
+  "name": "hospital-guide-agent",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning apps/server/main.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch apps/server/main.js",
+    "runtime:counts": "node --disable-warning=ExperimentalWarning scripts/inspect_runtime_counts.js",
+    "evaluate:routing": "node scripts/evaluate_routing.js",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.js"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}

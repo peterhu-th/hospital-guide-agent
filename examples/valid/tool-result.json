@@ -1,0 +1,12 @@
+{
+  "toolCallId": "tool-call-contract-test",
+  "tool": "create_appointment",
+  "success": true,
+  "data": { "appointmentId": "appointment-contract-test", "status": "BOOKED" },
+  "statePatch": [{ "op": "add", "path": "/appointmentIds/0", "value": "appointment-contract-test" }],
+  "nextSuggestedActions": ["VIEW_APPOINTMENT"],
+  "dataOrigin": "hospital_runtime",
+  "userMessage": "挂号已创建。",
+  "error": null,
+  "executedAt": "2026-08-12T10:12:00+08:00"
+}

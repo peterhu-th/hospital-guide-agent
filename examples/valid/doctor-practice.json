@@ -1,0 +1,10 @@
+{
+  "practiceId": "practice-contract-test",
+  "doctorId": "doctor-contract-test",
+  "departmentId": "dept-gastroenterology",
+  "status": "ACTIVE",
+  "validFrom": "2026-08-12",
+  "validUntil": null,
+  "createdAt": "2026-08-12T10:00:00+08:00",
+  "updatedAt": "2026-08-12T10:00:00+08:00"
+}

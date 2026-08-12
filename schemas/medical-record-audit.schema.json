@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/medical-record-audit.schema.json",
+  "title": "Audit Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["auditEventId", "actorType", "actorId", "action", "entityType", "entityId", "metadata", "occurredAt"],
+  "properties": {
+    "auditEventId": { "type": "integer", "minimum": 1 },
+    "actorType": { "type": "string", "enum": ["PATIENT_SESSION", "DOCTOR", "AGENT", "SYSTEM"] },
+    "actorId": { "type": "string", "minLength": 1 },
+    "action": { "type": "string", "enum": ["VIEW", "CREATE", "UPDATE", "SIGN", "CLOSE", "VERIFY", "PRACTICE_CHANGE", "ACCOUNT_STATUS_CHANGE"] },
+    "entityType": { "type": "string", "minLength": 1 },
+    "entityId": { "type": "string", "minLength": 1 },
+    "patientId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/patientId" }, { "type": "null" }] },
+    "doctorId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/doctorId" }, { "type": "null" }] },
+    "reason": { "type": ["string", "null"] },
+    "metadata": { "type": "object" },
+    "occurredAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  }
+}

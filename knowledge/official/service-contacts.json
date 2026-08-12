@@ -1,0 +1,36 @@
+{
+  "hospitalId": "hospital-mianyang-central",
+  "notice": "以下为官网公开联系方式；非紧急场景由 Agent 提供导诊，紧急情况由医院工作人员处理。",
+  "contacts": [
+    {
+      "contactId": "contact-service",
+      "label": "服务热线",
+      "value": "0816-2222821",
+      "freshness": "periodic",
+      "sourceId": "official-hospital-introduction"
+    },
+    {
+      "contactId": "contact-emergency",
+      "label": "医院急诊",
+      "value": "0816-2231777",
+      "freshness": "periodic",
+      "sourceId": "official-hospital-introduction"
+    },
+    {
+      "contactId": "contact-discipline",
+      "label": "医院纪委",
+      "value": "0816-2237353",
+      "freshness": "periodic",
+      "sourceId": "official-hospital-introduction"
+    },
+    {
+      "contactId": "contact-insurance-window",
+      "label": "医保政策综合服务窗口（历史公开）",
+      "value": "0816-2230063",
+      "freshness": "volatile",
+      "sourceId": "official-insurance-2022",
+      "requiresCurrentConfirmation": true
+    }
+  ],
+  "dataOrigin": "official_public"
+}

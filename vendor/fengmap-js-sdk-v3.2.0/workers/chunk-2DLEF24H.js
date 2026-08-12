@@ -1,0 +1,1 @@
+function toVec2(e){var o=[];for(let t=0;t<e.length;t+=2)o.push({x:e[t+0],y:e[t+1]});return o}export{toVec2};

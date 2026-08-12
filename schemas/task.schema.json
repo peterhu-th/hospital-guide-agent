@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/task.schema.json",
+  "title": "Journey Task",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["taskId", "type", "title", "status", "dependsOn", "createdAt", "updatedAt", "dataOrigin"],
+  "properties": {
+    "taskId": { "$ref": "common.schema.json#/$defs/taskId" },
+    "type": { "type": "string", "enum": ["DEPARTMENT_SELECTION", "APPOINTMENT", "PAYMENT", "CHECK_IN", "WAITING", "CONSULTATION", "EXAMINATION", "RETURN_VISIT", "PHARMACY", "LOCATION", "HUMAN_HELP"] },
+    "title": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["PENDING", "BLOCKED", "IN_PROGRESS", "COMPLETED", "CANCELLED", "FAILED"] },
+    "dependsOn": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/taskId" }, "uniqueItems": true },
+    "relatedEntity": { "oneOf": [{ "$ref": "common.schema.json#/$defs/entityReference" }, { "type": "null" }] },
+    "locationId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/locationId" }, { "type": "null" }] },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "dataOrigin": { "$ref": "common.schema.json#/$defs/dataOrigin" }
+  }
+}

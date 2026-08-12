@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/location.schema.json",
+  "title": "Hospital Location",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["locationId", "hospitalId", "mapId", "canonicalName", "mapLabel", "aliases", "floorId", "floorLabel", "category", "routeEnabled", "mapStatus", "dataOrigin"],
+  "properties": {
+    "locationId": { "$ref": "common.schema.json#/$defs/locationId" },
+    "hospitalId": { "$ref": "common.schema.json#/$defs/hospitalId" },
+    "mapId": { "const": "90872" },
+    "mapFeatureId": { "type": ["string", "null"] },
+    "canonicalName": { "type": "string", "minLength": 1 },
+    "mapLabel": { "type": ["string", "null"] },
+    "aliases": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "building": { "type": ["string", "null"] },
+    "floorId": { "type": "string", "enum": ["B1", "F1", "F2", "F3", "F4", "UNKNOWN"] },
+    "floorLabel": { "type": "string", "enum": ["地下1层", "1层", "2层", "3层", "4层", "未知"] },
+    "category": { "type": "string", "enum": ["department", "registration", "payment", "insurance", "examination", "pharmacy", "service", "entrance", "elevator", "escalator", "stairs", "restroom", "parking", "other"] },
+    "departmentIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/departmentId" }, "uniqueItems": true },
+    "routeEnabled": { "type": "boolean" },
+    "mapStatus": { "type": "string", "enum": ["mapped", "not_found", "ambiguous", "unverified"] },
+    "coordinates": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": { "x": { "type": "number" }, "y": { "type": "number" } }
+    },
+    "sources": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/sourceReference" } },
+    "dataOrigin": { "const": "map_data" }
+  }
+}

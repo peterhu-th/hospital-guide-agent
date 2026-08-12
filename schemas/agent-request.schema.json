@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/agent-request.schema.json",
+  "title": "Agent Turn Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["requestId", "turnId", "sessionId", "baseRevision", "message", "clientTime", "locale"],
+  "properties": {
+    "requestId": { "type": "string", "pattern": "^request-[a-zA-Z0-9-]+$" },
+    "turnId": { "$ref": "common.schema.json#/$defs/turnId" },
+    "sessionId": { "$ref": "common.schema.json#/$defs/sessionId" },
+    "baseRevision": { "type": "integer", "minimum": 0 },
+    "message": { "type": "string", "minLength": 1, "maxLength": 4000 },
+    "entryContext": {
+      "type": "string",
+      "enum": ["CHAT", "APPOINTMENT", "ARRIVAL", "PAYMENT_OR_EXAMINATION", "LOCATION_SEARCH", "MAP_BROWSER"]
+    },
+    "clientTime": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "locale": { "const": "zh-CN" },
+    "sessionSnapshot": { "oneOf": [{ "$ref": "session-state.schema.json" }, { "type": "null" }] }
+  }
+}

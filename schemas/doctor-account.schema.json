@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/doctor-account.schema.json",
+  "title": "Doctor Account",
+  "description": "Safe account view. Passwords and password hashes are deliberately excluded.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["doctorAccountId", "doctorId", "employeeNumber", "status", "verificationNotice", "createdAt", "updatedAt"],
+  "properties": {
+    "doctorAccountId": { "$ref": "common.schema.json#/$defs/doctorAccountId" },
+    "doctorId": { "$ref": "common.schema.json#/$defs/doctorId" },
+    "employeeNumber": { "type": "string", "pattern": "^[0-9]{6}$" },
+    "status": { "type": "string", "enum": ["PENDING_REVIEW", "ACTIVE", "SUSPENDED"] },
+    "verificationNotice": { "const": "系统内账号申请，未接入医院人事系统核验" },
+    "lastLoginAt": { "oneOf": [{ "$ref": "common.schema.json#/$defs/isoDateTime" }, { "type": "null" }] },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  }
+}

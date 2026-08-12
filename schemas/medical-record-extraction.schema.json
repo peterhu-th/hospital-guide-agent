@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/medical-record-extraction.schema.json",
+  "title": "Medical record extraction contract",
+  "oneOf": [
+    { "$ref": "#/$defs/request" },
+    { "$ref": "#/$defs/response" }
+  ],
+  "$defs": {
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contractType", "task", "patientWords", "sourceTurnId", "allowedFields", "doctorFieldsReadOnly"],
+      "properties": {
+        "contractType": { "const": "medical_record_extraction_request" },
+        "task": { "const": "MEDICAL_RECORD_EXTRACTION" },
+        "patientWords": { "type": "string", "minLength": 1, "maxLength": 4000 },
+        "sourceTurnId": { "type": "string", "minLength": 1 },
+        "allowedFields": { "type": "array", "items": { "enum": ["chiefConcern", "symptoms", "timeline", "patientHistory", "patientMedications", "patientAllergies", "patientQuestions"] }, "uniqueItems": true },
+        "doctorFieldsReadOnly": { "const": true }
+      }
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field", "normalizedValue", "patientWords", "certainty", "sourceTurnId", "createdBy", "verifiedByDoctor"],
+      "properties": {
+        "field": { "enum": ["chiefConcern", "symptoms", "timeline", "patientHistory", "patientMedications", "patientAllergies", "patientQuestions"] },
+        "normalizedValue": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "patientWords": { "type": "string", "minLength": 1, "maxLength": 4000 },
+        "certainty": { "enum": ["PATIENT_REPORTED", "FAMILY_REPORTED", "UNCERTAIN", "DENIED"] },
+        "sourceTurnId": { "type": "string", "minLength": 1 },
+        "createdBy": { "const": "AGENT" },
+        "verifiedByDoctor": { "const": false }
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contractType", "task", "candidateFacts", "clarificationQuestions", "diagnosis"],
+      "properties": {
+        "contractType": { "const": "medical_record_extraction_response" },
+        "task": { "const": "MEDICAL_RECORD_EXTRACTION" },
+        "candidateFacts": { "type": "array", "items": { "$ref": "#/$defs/fact" }, "maxItems": 20 },
+        "clarificationQuestions": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 200 }, "maxItems": 3 },
+        "diagnosis": { "type": "null" }
+      }
+    }
+  }
+}

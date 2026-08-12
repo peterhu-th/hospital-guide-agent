@@ -1,0 +1,9 @@
+{
+  "contractType": "department_routing_request",
+  "task": "DEPARTMENT_RECOMMENDATION",
+  "userExpression": "吃完饭肚子胀，还反酸",
+  "patientContext": { "ageRange": "60-69", "sex": "unknown" },
+  "confirmedFacts": [],
+  "candidateDepartments": [{ "departmentId": "dept-gastroenterology", "name": "消化内科", "division": "内科部", "summary": "提供消化系统相关门诊服务。", "aliases": ["消化科"], "differentiationHints": [] }],
+  "constraints": { "allowedDepartmentIds": ["dept-gastroenterology"], "maxRecommendations": 2, "diagnosisForbidden": true }
+}

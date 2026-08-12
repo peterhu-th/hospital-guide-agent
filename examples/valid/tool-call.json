@@ -1,0 +1,10 @@
+{
+  "toolCallId": "tool-call-contract-test",
+  "tool": "create_appointment",
+  "parameters": { "slotId": "slot-contract-test", "patientId": "patient-contract-test" },
+  "actionId": "action-contract-appointment",
+  "userConfirmed": true,
+  "idempotencyKey": "contract-appointment-001",
+  "requestedAt": "2026-08-12T10:11:30+08:00",
+  "requestSource": "agent_orchestrator"
+}

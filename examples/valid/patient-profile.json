@@ -1,0 +1,12 @@
+{
+  "patientId": "patient-contract-test",
+  "fullName": "契约测试用户",
+  "identityNumber": "51070319600101001X",
+  "sex": "male",
+  "age": 66,
+  "birthDate": "1960-01-01",
+  "verificationStatus": "SELF_DECLARED",
+  "createdAt": "2026-08-12T10:00:00+08:00",
+  "lastActiveAt": "2026-08-12T10:10:00+08:00",
+  "expiresAt": "2026-08-15T10:10:00+08:00"
+}

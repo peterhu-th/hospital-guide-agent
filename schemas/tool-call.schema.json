@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/tool-call.schema.json",
+  "title": "Business Tool Call",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["toolCallId", "tool", "parameters", "requestedAt", "requestSource"],
+  "properties": {
+    "toolCallId": { "type": "string", "pattern": "^tool-call-[a-zA-Z0-9-]+$" },
+    "tool": {
+      "type": "string",
+      "enum": ["get_patient_context", "create_patient_profile", "search_departments", "search_doctors", "list_appointment_slots", "create_appointment", "cancel_appointment", "change_appointment", "get_active_appointments", "check_in", "get_queue_status", "get_medical_orders", "get_bills", "get_examination_tasks", "schedule_examination", "get_prescriptions", "get_pharmacy_tasks", "search_locations", "calculate_static_route", "get_next_tasks", "request_human_service", "get_medical_record", "save_medical_record_revision"]
+    },
+    "parameters": { "type": "object" },
+    "actionId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/actionId" }, { "type": "null" }] },
+    "userConfirmed": { "type": "boolean" },
+    "idempotencyKey": { "type": ["string", "null"], "minLength": 8 },
+    "requestedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "requestSource": { "type": "string", "enum": ["agent_orchestrator", "user_interface", "doctor_workbench"] }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["tool"],
+        "properties": {
+          "tool": { "enum": ["create_appointment", "cancel_appointment", "change_appointment"] }
+        }
+      },
+      "then": {
+        "required": ["actionId", "userConfirmed", "idempotencyKey"],
+        "properties": {
+          "actionId": { "$ref": "common.schema.json#/$defs/actionId" },
+          "userConfirmed": { "const": true },
+          "idempotencyKey": { "type": "string", "minLength": 8 }
+        }
+      }
+    }
+  ]
+}

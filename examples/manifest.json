@@ -1,0 +1,58 @@
+{
+  "valid": [
+    { "schema": "hospital.schema.json", "instance": "valid/hospital.json" },
+    { "schema": "department.schema.json", "instance": "valid/department.json" },
+    { "schema": "location.schema.json", "instance": "valid/location.json" },
+    { "schema": "patient-profile.schema.json", "instance": "valid/patient-profile.json" },
+    { "schema": "doctor.schema.json", "instance": "valid/doctor.json" },
+    { "schema": "doctor-account.schema.json", "instance": "valid/doctor-account.json" },
+    { "schema": "doctor-practice.schema.json", "instance": "valid/doctor-practice.json" },
+    { "schema": "appointment-slot.schema.json", "instance": "valid/appointment-slot.json" },
+    { "schema": "appointment.schema.json", "instance": "valid/appointment.json" },
+    { "schema": "medical-order.schema.json", "instance": "valid/medical-order.json" },
+    { "schema": "medical-record.schema.json", "instance": "valid/medical-record.json" },
+    { "schema": "medical-record-audit.schema.json", "instance": "valid/medical-record-audit.json" },
+    { "schema": "medical-record-extraction.schema.json", "instance": "valid/medical-record-extraction.json" },
+    { "schema": "simulated-result.schema.json", "instance": "valid/simulated-result.json" },
+    { "schema": "bill.schema.json", "instance": "valid/bill.json" },
+    { "schema": "task.schema.json", "instance": "valid/task.json" },
+    { "schema": "session-state.schema.json", "instance": "valid/session-state.json" },
+    { "schema": "agent-request.schema.json", "instance": "valid/agent-request.json" },
+    { "schema": "agent-event.schema.json", "instance": "valid/agent-event.json" },
+    { "schema": "department-routing.schema.json", "instance": "valid/department-routing-request.json" },
+    { "schema": "department-routing.schema.json", "instance": "valid/department-routing-response.json" },
+    { "schema": "tool-call.schema.json", "instance": "valid/tool-call.json" },
+    { "schema": "tool-result.schema.json", "instance": "valid/tool-result.json" }
+  ],
+  "invalid": [
+    { "schema": "doctor.schema.json", "instance": "invalid/doctor-without-employee-number.json" },
+    { "schema": "bill.schema.json", "instance": "invalid/paid-bill-without-provider.json" },
+    { "schema": "agent-event.schema.json", "instance": "invalid/pending-action-without-confirmation.json" },
+    { "schema": "tool-call.schema.json", "instance": "invalid/write-tool-without-confirmation.json" },
+    { "schema": "medical-record-extraction.schema.json", "instance": "invalid/medical-record-extraction-overwrites-doctor.json" }
+  ],
+  "semanticChecks": [
+    {
+      "type": "departmentRoutingAllowlist",
+      "request": "valid/department-routing-request.json",
+      "response": "valid/department-routing-response.json",
+      "expected": true
+    },
+    {
+      "type": "departmentRoutingAllowlist",
+      "request": "valid/department-routing-request.json",
+      "response": "invalid/department-routing-hallucination.json",
+      "expected": false
+    },
+    {
+      "type": "sessionExpiry72Hours",
+      "instance": "valid/session-state.json",
+      "expected": true
+    },
+    {
+      "type": "billArithmetic",
+      "instance": "valid/bill.json",
+      "expected": true
+    }
+  ]
+}

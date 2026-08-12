@@ -1,0 +1,65 @@
+{
+  "version": "2.0.0",
+  "hospitalDisplayName": "绵阳市中心医院",
+  "notice": "当前不预置任何模拟实例。只有未连接真实医疗设备或实物系统、无法由软件真实产生的对象允许按本清单模拟。",
+  "forbiddenSimulatedEntities": [
+    "patient",
+    "doctor",
+    "doctor_account",
+    "doctor_practice_department",
+    "appointment_slot",
+    "appointment",
+    "queue_state",
+    "medical_record",
+    "doctor_diagnosis",
+    "doctor_order",
+    "doctor_prescription",
+    "bill",
+    "payment_success"
+  ],
+  "allowedObjectTypes": [
+    {
+      "objectType": "medical_image",
+      "examples": ["CT影像", "X线影像", "MRI影像"],
+      "limitation": "未连接影像设备和PACS",
+      "trigger": "医生已创建相应检查医嘱后主动生成演示结果",
+      "requiredLabel": "模拟生成：未连接真实影像设备，不代表患者真实影像",
+      "forbiddenClaims": ["真实患者影像", "确定诊断"]
+    },
+    {
+      "objectType": "examination_report",
+      "examples": ["放射报告", "超声报告", "内镜报告", "病理报告"],
+      "limitation": "未连接检查设备和报告系统",
+      "trigger": "医生已创建相应检查医嘱后主动生成演示报告",
+      "requiredLabel": "模拟生成：未连接真实检查系统，不作为医学结论",
+      "forbiddenClaims": ["真实检查结论", "医生已核验"]
+    },
+    {
+      "objectType": "laboratory_result",
+      "examples": ["血液检验", "尿液检验", "生化检验"],
+      "limitation": "未连接LIS和检验设备",
+      "trigger": "医生已创建相应检验医嘱后主动生成演示结果",
+      "requiredLabel": "模拟生成：未连接真实检验设备，不代表患者真实结果",
+      "forbiddenClaims": ["真实采样结果", "医生已核验"]
+    },
+    {
+      "objectType": "medication_physical_state",
+      "examples": ["药品实物", "药房库存", "药品批号", "发药结果"],
+      "limitation": "未连接真实药房、库存和发药设备",
+      "trigger": "医生已创建处方后，为流程演示生成",
+      "requiredLabel": "模拟生成：未连接真实药房和库存系统",
+      "forbiddenClaims": ["真实库存", "真实发药", "Agent生成的处方或剂量"]
+    },
+    {
+      "objectType": "device_measurement",
+      "examples": ["血压设备读数", "血氧设备读数", "监护设备数据"],
+      "limitation": "未连接对应医疗设备",
+      "trigger": "医生明确选择演示设备数据",
+      "requiredLabel": "模拟生成：未连接真实医疗设备，不代表患者实际测量值",
+      "forbiddenClaims": ["患者真实生命体征", "医生已核验"]
+    }
+  ],
+  "paymentRule": "未接入真实支付渠道时，账单只能保持待缴费，不允许模拟支付成功或真实扣款。",
+  "doctorAuthorityRule": "Agent不得质疑、反驳、评价、纠正或覆盖医生保存的诊断、处方、医嘱和病历内容。",
+  "instances": []
+}

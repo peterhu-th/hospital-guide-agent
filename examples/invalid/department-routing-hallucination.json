@@ -1,0 +1,10 @@
+{
+  "contractType": "department_routing_response",
+  "intent": "DEPARTMENT_RECOMMENDATION",
+  "extractedFacts": [],
+  "recommendations": [{ "departmentId": "dept-invented-by-model", "confidence": 0.99, "reason": "模型自行创建的科室" }],
+  "shouldAskQuestion": false,
+  "clarificationQuestion": null,
+  "shouldRequestHumanHelp": false,
+  "containsDiagnosis": false
+}

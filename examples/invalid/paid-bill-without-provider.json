@@ -1,0 +1,15 @@
+{
+  "billId": "bill-contract-invalid",
+  "patientId": "patient-contract-test",
+  "encounterId": null,
+  "relatedEntities": [{ "entityType": "appointment", "entityId": "appointment-contract-test" }],
+  "items": [{ "itemId": "bill-item-registration", "name": "挂号费", "amount": 20 }],
+  "totalAmount": 20,
+  "insuranceAmount": 0,
+  "personalAmount": 20,
+  "currency": "CNY",
+  "status": "PAID",
+  "paymentGuidance": "请前往收费窗口或医保部办理缴费",
+  "createdAt": "2026-08-12T10:10:00+08:00",
+  "updatedAt": "2026-08-12T10:10:00+08:00"
+}

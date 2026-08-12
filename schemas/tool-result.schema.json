@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/tool-result.schema.json",
+  "title": "Business Tool Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["toolCallId", "tool", "success", "data", "statePatch", "nextSuggestedActions", "dataOrigin", "userMessage", "executedAt"],
+  "properties": {
+    "toolCallId": { "type": "string", "pattern": "^tool-call-[a-zA-Z0-9-]+$" },
+    "tool": {
+      "type": "string",
+      "enum": ["get_patient_context", "create_patient_profile", "search_departments", "search_doctors", "list_appointment_slots", "create_appointment", "cancel_appointment", "change_appointment", "get_active_appointments", "check_in", "get_queue_status", "get_medical_orders", "get_bills", "get_examination_tasks", "schedule_examination", "get_prescriptions", "get_pharmacy_tasks", "search_locations", "calculate_static_route", "get_next_tasks", "request_human_service", "get_medical_record", "save_medical_record_revision"]
+    },
+    "success": { "type": "boolean" },
+    "data": {},
+    "statePatch": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/statePatchOperation" } },
+    "nextSuggestedActions": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "dataOrigin": { "$ref": "common.schema.json#/$defs/dataOrigin" },
+    "userMessage": { "type": "string", "minLength": 1 },
+    "error": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["errorCode", "category", "recoverable", "recommendedActions"],
+      "properties": {
+        "errorCode": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]+$" },
+        "category": { "type": "string", "enum": ["validation", "business_state", "model", "map", "storage", "external_service", "unknown"] },
+        "recoverable": { "type": "boolean" },
+        "recommendedActions": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "executedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "success": { "const": true } } },
+      "then": { "properties": { "error": { "type": "null" } } }
+    },
+    {
+      "if": { "properties": { "success": { "const": false } } },
+      "then": { "required": ["error"], "properties": { "error": { "type": "object" }, "statePatch": { "maxItems": 0 } } }
+    }
+  ]
+}

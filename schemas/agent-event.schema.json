@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/agent-event.schema.json",
+  "title": "Agent Stream Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["eventId", "turnId", "sequence", "type", "createdAt", "payload"],
+  "properties": {
+    "eventId": { "$ref": "common.schema.json#/$defs/eventId" },
+    "turnId": { "$ref": "common.schema.json#/$defs/turnId" },
+    "sequence": { "type": "integer", "minimum": 0 },
+    "type": {
+      "type": "string",
+      "enum": ["assistant_text_delta", "fact_candidate", "clarification_required", "department_recommendation", "knowledge_answer", "pending_action", "tool_result", "state_patch", "location_result", "route_result", "human_handoff", "done"]
+    },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "payload": { "type": "object" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "assistant_text_delta" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/textPayload" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "fact_candidate" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/factPayload" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "clarification_required" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/clarificationPayload" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "department_recommendation" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/departmentPayload" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "pending_action" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/pendingActionPayload" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "state_patch" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/statePatchPayload" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "location_result" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/locationPayload" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "route_result" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/routePayload" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "human_handoff" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/handoffPayload" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "done" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/donePayload" } } }
+    }
+  ],
+  "$defs": {
+    "textPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text"],
+      "properties": { "text": { "type": "string", "minLength": 1 } }
+    },
+    "factPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field", "rawValue", "confidence", "requiresConfirmation"],
+      "properties": {
+        "field": { "type": "string", "minLength": 1 },
+        "rawValue": {},
+        "normalizedValue": {},
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "requiresConfirmation": { "type": "boolean" }
+      }
+    },
+    "clarificationPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["question", "reason"],
+      "properties": {
+        "question": { "type": "string", "minLength": 1 },
+        "reason": { "type": "string", "minLength": 1 },
+        "options": { "type": "array", "maxItems": 4, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "departmentPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recommendations", "isDiagnosis", "source"],
+      "properties": {
+        "recommendations": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["departmentId", "confidence", "reason"],
+            "properties": {
+              "departmentId": { "$ref": "common.schema.json#/$defs/departmentId" },
+              "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+              "reason": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "isDiagnosis": { "const": false },
+        "source": { "const": "agent_inferred" }
+      }
+    },
+    "pendingActionPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionId", "actionType", "summary", "requiresExplicitConfirmation", "parameters"],
+      "properties": {
+        "actionId": { "$ref": "common.schema.json#/$defs/actionId" },
+        "actionType": { "type": "string", "enum": ["CREATE_APPOINTMENT", "CANCEL_APPOINTMENT", "CHANGE_APPOINTMENT"] },
+        "summary": { "type": "string", "minLength": 1 },
+        "requiresExplicitConfirmation": { "const": true },
+        "parameters": { "type": "object" },
+        "dataOrigin": { "$ref": "common.schema.json#/$defs/dataOrigin" }
+      }
+    },
+    "statePatchPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["baseRevision", "nextRevision", "operations", "issuedBy"],
+      "properties": {
+        "baseRevision": { "type": "integer", "minimum": 0 },
+        "nextRevision": { "type": "integer", "minimum": 1 },
+        "operations": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/statePatchOperation" } },
+        "issuedBy": { "type": "string", "enum": ["application", "business_tool"] }
+      }
+    },
+    "locationPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matches"],
+      "properties": {
+        "matches": { "type": "array", "items": { "$ref": "location.schema.json" } },
+        "ambiguous": { "type": "boolean" }
+      }
+    },
+    "routePayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["startLocationId", "endLocationId", "status", "steps"],
+      "properties": {
+        "startLocationId": { "$ref": "common.schema.json#/$defs/locationId" },
+        "endLocationId": { "$ref": "common.schema.json#/$defs/locationId" },
+        "status": { "type": "string", "enum": ["AVAILABLE", "UNAVAILABLE", "AMBIGUOUS"] },
+        "steps": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "reason": { "type": ["string", "null"] }
+      }
+    },
+    "handoffPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reason", "suggestedDestination"],
+      "properties": {
+        "reason": { "type": "string", "minLength": 1 },
+        "suggestedDestination": { "type": "string", "enum": ["患者服务中心", "现场导诊台", "收费窗口", "医保窗口", "其他"] }
+      }
+    },
+    "donePayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finalRevision"],
+      "properties": { "finalRevision": { "type": "integer", "minimum": 0 } }
+    }
+  }
+}

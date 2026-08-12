@@ -1,0 +1,1476 @@
+{
+  "mapId": "90872",
+  "notice": "别名为项目整理数据；标准地点与楼层来自地图。",
+  "aliases": [
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-90723990111",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-90723990111",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-90723990113",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-90723990113",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723990133",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723990133",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723990134",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723990138",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723990138",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "卫生间",
+      "locationId": "location-map-90723990147",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "厕所",
+      "locationId": "location-map-90723990147",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723990149",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "卫生间",
+      "locationId": "location-map-90723990150",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "厕所",
+      "locationId": "location-map-90723990150",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723990153",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "影像科",
+      "locationId": "location-map-90723990165",
+      "canonicalName": "放射科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "拍片的地方",
+      "locationId": "location-map-90723990165",
+      "canonicalName": "放射科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "CT室",
+      "locationId": "location-map-90723990165",
+      "canonicalName": "放射科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "挂号处",
+      "locationId": "location-map-90723990169",
+      "canonicalName": "挂号",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "办号",
+      "locationId": "location-map-90723990169",
+      "canonicalName": "挂号",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723990177",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723990177",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723990180",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723990180",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "医保科",
+      "locationId": "location-map-90723990185",
+      "canonicalName": "医保部",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "医保窗口",
+      "locationId": "location-map-90723990185",
+      "canonicalName": "医保部",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "医保咨询",
+      "locationId": "location-map-90723990185",
+      "canonicalName": "医保部",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723990187",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "挂号处",
+      "locationId": "location-map-90723990190",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "收费处",
+      "locationId": "location-map-90723990190",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "缴费窗口",
+      "locationId": "location-map-90723990190",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "交钱的地方",
+      "locationId": "location-map-90723990190",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "扶梯",
+      "locationId": "location-map-907239901101",
+      "canonicalName": "手扶电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907239901102",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907239901102",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-907239901107",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-907239901107",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907239901108",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907239901108",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907239901116",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907239901119",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-9072301011",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723010111",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723010111",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "扶梯",
+      "locationId": "location-map-90723010118",
+      "canonicalName": "手扶电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-90723010122",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-90723010122",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-90723010124",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-90723010124",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723010129",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723010134",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723010134",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723010141",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723010146",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723010146",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723010157",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "卫生间",
+      "locationId": "location-map-90723010192",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "厕所",
+      "locationId": "location-map-90723010192",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "卫生间",
+      "locationId": "location-map-907230101105",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "厕所",
+      "locationId": "location-map-907230101105",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230101132",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230101150",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230101155",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230101155",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907230101194",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907230101194",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-907230101196",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-907230101196",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "B超室",
+      "locationId": "location-map-907230101201",
+      "canonicalName": "超声科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "彩超室",
+      "locationId": "location-map-907230101201",
+      "canonicalName": "超声科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "做B超的地方",
+      "locationId": "location-map-907230101201",
+      "canonicalName": "超声科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "影像科",
+      "locationId": "location-map-907230101203",
+      "canonicalName": "放射科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "拍片的地方",
+      "locationId": "location-map-907230101203",
+      "canonicalName": "放射科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "CT室",
+      "locationId": "location-map-907230101203",
+      "canonicalName": "放射科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "卫生间",
+      "locationId": "location-map-907230101276",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "厕所",
+      "locationId": "location-map-907230101276",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230101313",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230101313",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230101323",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230101323",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230101351",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230101356",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230101356",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230101359",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230101359",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230101368",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-907230101380",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-907230101380",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907230101381",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907230101381",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230101414",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230101414",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230101418",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230101427",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "取药处",
+      "locationId": "location-map-907230101452",
+      "canonicalName": "药房",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "拿药的地方",
+      "locationId": "location-map-907230101452",
+      "canonicalName": "药房",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "医保科",
+      "locationId": "location-map-907230101468",
+      "canonicalName": "医保部",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "医保窗口",
+      "locationId": "location-map-907230101468",
+      "canonicalName": "医保部",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "医保咨询",
+      "locationId": "location-map-907230101468",
+      "canonicalName": "医保部",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "取药处",
+      "locationId": "location-map-907230101480",
+      "canonicalName": "药房",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "拿药的地方",
+      "locationId": "location-map-907230101480",
+      "canonicalName": "药房",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230101515",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230101515",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "挂号处",
+      "locationId": "location-map-907230101537",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "收费处",
+      "locationId": "location-map-907230101537",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "缴费窗口",
+      "locationId": "location-map-907230101537",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "交钱的地方",
+      "locationId": "location-map-907230101537",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-9072302019",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-9072302019",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-90723020110",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-90723020110",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723020127",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723020130",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723020130",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723020176",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723020176",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723020179",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "影像科",
+      "locationId": "location-map-90723020191",
+      "canonicalName": "放射科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "拍片的地方",
+      "locationId": "location-map-90723020191",
+      "canonicalName": "放射科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "CT室",
+      "locationId": "location-map-90723020191",
+      "canonicalName": "放射科",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-90723020194",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-90723020194",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-90723020196",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-90723020196",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230201130",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230201152",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230201152",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230201157",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230201157",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "卫生间",
+      "locationId": "location-map-907230201172",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "厕所",
+      "locationId": "location-map-907230201172",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230201183",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907230201187",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907230201187",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "扶梯",
+      "locationId": "location-map-907230201194",
+      "canonicalName": "手扶电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907230201196",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907230201196",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230201198",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230201198",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-907230201200",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-907230201200",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230201208",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230201214",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230201214",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230201219",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "取药处",
+      "locationId": "location-map-907230201243",
+      "canonicalName": "药房",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "拿药的地方",
+      "locationId": "location-map-907230201243",
+      "canonicalName": "药房",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "挂号处",
+      "locationId": "location-map-907230201259",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "收费处",
+      "locationId": "location-map-907230201259",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "缴费窗口",
+      "locationId": "location-map-907230201259",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "交钱的地方",
+      "locationId": "location-map-907230201259",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "挂号处",
+      "locationId": "location-map-907230201267",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "收费处",
+      "locationId": "location-map-907230201267",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "缴费窗口",
+      "locationId": "location-map-907230201267",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "交钱的地方",
+      "locationId": "location-map-907230201267",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "挂号处",
+      "locationId": "location-map-907230201290",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "收费处",
+      "locationId": "location-map-907230201290",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "缴费窗口",
+      "locationId": "location-map-907230201290",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "交钱的地方",
+      "locationId": "location-map-907230201290",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230201305",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230201309",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230201309",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230201317",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-907230201319",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-907230201319",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-9072303019",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-9072303019",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723030121",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301114",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301114",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301157",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301159",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301159",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301181",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-907230301189",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-907230301189",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907230301190",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907230301190",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301282",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301209",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301209",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301210",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301218",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301218",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301220",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301220",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301225",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301225",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301233",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301270",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301270",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301277",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301277",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301296",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "卫生间",
+      "locationId": "location-map-907230301300",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "厕所",
+      "locationId": "location-map-907230301300",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301377",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301382",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301382",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301393",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "扶梯",
+      "locationId": "location-map-907230301395",
+      "canonicalName": "手扶电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-907230301396",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-907230301396",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907230301399",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907230301399",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301404",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301427",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301427",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301428",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907230301437",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907230301437",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-907230301438",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-907230301438",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230301462",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301466",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301466",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230301561",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230301561",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907230301570",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907230301570",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "卫生间",
+      "locationId": "location-map-907230301581",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "厕所",
+      "locationId": "location-map-907230301581",
+      "canonicalName": "洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "挂号处",
+      "locationId": "location-map-907230301586",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "收费处",
+      "locationId": "location-map-907230301586",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "缴费窗口",
+      "locationId": "location-map-907230301586",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "交钱的地方",
+      "locationId": "location-map-907230301586",
+      "canonicalName": "挂号收费",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723040159",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "扶梯",
+      "locationId": "location-map-90723040182",
+      "canonicalName": "手扶电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-90723040184",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-90723040184",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-90723040191",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-90723040191",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-90723040194",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-90723040194",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-90723040196",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230401104",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230401104",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230401106",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女卫生间",
+      "locationId": "location-map-907230401112",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "女厕所",
+      "locationId": "location-map-907230401112",
+      "canonicalName": "女洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男卫生间",
+      "locationId": "location-map-907230401113",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "男厕所",
+      "locationId": "location-map-907230401113",
+      "canonicalName": "男洗手间",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "楼梯",
+      "locationId": "location-map-907230401123",
+      "canonicalName": "步行梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "电梯",
+      "locationId": "location-map-907230401124",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "alias": "升降梯",
+      "locationId": "location-map-907230401124",
+      "canonicalName": "直升电梯",
+      "dataOrigin": "project_curated"
+    }
+  ]
+}

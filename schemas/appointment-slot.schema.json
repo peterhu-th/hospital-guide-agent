@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/appointment-slot.schema.json",
+  "title": "Doctor-Published Appointment Slot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slotId", "practiceId", "doctorId", "departmentId", "date", "period", "startTime", "endTime", "status", "capacity", "bookedCount", "remaining", "feeAmount", "currency", "createdAt", "updatedAt"],
+  "properties": {
+    "slotId": { "$ref": "common.schema.json#/$defs/slotId" },
+    "practiceId": { "$ref": "common.schema.json#/$defs/practiceId" },
+    "doctorId": { "$ref": "common.schema.json#/$defs/doctorId" },
+    "departmentId": { "$ref": "common.schema.json#/$defs/departmentId" },
+    "date": { "type": "string", "format": "date" },
+    "period": { "type": "string", "enum": ["上午", "下午"] },
+    "startTime": { "type": "string", "pattern": "^[0-2][0-9]:[0-5][0-9]$" },
+    "endTime": { "type": "string", "pattern": "^[0-2][0-9]:[0-5][0-9]$" },
+    "status": { "type": "string", "enum": ["DRAFT", "AVAILABLE", "FULL", "EXPIRED", "SUSPENDED"] },
+    "capacity": { "type": "integer", "minimum": 1 },
+    "bookedCount": { "type": "integer", "minimum": 0 },
+    "remaining": { "type": "integer", "minimum": 0 },
+    "feeAmount": { "type": "number", "minimum": 0 },
+    "currency": { "const": "CNY" },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  },
+  "description": "Application validation must enforce bookedCount <= capacity and remaining = capacity - bookedCount."
+}

@@ -1,0 +1,19 @@
+{
+  "orderId": "order-contract-ultrasound",
+  "encounterId": "encounter-contract-test",
+  "patientId": "patient-contract-test",
+  "createdByDoctorId": "doctor-contract-test",
+  "orderType": "EXAMINATION",
+  "name": "腹部超声检查",
+  "performingDepartmentId": "dept-ultrasound-medicine",
+  "locationId": "location-ultrasound",
+  "status": "PENDING_PAYMENT",
+  "requiresPayment": true,
+  "requiresAppointment": true,
+  "preparationText": null,
+  "scheduledFor": null,
+  "doctorInstructions": {},
+  "items": [],
+  "createdAt": "2026-08-12T10:10:00+08:00",
+  "updatedAt": "2026-08-12T10:10:00+08:00"
+}

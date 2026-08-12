@@ -1,0 +1,10 @@
+{
+  "contractType": "department_routing_response",
+  "intent": "DEPARTMENT_RECOMMENDATION",
+  "extractedFacts": [{ "field": "chief_complaint", "rawValue": "吃完饭肚子胀", "normalizedValue": "饭后腹胀", "confidence": 0.94 }],
+  "recommendations": [{ "departmentId": "dept-gastroenterology", "confidence": 0.91, "reason": "主要表达与该科室公开服务范围更匹配" }],
+  "shouldAskQuestion": false,
+  "clarificationQuestion": null,
+  "shouldRequestHumanHelp": false,
+  "containsDiagnosis": false
+}

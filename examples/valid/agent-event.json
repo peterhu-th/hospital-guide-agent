@@ -1,0 +1,15 @@
+{
+  "eventId": "event-contract-001",
+  "turnId": "turn-contract-test",
+  "sequence": 1,
+  "type": "pending_action",
+  "createdAt": "2026-08-12T10:11:01+08:00",
+  "payload": {
+    "actionId": "action-contract-appointment",
+    "actionType": "CREATE_APPOINTMENT",
+    "summary": "确认挂消化内科测试号源",
+    "requiresExplicitConfirmation": true,
+    "parameters": { "slotId": "slot-contract-test" },
+    "dataOrigin": "hospital_runtime"
+  }
+}

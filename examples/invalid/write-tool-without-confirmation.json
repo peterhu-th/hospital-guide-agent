@@ -1,0 +1,8 @@
+{
+  "toolCallId": "tool-call-demo-invalid",
+  "tool": "create_appointment",
+  "parameters": { "slotId": "slot-demo-available" },
+  "userConfirmed": false,
+  "requestedAt": "2026-08-12T10:11:30+08:00",
+  "requestSource": "agent_orchestrator"
+}

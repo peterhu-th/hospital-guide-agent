@@ -1,0 +1,10 @@
+{
+  "simulatedResultId": "simulated-result-contract-test",
+  "orderId": "order-contract-ultrasound",
+  "simulationType": "EXAMINATION_REPORT",
+  "generatedByDoctorAction": true,
+  "simulationNotice": "模拟生成：仅用于演示检查流程",
+  "content": { "status": "placeholder" },
+  "generationRule": "医生创建演示检查医嘱后才允许生成占位报告",
+  "createdAt": "2026-08-12T10:15:00+08:00"
+}

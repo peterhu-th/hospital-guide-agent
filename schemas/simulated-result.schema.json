@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/simulated-result.schema.json",
+  "title": "Explicitly Marked Simulated Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["simulatedResultId", "orderId", "simulationType", "generatedByDoctorAction", "simulationNotice", "content", "generationRule", "createdAt"],
+  "properties": {
+    "simulatedResultId": { "type": "string", "pattern": "^simulated-result-[a-zA-Z0-9-]+$" },
+    "orderId": { "$ref": "common.schema.json#/$defs/orderId" },
+    "simulationType": { "type": "string", "enum": ["IMAGING_FILE", "EXAMINATION_REPORT", "LAB_RESULT", "PHARMACY_INVENTORY", "DISPENSING_RESULT", "DEVICE_VITAL_SIGN"] },
+    "generatedByDoctorAction": { "const": true },
+    "simulationNotice": { "type": "string", "pattern": "模拟生成" },
+    "content": { "type": "object" },
+    "generationRule": { "type": "string", "minLength": 1 },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  }
+}

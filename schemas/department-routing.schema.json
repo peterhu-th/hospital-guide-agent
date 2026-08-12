@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/department-routing.schema.json",
+  "title": "DeepSeek Department Routing Contract",
+  "oneOf": [
+    { "$ref": "#/$defs/request" },
+    { "$ref": "#/$defs/response" }
+  ],
+  "$defs": {
+    "departmentCandidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["departmentId", "name", "division", "summary"],
+      "properties": {
+        "departmentId": { "$ref": "common.schema.json#/$defs/departmentId" },
+        "name": { "type": "string", "minLength": 1 },
+        "division": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1 },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "differentiationHints": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contractType", "task", "userExpression", "patientContext", "confirmedFacts", "candidateDepartments", "constraints"],
+      "properties": {
+        "contractType": { "const": "department_routing_request" },
+        "task": { "const": "DEPARTMENT_RECOMMENDATION" },
+        "userExpression": { "type": "string", "minLength": 1, "maxLength": 4000 },
+        "patientContext": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["ageRange", "sex"],
+          "properties": {
+            "ageRange": { "type": "string", "enum": ["unknown", "0-17", "18-49", "50-59", "60-69", "70+"] },
+            "sex": { "type": "string", "enum": ["unknown", "female", "male", "other", "unwilling"] }
+          }
+        },
+        "confirmedFacts": { "type": "array", "items": { "type": "object" } },
+        "candidateDepartments": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/departmentCandidate" } },
+        "constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["allowedDepartmentIds", "maxRecommendations", "diagnosisForbidden"],
+          "properties": {
+            "allowedDepartmentIds": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/departmentId" }, "uniqueItems": true },
+            "maxRecommendations": { "const": 2 },
+            "diagnosisForbidden": { "const": true }
+          }
+        }
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contractType", "intent", "extractedFacts", "recommendations", "shouldAskQuestion", "clarificationQuestion", "shouldRequestHumanHelp", "containsDiagnosis"],
+      "properties": {
+        "contractType": { "const": "department_routing_response" },
+        "intent": { "type": "string", "enum": ["DEPARTMENT_RECOMMENDATION", "HOSPITAL_QA", "OTHER"] },
+        "extractedFacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["field", "rawValue", "normalizedValue", "confidence"],
+            "properties": {
+              "field": { "type": "string", "minLength": 1 },
+              "rawValue": {},
+              "normalizedValue": {},
+              "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        },
+        "recommendations": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["departmentId", "confidence", "reason"],
+            "properties": {
+              "departmentId": { "$ref": "common.schema.json#/$defs/departmentId" },
+              "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+              "reason": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "shouldAskQuestion": { "type": "boolean" },
+        "clarificationQuestion": { "type": ["string", "null"] },
+        "shouldRequestHumanHelp": { "type": "boolean" },
+        "containsDiagnosis": { "const": false }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "shouldAskQuestion": { "const": true } } },
+          "then": { "properties": { "clarificationQuestion": { "type": "string", "minLength": 1 } } }
+        }
+      ],
+      "description": "Application validation must enforce that every recommendation.departmentId belongs to the request constraints.allowedDepartmentIds and candidateDepartments."
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "rule": "地点名称和楼层冲突时以地图 90872 为准；地图没有的地点不得猜测楼层。",
+  "conflicts": [
+    {
+      "conflictId": "conflict-hospital-name",
+      "field": "hospitalName",
+      "officialValue": "绵阳市中心医院",
+      "mapValue": "绵阳中心医院",
+      "resolution": "医院展示名采用官网名称；地图调用使用 mapId=90872 和地图原名",
+      "winner": "official_for_identity_map_for_navigation"
+    },
+    {
+      "conflictId": "conflict-insurance-office-name",
+      "field": "locationName",
+      "officialValue": "医保科/医保政策咨询窗口",
+      "mapValue": "医保部",
+      "resolution": "地点搜索映射为地图标签“医保部”及其楼层",
+      "winner": "map-90872"
+    },
+    {
+      "conflictId": "conflict-official-department-map-coverage",
+      "field": "departmentLocation",
+      "officialValue": "官网科室 92 个",
+      "mapValue": "自动精确映射 16 个",
+      "resolution": "未匹配科室统一标记 not_found；后续需现场或院方确认，不自动猜测",
+      "winner": "map-90872"
+    }
+  ],
+  "ambiguousMapLabels": [
+    {
+      "mapLabel": "B超室",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "CT室",
+      "occurrences": 11
+    },
+    {
+      "mapLabel": "EICU治疗室",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "专家门诊",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "主任办",
+      "occurrences": 4
+    },
+    {
+      "mapLabel": "主任办公室",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "休息室",
+      "occurrences": 20
+    },
+    {
+      "mapLabel": "会议室",
+      "occurrences": 4
+    },
+    {
+      "mapLabel": "体检",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "候诊厅",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "值班室",
+      "occurrences": 5
+    },
+    {
+      "mapLabel": "停车场出入口",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "出入口",
+      "occurrences": 8
+    },
+    {
+      "mapLabel": "分诊室",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "办公室",
+      "occurrences": 16
+    },
+    {
+      "mapLabel": "功能性外科",
+      "occurrences": 4
+    },
+    {
+      "mapLabel": "医保部",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "医厕",
+      "occurrences": 7
+    },
+    {
+      "mapLabel": "咨询台",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "处置室",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "外科",
+      "occurrences": 14
+    },
+    {
+      "mapLabel": "女洗手间",
+      "occurrences": 15
+    },
+    {
+      "mapLabel": "妇科",
+      "occurrences": 25
+    },
+    {
+      "mapLabel": "家属等候区",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "彩超室",
+      "occurrences": 8
+    },
+    {
+      "mapLabel": "微创外科",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "心血管外科",
+      "occurrences": 4
+    },
+    {
+      "mapLabel": "急诊",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "手扶电梯",
+      "occurrences": 5
+    },
+    {
+      "mapLabel": "手术室",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "护士站",
+      "occurrences": 7
+    },
+    {
+      "mapLabel": "护理咨询",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "挂号收费",
+      "occurrences": 6
+    },
+    {
+      "mapLabel": "换药室",
+      "occurrences": 20
+    },
+    {
+      "mapLabel": "接待室",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "控制",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "控制室",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "放射科",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "普外科",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "机房",
+      "occurrences": 15
+    },
+    {
+      "mapLabel": "检查",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "检查室",
+      "occurrences": 29
+    },
+    {
+      "mapLabel": "检验",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "步行梯",
+      "occurrences": 40
+    },
+    {
+      "mapLabel": "治疗",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "治疗室",
+      "occurrences": 24
+    },
+    {
+      "mapLabel": "治疗室14",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "洗手间",
+      "occurrences": 8
+    },
+    {
+      "mapLabel": "清洁间",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "物资器械中心",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "男洗手间",
+      "occurrences": 15
+    },
+    {
+      "mapLabel": "病厕",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "病房",
+      "occurrences": 29
+    },
+    {
+      "mapLabel": "登记",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "直升电梯",
+      "occurrences": 37
+    },
+    {
+      "mapLabel": "药剂科",
+      "occurrences": 5
+    },
+    {
+      "mapLabel": "药房",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "血液透析室",
+      "occurrences": 6
+    },
+    {
+      "mapLabel": "血透中心",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "诊室",
+      "occurrences": 4
+    },
+    {
+      "mapLabel": "诊断室",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "贵宾室",
+      "occurrences": 5
+    },
+    {
+      "mapLabel": "配电室",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "配药",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "重症监护室",
+      "occurrences": 3
+    },
+    {
+      "mapLabel": "门诊办",
+      "occurrences": 2
+    },
+    {
+      "mapLabel": "门诊办公",
+      "occurrences": 4
+    }
+  ]
+}

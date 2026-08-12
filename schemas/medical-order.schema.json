@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/medical-order.schema.json",
+  "title": "Doctor-Created Medical Order",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["orderId", "encounterId", "patientId", "createdByDoctorId", "orderType", "name", "status", "requiresPayment", "requiresAppointment", "doctorInstructions", "createdAt", "updatedAt"],
+  "properties": {
+    "orderId": { "$ref": "common.schema.json#/$defs/orderId" },
+    "encounterId": { "$ref": "common.schema.json#/$defs/encounterId" },
+    "patientId": { "$ref": "common.schema.json#/$defs/patientId" },
+    "createdByDoctorId": { "$ref": "common.schema.json#/$defs/doctorId" },
+    "orderType": { "type": "string", "enum": ["EXAMINATION", "PRESCRIPTION"] },
+    "name": { "type": "string", "minLength": 1 },
+    "performingDepartmentId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/departmentId" }, { "type": "null" }] },
+    "locationId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/locationId" }, { "type": "null" }] },
+    "status": { "type": "string", "enum": ["CREATED", "PENDING_PAYMENT", "PENDING_APPOINTMENT", "SCHEDULED", "CHECKED_IN", "IN_PROGRESS", "COMPLETED", "REPORT_READY", "CANCELLED"] },
+    "requiresPayment": { "type": "boolean" },
+    "requiresAppointment": { "type": "boolean" },
+    "preparationText": { "type": ["string", "null"] },
+    "scheduledFor": { "oneOf": [{ "$ref": "common.schema.json#/$defs/isoDateTime" }, { "type": "null" }] },
+    "doctorInstructions": { "type": "object" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["orderItemId", "itemName"],
+        "properties": {
+          "orderItemId": { "type": "string", "pattern": "^order-item-[a-zA-Z0-9-]+$" },
+          "itemName": { "type": "string", "minLength": 1 },
+          "dosage": { "type": ["string", "null"] },
+          "frequency": { "type": ["string", "null"] },
+          "duration": { "type": ["string", "null"] },
+          "instructions": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  }
+}

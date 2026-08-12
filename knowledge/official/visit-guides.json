@@ -1,0 +1,53 @@
+{
+  "hospitalId": "hospital-mianyang-central",
+  "runtimeRule": "只使用离线整理数据；具体门诊时间、窗口、预约渠道和号源须由模拟系统或医院实时系统确认。",
+  "guides": [
+    {
+      "guideId": "guide-outpatient-overview",
+      "title": "门诊就医总览",
+      "steps": [
+        "选择或推荐科室",
+        "模拟查询号源",
+        "模拟挂号",
+        "到地图地点报到",
+        "就诊后查看模拟医嘱",
+        "按医嘱完成检查、取药或缴费"
+      ],
+      "dataOrigin": "project_curated",
+      "simulationNotice": "流程骨架为项目整理；阶段 2 起所有挂号、缴费和业务结果均为模拟",
+      "sourceIds": [
+        "official-guider-index",
+        "official-patient-flow"
+      ]
+    },
+    {
+      "guideId": "guide-patient-service",
+      "title": "患者服务中心公开职责",
+      "steps": [
+        "咨询、建议、投诉和求助协调",
+        "入出院手续指导",
+        "医保审核手续指导",
+        "院前检查一站式服务",
+        "双向转诊接待协调"
+      ],
+      "dataOrigin": "official_public",
+      "sourceIds": [
+        "official-patient-service-center"
+      ]
+    },
+    {
+      "guideId": "guide-indoor-place-search",
+      "title": "院内地点搜索",
+      "steps": [
+        "从用户表达识别地点别名",
+        "返回地图中的标准标签和楼层",
+        "地图与官网不一致时采用地图结果",
+        "阶段 1 不提供实时定位和动态导航"
+      ],
+      "dataOrigin": "project_curated",
+      "sourceIds": [
+        "map-90872"
+      ]
+    }
+  ]
+}

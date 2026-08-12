@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/department.schema.json",
+  "title": "Department",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["departmentId", "hospitalId", "name", "displayName", "division", "aliases", "summary", "routingEnabled", "locationIds", "sources", "dataOrigin", "routingReviewStatus"],
+  "properties": {
+    "departmentId": { "$ref": "common.schema.json#/$defs/departmentId" },
+    "hospitalId": { "$ref": "common.schema.json#/$defs/hospitalId" },
+    "name": { "type": "string", "minLength": 1 },
+    "displayName": { "type": "string", "minLength": 1 },
+    "division": { "type": "string", "enum": ["内科部", "外科部", "综合部", "门诊部", "医技部", "手麻平台部", "行后职能科室", "其他"] },
+    "aliases": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "summary": { "type": "string", "minLength": 1 },
+    "officialSummary": { "type": ["string", "null"], "minLength": 1 },
+    "officialSummaryAvailability": { "type": "string", "enum": ["available", "not_published"] },
+    "routingHints": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "differentiationHints": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "clarifyingQuestions": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "routingEnabled": { "type": "boolean" },
+    "locationIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/locationId" }, "uniqueItems": true },
+    "sources": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/sourceReference" } },
+    "dataOrigin": { "type": "string", "enum": ["official_public", "project_curated"] },
+    "routingReviewStatus": { "$ref": "common.schema.json#/$defs/reviewStatus" }
+  }
+}

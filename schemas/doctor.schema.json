@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/doctor.schema.json",
+  "title": "Registered Doctor Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["doctorId", "hospitalId", "displayName", "employeeNumber", "createdAt", "updatedAt"],
+  "properties": {
+    "doctorId": { "$ref": "common.schema.json#/$defs/doctorId" },
+    "hospitalId": { "$ref": "common.schema.json#/$defs/hospitalId" },
+    "displayName": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "employeeNumber": { "type": "string", "pattern": "^[0-9]{6}$" },
+    "professionalTitle": { "type": ["string", "null"] },
+    "contact": { "type": "object" },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  }
+}

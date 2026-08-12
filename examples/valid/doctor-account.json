@@ -1,0 +1,10 @@
+{
+  "doctorAccountId": "doctor-account-contract-test",
+  "doctorId": "doctor-contract-test",
+  "employeeNumber": "260101",
+  "status": "PENDING_REVIEW",
+  "verificationNotice": "系统内账号申请，未接入医院人事系统核验",
+  "lastLoginAt": null,
+  "createdAt": "2026-08-12T10:00:00+08:00",
+  "updatedAt": "2026-08-12T10:00:00+08:00"
+}

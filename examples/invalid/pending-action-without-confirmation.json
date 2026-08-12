@@ -1,0 +1,15 @@
+{
+  "eventId": "event-demo-invalid",
+  "turnId": "turn-demo-002",
+  "sequence": 1,
+  "type": "pending_action",
+  "createdAt": "2026-08-12T10:11:01+08:00",
+  "payload": {
+    "actionId": "action-contract-invalid",
+    "actionType": "CREATE_APPOINTMENT",
+    "summary": "未经确认直接挂号",
+    "requiresExplicitConfirmation": false,
+    "parameters": {},
+    "dataOrigin": "hospital_runtime"
+  }
+}

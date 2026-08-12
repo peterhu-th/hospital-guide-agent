@@ -1,0 +1,12 @@
+{
+  "hospitalId": "hospital-mianyang-central",
+  "mapId": "90872",
+  "name": "绵阳市中心医院",
+  "type": "三级甲等综合医院",
+  "address": "四川省绵阳市警钟街常家巷12号",
+  "contacts": [{ "type": "service", "label": "服务热线", "value": "0816-2222821" }],
+  "campuses": [{ "campusId": "campus-main", "name": "主院区", "buildings": ["门诊", "第一住院大楼"] }],
+  "sources": [{ "sourceId": "source-hospital-introduction", "dataOrigin": "official_public", "url": "https://www.myszxyy.cn/introduction/", "fetchedAt": "2026-08-12T10:00:00+08:00", "freshness": "stable", "reviewStatus": "official_public" }],
+  "dataOrigin": "official_public",
+  "version": "2026-08-12"
+}

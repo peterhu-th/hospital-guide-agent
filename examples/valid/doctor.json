@@ -1,0 +1,10 @@
+{
+  "doctorId": "doctor-contract-test",
+  "hospitalId": "hospital-mianyang-central",
+  "displayName": "契约测试医生",
+  "employeeNumber": "260101",
+  "professionalTitle": null,
+  "contact": {},
+  "createdAt": "2026-08-12T10:00:00+08:00",
+  "updatedAt": "2026-08-12T10:00:00+08:00"
+}

@@ -1,0 +1,4266 @@
+[
+  {
+    "departmentId": "dept-f5846a42d8d4",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "呼吸与危重症医学科",
+    "displayName": "呼吸与危重症医学科",
+    "division": "内科部",
+    "aliases": [
+      "呼吸科",
+      "肺科",
+      "看咳嗽的"
+    ],
+    "summary": "面向呼吸系统相关问题提供专科门诊服务。",
+    "officialSummary": "绵阳市中心医院呼吸与危重症医学科成立于70年代初期，经过50余年发展，已成为川西北地区呼吸疾病诊疗中心，惠及绵阳、广元、阿坝、遂宁、德阳及陕西、宁夏等周边地区呼吸病患者，具有较高的医疗水平和声誉。开放床位111张，医护团队共77人，其中主任医师6名，副主任医师4名，主任护师1名，副主任护师4名；博士研究生6人，硕士研究生10人。学科带头人当选为第十四批四川省卫健委学术技术带头人；科室为中国医师协会呼吸分会委员单位，四川省医学会常委单位，四川省护理学会委员单位，绵阳市医学会呼吸专委会、哮喘专委会主委单位，绵阳市护理学会呼吸护理专委会主委单位。科室拥有麦加菲、耶格等大型肺功能仪、多导睡眠监测仪、奥林巴斯电子支气管镜、内科胸腔镜、内镜下介入治疗设备、硬质支气管镜、有创呼吸机、无创呼吸机、经鼻高流量治疗仪等高端医疗设备，在绵阳及周边地区较早开展全套肺功能检查、纤支镜检查及睡眠监测等；可熟练完成临床上常用的肺功... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "咳嗽、咳痰、喘息、呼吸系统慢性问题可作为候选"
+    ],
+    "differentiationHints": [
+      "鼻咽部局部问题与耳鼻咽喉科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [
+      "location-map-907230201146"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-f5846a42d8d4",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_huxineikea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-a0458b883836",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "内分泌科",
+    "displayName": "内分泌科",
+    "division": "内科部",
+    "aliases": [
+      "内分泌",
+      "糖尿病科",
+      "看血糖的"
+    ],
+    "summary": "面向糖尿病、甲状腺及其他内分泌代谢相关问题提供专科服务。",
+    "officialSummary": "绵阳市中心医院内分泌科成立于上个世纪70年代初，率先在地市州建立了内分泌专科门诊，诊治水平较高，代表了绵阳市内分泌最高水平，经过50多年的发展，2008年在地市州率先成立糖尿病专科护理门诊，科室目前设置固定床位49张，在川西北地区乃至省内享有一定的声誉。有中华医学会四川省内分泌专委会委员，四川省糖尿病防治协会理事，世界健康基金会（HOPE）中国糖尿病教育项目的糖尿病教员，绵阳市医学会内分泌及糖尿病专委会委员，副主任委员及秘书，绵阳市级拔尖人才、优秀科技人才，享受市政府特殊津贴的专家。擅长治疗糖尿病各种并发症、甲状腺相关性疾病及内分泌各种疑难杂症的诊治；此外，能开展糖化血红蛋白、胰岛功能、各种内分泌激素检查，骨密度、糖尿病相关并发症检查、胰岛素泵强化治疗、眼底照相、放射性同位素治疗甲亢等。 本专业承担重庆医科大学、成都中医药大学及泸州医学院等各级大专院校的实习带教及教学任务，接收... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "血糖、甲状腺、代谢相关诉求可作为候选"
+    ],
+    "differentiationHints": [
+      "一般营养咨询与临床营养科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-a0458b883836",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_nfmka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-8c63dfb82259",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "皮肤科",
+    "displayName": "皮肤科",
+    "division": "内科部",
+    "aliases": [
+      "皮肤病科",
+      "看皮肤的"
+    ],
+    "summary": "面向皮肤、毛发、指甲及相关问题提供专科服务。",
+    "officialSummary": "绵阳市中心医院皮肤性病科介绍一、科室概括：我科成立于1964年，于2003年4月成立病房，现由住院部、门诊、皮肤激光美容治疗室、检查室组成，编制床位35张。年门诊量达10余万人次，年出院患者千余人次，门诊及住院工作量一直稳居绵阳市第一，全省地级市前列。收治病员范围覆盖绵阳城区及各县市区、广元市、德阳市、遂宁市及部分外省病员。对大疱性皮肤病、结缔组织疾病、性传播疾病、皮炎湿疹、药疹、银屑病等疾病均可进行系统、先进的诊疗，诊疗手段齐全，抢救成功率高。系皮肤性病学规范化培训基地、银屑病规范化诊疗中心、化妆品不良反应监测中心、绵阳市重点学科，绵阳市皮肤性病质量控制中心，四川大学华西医院皮肤科与成都市第二人民医院皮肤科联盟单位。二、人员情况：现有主任医师1名，副主任医师3名，主治医师3名，住院医师3名，其中硕士研究生7名、美容主诊医师5名。黄忠奎副主任医师担任绵阳市皮肤性病质量控制分中心主任、四川省皮肤病性病质量控... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "皮疹、瘙痒、皮肤损害等表达可作为候选"
+    ],
+    "differentiationHints": [
+      "明确外伤伤口与伤口治疗中心或外科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-8c63dfb82259",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_pifukea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-92d9deea497c",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "神经内科",
+    "displayName": "神经内科",
+    "division": "内科部",
+    "aliases": [
+      "脑内科",
+      "神内"
+    ],
+    "summary": "面向神经系统内科相关问题提供专科服务。",
+    "officialSummary": "绵阳市中心医院神经内科成立于1977年，开放床位114张，为四川省乙级医学重点学科、绵阳市医学重点学科，系国家卫健委脑卒中筛查与防治基地、国家高级卒中中心、中国卒中学会综合卒中中心、四川省住院医师规范化培训神经内科基地、中国阳光医院联盟成员单位、川西北区域医疗中心脑血管中心、神经疑难疾病诊疗中心、眩晕疾病诊疗中心、中国AD临床前期联盟单位、全国老年神经疾病照护联盟成员单位、国家首批二级癫痫中心、四川省卒中学会卒中中心联盟成员单位、四川省卒中培训联盟成员单位、四川省卒中学会溶栓联盟成员单位、中风120四川特别行动组成员单位、四川省神经内科专科护士培训基地、绵阳市溶栓联盟成员单位、绵阳市卒中救治联盟成员单位。2017年度被绵阳市总工会授予“工人先锋号”，2018年度被中华全国总工会授予“工人先锋号”，被卫计委授予“先进党支部”。科室集临床、科研、教学为一体，研究方向涵盖神经系统各个疾病谱系，凭借一流的配套设施... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "头晕、头痛、肢体麻木、记忆或运动异常等可作为候选"
+    ],
+    "differentiationHints": [
+      "明确需要手术评估的脑、脊髓问题与神经外科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-92d9deea497c",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_sjnka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-d87037453a1a",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "肾病内科",
+    "displayName": "肾病内科",
+    "division": "内科部",
+    "aliases": [
+      "肾内科",
+      "看肾的"
+    ],
+    "summary": "面向肾脏疾病及相关内科问题提供专科服务。",
+    "officialSummary": "一、科室发展史肾病内科于1994年建科，是集临床、教学及科研为一体的专业科室，1996年成立血液透析室，现有床位80张，血液透析机61台，血滤机10台，CRRT机5台，自动化腹膜透析机2台。2002年牵头成立绵阳市肾脏病专委会，2010年成立绵阳市肾病质量控制中心，2018年建成市级甲级重点学科；2019年获批四川省医学甲级重点专科、“国家肾脏病临床研究中心网络成员单位”、“四川省肾脏疾病诊断临床医学研究中心”。2022年牵头成立“川西北肾脏病专科联盟”，有省内外39家联盟成员单位。2023年建成院内血管通路AAAAA级匠心技能工作室。科室始终坚持\"以人为本，患者至上\"的原则，不断提高自身服务；以\"团结创新，力求卓越\"为动力，不断提高科室诊治水平；力求以高级服务、精密仪器、尖端技术为广大患者服务。科室理念：尊重生命；团结务实；开拓创新。 二、人才梯队肾病内科医疗组共有18人：主任医师6名，副主任医师2名，主治医师7名，住院医师3人，其中有博士研究... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "肾功能、尿检异常、水肿等表达可作为候选"
+    ],
+    "differentiationHints": [
+      "结石、排尿梗阻及泌尿系统外科问题与泌尿外科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [
+      "location-map-907230201148"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-d87037453a1a",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_sbka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-64800e429762",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "血透中心",
+    "displayName": "血透中心",
+    "division": "内科部",
+    "aliases": [
+      "透析中心",
+      "血液透析"
+    ],
+    "summary": "为已经明确需要血液净化治疗的患者提供相关服务。",
+    "officialSummary": "绵阳市中心医院透析中心成立于1994年，是绵阳市首家开展血液净化治疗的单位，也是规模最大的透析中心，是集临床、教学及科研为一体的专业科室，拥有优秀的医护人员和先进的医疗设备。一直以来，本中心以“完善自我，呵护生命，奉献社会”的宗旨，兢兢业业，以娴熟的技术每月服务于透析患者近3000人次，并且致力于发展血液透析的新技术、新业务，多次填补本市空白，开拓了血液透析新领域。 本中心具有明显的技术优势，拥有德国费生血液透析机42台，贝朗血液透析机4台，其中血液透析滤过机7台，CRRT机3台，拥有国际领先水平的劳尔水处理机； 科室现有主任1名，副主任1名，护士长2名。科室现有专业医师7名，其中主任医师1名，副主任医师1名，主治医师3名，医师2名，其中博士1名、硕士4名、本科2名。科室现有护士共30名，副主任护师1名，主管护师6名，护师14名，护士9名，其中本科护士13名。透析中心医护人员均经过专业培训和进修学习。... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有透析医嘱或固定透析患者的流程咨询"
+    ],
+    "differentiationHints": [
+      "首次肾脏问题通常先由肾病内科评估"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [
+      "location-map-907230101120",
+      "location-map-907230301334"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-64800e429762",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xytxzxa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-a7b2973e7172",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "消化内科",
+    "displayName": "消化内科",
+    "division": "内科部",
+    "aliases": [
+      "消化科",
+      "胃肠科",
+      "看胃的",
+      "看肚子的"
+    ],
+    "summary": "面向消化系统相关问题提供内科专科服务。",
+    "officialSummary": "绵阳市中心医院消化内科成立于1979年，是国家消化系统疾病临床医学研究中心绵阳市中心医院基地、国家消化病临床研究中心早期胃癌筛查研究协同网络协同中心、四川省食管疾病规范诊治联盟医院和绵阳市甲级重点学科。现有医护专业技术人员53人，其中四川省学术技术带头人后备人选1人，市级中青年科技拔尖人才1人，博士后1人，在读博士后1人，博士2人，硕士7人，主任医师5人，副主任医师4人，副主任护师3人。目前消化内科由住院部、消化内镜中心和消化内科门诊部三部分组成。消化内科住院部住院部床位100张，其中日间病床7张，病房配备了13台心电监护仪、微量输液泵30台及微量注射泵14台、无创呼吸机1台、心电图机1台、心脏除颤仪1台。在亚专科建设方面，设置了肝胆、胆胰、食道胃、胃肠四个亚专业组；消化内科年出院约4000余人次，出院危重病人占比53.4%，平均住院天数约7.4天。消化内镜中心面积1200平方米，功能分区设置为：预约室、普通胃镜室、普通肠镜室、... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "反酸、胃部不适、腹胀、消化异常等可作为候选"
+    ],
+    "differentiationHints": [
+      "明显需要外科处理的腹部问题与普通外科、肝胆外科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [
+      "location-map-907230201145"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-a7b2973e7172",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xhnka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-a0160de6d9ff",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "心血管内科",
+    "displayName": "心血管内科",
+    "division": "内科部",
+    "aliases": [
+      "心内科",
+      "心脏内科",
+      "看心脏的"
+    ],
+    "summary": "面向心血管系统内科相关问题提供专科服务。",
+    "officialSummary": "心血管内科始建于上世纪七十年代，经过几代人的不懈努力，目前是川西北地区最大的集医、教、研为一体的专科中心之一。现开放床位120张，设有普通病区、CCU病区、心脏导管室、心脏特检室及心血管专科门诊区，拥有5间导管室，配备有大型血管机、ECMO、心脏射频消融仪、三维标测系统、血管内超声系统、旋磨系统、FFR系统、IABP、胸腔按压系统等硬件设施。科室目前共有以硕士、博士为主的专科医师团队26人，多人在国家、省、市学术委员会任职，核心骨干医生定期被选派至欧美顶尖医疗机构访问、进修、学习，多人全程参与专科重要指南的编撰修订。专业一直秉承“谨记初心、脚踏实地、行稳致远、进而有为”的科训，大力夯实对多发病、常见病的规范化、标准化治疗。长期以来，一直将追踪世界前沿医疗技术，保持与全球医疗技术同步为己任，在国内率先建立了完善的亚专业体系，目前拥有包括心脏重症、高血压、心衰、冠脉、起搏、电生理、瓣膜和结构等亚专业，通过亚专... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "心慌、血压、活动后胸闷等表达可作为候选"
+    ],
+    "differentiationHints": [
+      "已明确需要心胸外科手术评估时与心胸外科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-a0160de6d9ff",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xxgnka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-948bacda4a9b",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "风湿免疫科",
+    "displayName": "风湿免疫科",
+    "division": "内科部",
+    "aliases": [
+      "风湿科",
+      "免疫科"
+    ],
+    "summary": "面向风湿免疫相关问题提供专科服务。",
+    "officialSummary": "绵阳市中心医院风湿免疫科始建于2003年，是国内最早独立开展风湿性疾病诊治的临床学科之一，学科集临床、教学和科研于一体，目前是中国风湿免疫病医联体、中国系统性红斑狼疮研究协作组、国家风湿病数据中心成员单位及痛风规范诊治服务中心建设达标单位、四川大学华西医院风湿免疫科协作科室、川西北区域医疗中心骨与关节疾病防治中心、绵阳市风湿免疫医疗质量控制中心、绵阳市重点学科。学科带头人杨静主任，是中华医学会风湿病学分会委员、中国医师协会风湿免疫科医师分会委员、四川省风湿免疫学会副主任委员、四川省医师协会风湿免疫科医师专科分会副主任委员、绵阳市风湿病学会主任委员、四川省卫生厅学术技术带头人、川北医学院硕士研究生导师。在杨静主任带领下，经过18年迅猛发展，已成为川西北地区风湿免疫病诊治中心。现开放床位61张，年门诊量超5万人次，年收治住院病人3500余人次，优质高效地完成了大量临床工作。目前免疫科有专科医师12人，其中... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "多关节反复不适、自身免疫相关既往诊断等可作为候选"
+    ],
+    "differentiationHints": [
+      "单纯外伤或局部骨关节机械性问题与骨科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-948bacda4a9b",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_mianyikea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-63dbbc719408",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "血液内科",
+    "displayName": "血液内科",
+    "division": "内科部",
+    "aliases": [
+      "血液科"
+    ],
+    "summary": "面向血液系统相关问题提供内科专科服务。",
+    "officialSummary": "绵阳市中心医院血液内科成立于1979年，是四川省地市州医院中最早建立的独立血液专科，经过40余年的发展，已成为川西北地区最大的血液疾病诊疗中心，是绵阳市重点学科、多个血液病种四川省定点救治中心、多个临床研究协作组主要成员及华西网络医院协作单位。科室现有专业医护人员40余人，其中主任医师3名，副主任医师1名，主治医师3名，住院医师5名；博士研究生2人，硕士研究生7人。拥有绵阳市首批科技拔尖人才及享受国家特殊津贴1人，历任四川省医学会血液专委会常委3人，青年委员2人，四川省卫健委学术技术带头人1人。现有编制床位55张，另设立日间病房，已有30多个病种开展临床路径工作，2019年度专科门诊量11805人次,2019年度出院2284人次，逐年递增。 科室紧随国际国内发展前沿，在传统的骨髓形态学检查、骨髓活检、病理免疫组化、流式细胞检测基础上，开展了FISH检测、染色体核型分析、基因检测等多种血液学检查，提高了血液肿瘤的基因诊断水... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "血常规持续异常、贫血或已有血液系统诊断等可作为候选"
+    ],
+    "differentiationHints": [
+      "输血执行与输血科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-63dbbc719408",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xynka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-4db23d582307",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "中西医结合科",
+    "displayName": "中西医结合科",
+    "division": "内科部",
+    "aliases": [
+      "中医科",
+      "中西医科"
+    ],
+    "summary": "提供中医及中西医结合相关门诊服务。",
+    "officialSummary": "绵阳市中心医院中医科始建1955年，65年来在医院诊疗文化的洗礼和诊治技术的影响下，科室秉承“传承中医、守护健康”的服务理念，恪守“整体观念，辨证论治，因人而异、强调个体化治疗，治病求本，标本兼治”的诊疗原则，逐步形成了“以门诊为基础，以住院为保障，以内科、肿瘤、妇儿科、眼耳鼻喉科、皮肤、美容等为特色亚专业”的优势学科。随着科室的发展，现代医疗水平的提高，形成了具有专科特色的中西医结合的诊治方法，于2014年9月更名中西医结合科，运用中医各种传统治疗、传统方法和现代医院诊疗手段为一体的中西医结合的治疗服务。科室现有医护人员30余人，其中高级职称9人（包括退休返聘5人），中级职称3人，初级2人，在职人员大学本科2人，硕士7人；四川省及绵阳市名老中医2名；中国中西医结合学会消化系统疾病专业委员会第一届急性胰腺炎专家委员会常务委员1人，中华中医药学会综合医院中医药工作委员会第二届委员会委员1人；四川省中医专委会副... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "用户明确希望接受中医或中西医结合方式时可作为候选"
+    ],
+    "differentiationHints": [
+      "不以中医偏好替代明确专科需求"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-4db23d582307",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_zxyjhka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-f754e8e16c80",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "老年综合科",
+    "displayName": "老年综合科",
+    "division": "内科部",
+    "aliases": [
+      "老年科",
+      "老年病科"
+    ],
+    "summary": "面向老年患者多系统慢性问题和综合评估需求提供服务。",
+    "officialSummary": "绵阳市中心医院老年综合科（心脏电生理中心）成立于1995年，位于第一住院综合大楼18楼、19楼。主要收治各种老年性疾病，如心血管疾病、呼吸系统疾病、内分泌系统疾病、消化系统疾病等，尤其在心血管疾病的诊断、治疗、介入手术以及高龄多器官功能损伤患者的抢救治疗、老年心肺康复等方面有着丰富的临床经验。科室现有医护人员46人，其中主任医师2人，副主任医师2人，主任护师1人，硕士研究生5人，博士研究生1人。目前设有心脏导管室、心电图室、远程心电监护中心、老年心肺功能康复室、睡眠呼吸监测室等，配备有动态血压、生命体征数据远程监护系统、无创呼吸机、气压治疗仪等。科室发表SCI文章4篇，获得国家实用新型专利10项，是国家级高血压达标中心、中国基层医师心血管疾病培训示范中心，远程生命多参数监护中心，国家老年疾病临床医学研究中心（中国人民解放军总医院）协同网络核心单位及（四川大学华西医院）协同研究网络成员单位。并先后荣获健康界“... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "老年人同时存在多个慢性问题或难以确定单一专科时可作为候选"
+    ],
+    "differentiationHints": [
+      "单一系统问题清晰时优先对应专科"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-f754e8e16c80",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_lnzhkxzdslzxa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-6aa3481cbd67",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "感染科",
+    "displayName": "感染科",
+    "division": "内科部",
+    "aliases": [
+      "感染病科",
+      "传染科"
+    ],
+    "summary": "面向感染性疾病及相关问题提供专科服务。",
+    "officialSummary": "绵阳市中心医院感染科，成立于2013年8月19日，现为绵阳市重点学科，已经成为川西北地区感染性疾病和肝病临床诊治、教学、科研中心，承担了绵阳、广元、遂宁等周边地区感染病和肝病的救治工作。主办了多期四川省继续教育培训项目及肝病患者教育活动，承担了多项省市级科研课题项目。先后取得“中国慢性乙型肝炎临床治愈（珠峰）”工程项目分中心资质，“全国人工肝及血液净化技术示范中心”资质，并荣获四川省五一巾帼岗。感染科病房现位于图书馆大楼第1-4层，建筑面积2000平方米，病房区域为1000平方米，分为感染区、非感染区域及医务人员生活区三部分。科室住院病区现开放床位78张，科室年门诊量3万余人次，年住院病人2000余人次，急危疑难病例占比大于70-80%，覆盖川西北地区、甘肃及陕西部分地区。科室现有医疗专业人员17人，包括主任医师2人、副主任医师3人、主治医师5人、医师7人；其中硕士7人。专业护理人员24人，其中主管护师5人。多年来圆满完成重庆... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有感染性疾病线索或转诊信息时可作为候选"
+    ],
+    "differentiationHints": [
+      "普通呼吸症状与呼吸科、发热就诊流程区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-6aa3481cbd67",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_ganranke/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-bf652c010e9a",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "全科医学科",
+    "displayName": "全科医学科",
+    "division": "内科部",
+    "aliases": [
+      "全科",
+      "综合门诊"
+    ],
+    "summary": "面向常见慢性病初诊、复诊和无法明确单一专科的综合需求提供服务。",
+    "officialSummary": "绵阳市中心医院全科医学科由全科医学住院医师规范化培训基地、全科医学科病房、全科门诊组成。全科医学住院医师规范化培训基地成立于2012年，于2014年成为绵阳市首家国家级全科住院医师规范化培训基地，已培养结业全科医生600余人，遍布全省及甘阿凉自治州。连续6年获得院级“优秀住培基地”。全科医学科病房成立于2017年初，2019年初独立运营，2023年1月成为绵阳市甲级重点专科，是绵阳市首家正式成立并独立建制的集临床、教学、科研为一体的临床二级综合学科。科室设置：编制床位27张，全科门诊3间（其中全科教学门诊1间），基层实践基地2家。全科教学门诊：每周二下午，以教学为主，培养全科医生为目的的独有门诊方式，每位就诊患者同时由两位全科医生进行诊治，看诊时间平均40分钟。适用挂号对象：常见慢性病初诊、复诊等患者。人才结构：全科医学专业医师10人，其中主任医师1人，副主任医师2人，主治医师3人，住院医师4人，硕士研究生导师1人，省医学... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "多个常见问题并存或用户无法定位专科时可作为候选"
+    ],
+    "differentiationHints": [
+      "专科指向明确时优先专科"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-bf652c010e9a",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_qkyxka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-604e27429eff",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "心身医学科",
+    "displayName": "心身医学科",
+    "division": "内科部",
+    "aliases": [
+      "睡眠门诊",
+      "心理睡眠科",
+      "心身科"
+    ],
+    "summary": "面向睡眠、情绪与躯体不适相互影响等心身相关问题提供服务。",
+    "officialSummary": "绵阳市中心医院心身医学科∙睡眠医学中心于2022年独立成科，是绵阳市内三甲综合医院中首家独立建制的集临床、教学、科研为一体的二级学科，是集临床、教学、科研于一体的整合式心身医学中心和睡眠医学中心。2025年获评市级临床重点学科，四川省卫健委精神卫生服务能力提升项目睡眠门诊和心理门诊建设项目。自2000年开设精神科门诊，承担川西北地区综合医院精神卫生门诊诊疗服务和心理咨询服务2005年神经内科开设精神心理亚专业，2025年经市卫健委批准更名为心身医学科∙睡眠医学中心，牵头建设全院睡眠医学中心平台。病房编制床位18张，提供开放式住院病房服务。2024年门诊量达21742人次，年出院人数630余人次。心身医学科∙睡眠医学中心拥有一支专业素质过硬的医疗团队，包括学术主任1名，医生9名，心身和睡眠医学多学科诊疗团队高级职称10余人，其中博士生导师1人，硕士研究生导师2人次，博士1人，医学硕士6人；高级职称6人、中级职称6人。此外，还配备专... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "失眠、情绪与身体不适长期相互影响等可作为候选"
+    ],
+    "differentiationHints": [
+      "先排除明确器质性专科问题"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-604e27429eff",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xsyxk/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-a247129da41b",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "发热门诊",
+    "displayName": "发热门诊",
+    "division": "内科部",
+    "aliases": [
+      "发热诊室",
+      "发烧门诊"
+    ],
+    "summary": "为需要按医院发热就诊流程处理的患者提供服务。",
+    "officialSummary": " 暂无信息",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "用户明确询问医院发热就诊流程时可作为候选"
+    ],
+    "differentiationHints": [
+      "是否开放及当前流程必须使用医院实时确认信息"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-a247129da41b",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_frmz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-b8957ac1e012",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "健康管理中心",
+    "displayName": "健康管理中心",
+    "division": "内科部",
+    "aliases": [
+      "体检中心",
+      "健康体检"
+    ],
+    "summary": "提供健康体检和健康管理相关服务。",
+    "officialSummary": "绵阳市中心医院健康管理中心简介一、医院整体实力介绍绵阳市中心医院始建于1939年，是一所以临床医疗、健康管理为主，集医疗、教学、科研、急诊急救、灾难医学为一体的三级甲等综合医院。是四川省川西北区域医疗中心，医疗服务辐射包括川西北区域和甘肃、陕西等省份，医疗健康服务覆盖人口上千万，医院综合实力在四川省地市州同级医院中处于领先地位。我院是国家自然科学基金依托单位，陈孝平院士工作站建站医院，拥有国家卫健委核技术医学转化重点实验室、电子科技大学医学院附属绵阳医院、重庆医科大学及成都医学院非直管附属医院，重庆医科大学、西南医科大学和川北医学院研究生联合培养基地，国家卫计委卫生人才培训基金基地医院、国家卫计委临床药师培训基地。 二、健康管理中心平台优势我院健康管理中心目前位于绵阳市涪城区南河路5号（原海关南河办公区），开放场地近3000平方米，开放设置三层楼，分为公共体检区、男宾体... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "用户明确提出体检、健康评估或体检报告管理"
+    ],
+    "differentiationHints": [
+      "已有明确不适通常应进入对应临床科室"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-b8957ac1e012",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_jkglzxa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-07a507ab6051",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "临床介入放射专业",
+    "displayName": "临床介入放射专业",
+    "division": "内科部",
+    "aliases": [
+      "介入放射",
+      "介入治疗"
+    ],
+    "summary": "为已有医生评估或医嘱的介入放射诊疗提供专业服务。",
+    "officialSummary": "绵阳市中心医院介入放射诊疗工作开展于1985年，是四川省最早开展介入放射诊疗工作的医院之一，在省内率先开展了多种介入放射诊疗技术。2001年成为四川省介入放射学组成员单位。2004年组建成立绵阳市介入放射诊疗中心，2007年设立介入病房。2009年通过四川省卫生厅评审成为四川省医学甲级重点专科，2013年通过四川省医学甲级重点专科动态评审，2014年介入病房正式更名为临床介入专业，拥有专业病床10张，2016年绵阳市外周介入诊疗质量控制中心挂靠我科。作为四川省最早开展介入诊疗工作的医院，临床介入专业目前常规开展项目包括：1、原发性（转移性）肝癌介入治疗，肺癌介入治疗等恶性肿瘤介入治疗；2、颅内动脉瘤栓塞术、颈内动脉海绵窦瘘栓塞术、脑（脊髓）血管畸形栓塞术，颈动脉狭窄、椎动脉狭窄及颅内动脉狭窄支架置入术，颅内动脉取栓（溶栓）术等神经介入治疗；3、经颈静脉门体静脉分流术（TIPS）治疗门静脉高压及其所致的上消化道出血和顽固性腹水；... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有明确介入诊疗建议或转诊信息"
+    ],
+    "differentiationHints": [
+      "普通影像检查与放射科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-07a507ab6051",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_lcjrzya0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-11916b32f21a",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "泌尿外科",
+    "displayName": "泌尿外科",
+    "division": "外科部",
+    "aliases": [
+      "泌尿科",
+      "尿外科",
+      "看前列腺的"
+    ],
+    "summary": "面向泌尿系统及男性生殖系统相关外科问题提供服务。",
+    "officialSummary": "绵阳市中心医院泌尿外科于1978年独立建科，是地市级医院中最早成立的泌尿专科之一。经过四十余年的发展壮大，已经发展成集医疗、教学、科研为一体的现代泌尿外科。是绵阳市甲级重点学科、四川省泌尿外科医学会常委单位、绵阳市泌尿外科医学会主委单位、四川大学华西医院泌尿外科学科联盟单位，国家级住院医师规范化培训基地、良性前前列腺增生症健康管理基地、成都医学会泌尿外科专科分会肾上腺性高血压外科成员单位。目前专业主要的研究方向在泌尿系肿瘤的微创治疗、泌尿系结石的微创治疗、前列腺癌早期筛查和治疗、女性尿失禁、男性生殖系疾病等方面，业务覆盖川西北地区，学术、技术水平省内先进，部分领先。 科室现有编制床位61张，年均手术三千余台，年均门诊人数四万人次。科室有医护人员39人，其中，医生16人，主任医师3人、副主任医师3人，主治医师7人、医师3人，有博士1人、硕士10人。护士23人，其中副主任护师1人，主管护师16人、护师6人。 科室... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "排尿、泌尿系结石、前列腺及相关外科问题可作为候选"
+    ],
+    "differentiationHints": [
+      "肾功能内科问题与肾病内科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-11916b32f21a",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_mnwka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-42a6893f09bc",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "普通外科",
+    "displayName": "普通外科",
+    "division": "外科部",
+    "aliases": [
+      "普外科",
+      "外科"
+    ],
+    "summary": "面向常见普通外科相关问题提供服务。",
+    "officialSummary": "绵阳市中心医院普通外科为四川省甲级重点专科、绵阳市首批临床重点专科、国家卫健委普通外科内镜医师合作培训单位、中国医师协会腹腔镜外科培训基地、中国疝病研究联盟-疝病治疗和研究中心、四川国际造口治疗师学校临床实践基地、绵阳市普外科质量控制中心主任单位、绵阳市医学会普外专委会主任单位。成立于1939年，经过近80余年的发展，积淀了深厚的文化底蕴，人才辈出，技术不断更新。拥有各类专业技术人员60余人，其中主任医师3名，副主任医师6名，副主任护师3名；博士5人，硕士8人。专业细分为胃肠胰脾外科、结直肠肛门外科、甲状腺外科、疝与腹壁外科。在胃肠道疾病的综合治疗、腹腔镜微创手术、肠内肠外营养、术后康复等领域业务能力与技术水平达到国内先进水平。能常规开展三甲医院普外科所有类型的手术，无论是病人数量、手术效果、还是手术量均居同类前列。普外科诊治范围普外科疾病多为常见病，其发病率高，疾病种类多可以常规开展三甲医院普通外... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "体表包块、腹部外科问题、疝等可作为候选"
+    ],
+    "differentiationHints": [
+      "按器官系统明确属于乳腺、肝胆等专科时优先专科"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [
+      "location-map-907230201166",
+      "location-map-907230401121",
+      "location-map-907230201245",
+      "location-map-907230201247",
+      "location-map-907230201249",
+      "location-map-907230201250",
+      "location-map-907230201252",
+      "location-map-907230201253",
+      "location-map-907230201258",
+      "location-map-907230201261",
+      "location-map-907230201268",
+      "location-map-907230201269",
+      "location-map-907230201278",
+      "location-map-907230201301",
+      "location-map-907230201316",
+      "location-map-907230201322"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-42a6893f09bc",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_ptwka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-308dc64d18d8",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "乳腺外科",
+    "displayName": "乳腺外科",
+    "division": "外科部",
+    "aliases": [
+      "乳腺科",
+      "看乳房的"
+    ],
+    "summary": "面向乳腺相关问题提供外科专科服务。",
+    "officialSummary": "（一）发展简况绵阳市中心医院乳腺外科成立于1995年。2011年被评为“绵阳市重点学科”，2017年被评为“四川省甲级重点专科”，2019年加入西部乳腺病联盟医院，2023年12月25日“乳腺外科”正式更名为“乳腺疾病中心”，是四川省医学会乳腺病学专委会副主委单位，四川大学华西医院乳腺外科联盟单位，绵阳市医学会乳腺专委会主委单位，国家癌症中心首批乳腺癌规范诊疗质量控制试点中心，四川省卫生健康委员会“两癌”筛查适宜技术基地（区域示范）。经过近30年的发展，目前已成为一个集医、教、研于一体的乳腺疾病诊疗中心，年门诊量达3万余人次、年手术量3千余台次（其中乳腺癌手术近400台次）。乳腺疾病中心分设乳腺肿瘤外科板块及乳腺肿瘤内科板块，在MDT平台的支持下，形成了一个完善的多学科（乳腺外科、乳腺肿瘤内科、医学影像科、核医学科、病理科、康复科）协作诊疗体系。科室秉承以病人为中心，以医疗质量安全为核心的理念，全体医护人员以精湛的技术... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "乳房肿块、疼痛、乳头异常等可作为候选"
+    ],
+    "differentiationHints": [
+      "哺乳期一般保健问题可能需结合妇产科或其他服务"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-308dc64d18d8",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_rxwka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-19a5d3329b35",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "肝胆外科",
+    "displayName": "肝胆外科",
+    "division": "外科部",
+    "aliases": [
+      "肝胆科",
+      "肝胆胰外科"
+    ],
+    "summary": "面向肝、胆及相关外科问题提供专科服务。",
+    "officialSummary": "（一）基本情况绵阳市中心医院肝胆外科成立于1987年，在黎前德、周仲健等老一辈专家带领下，经过三十多年的发展，现已成为川西北地区肝胆胰疾病诊治中心、四川省甲级重点专科。现科室建有陈孝平院士工作站、全国肝胆外科快速康复（ERAS）标准病房、四川省胰腺疾病诊治中心绵阳市分中心、急性胰腺炎协作组绵阳市区域研究（诊疗）中心、日间手术中心，科室还是中国医师协会腹腔镜外科医师培训基地、绵阳市医学会肝胆专业委员会主任委员单位。绵阳市中心医院肝胆外科现有医护人员45人，高级职称12人，硕博士7人，专职护士医生助理1人。享有国务院“政府特殊津贴”专家2人，四川省卫健委学术技术带头人1人，四川省学术和技术带头人后备人选1人，3人在国家级学术团体任职。科室现开放病床63张、年门诊2万3千余人次、手术2200余台、出院3000余人次。三四级手术占比99.6%，其中四级手术占比22%。微创手术占比90%以上。健全的人才、一流的设备、成熟的技术以及系统化... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有胆囊、胆管、肝脏外科线索或转诊信息"
+    ],
+    "differentiationHints": [
+      "一般消化不适与消化内科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-19a5d3329b35",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_gdwka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-cb3861a9759c",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "烧伤整形外科",
+    "displayName": "烧伤整形外科",
+    "division": "外科部",
+    "aliases": [
+      "烧伤科",
+      "整形外科"
+    ],
+    "summary": "面向烧伤、创面修复及整形外科相关问题提供服务。",
+    "officialSummary": "绵阳市中心医院烧伤整形外科成立于1960年，是绵阳地区最早成立的烧伤专业。目前是全国烧伤专业规范化培训重点基地，科研、教学及临床全面发展。经过几十年的不懈努力，专业不断发展壮大，技术力量不断增强，现拥有大型红外线烧伤治疗仪两台，气动取皮机、碾皮机各一台，面部及躯干各类整形器械等，并筹备有现代化浸浴室及浸浴设备及翻身床，以及激光美容治疗仪器。科室细分的亚专业包括：整形外科、烧伤外科、美容外科及皮肤外科。现科室拥有床位29张，开放床位34张，年收治病600余人，年门诊量2000人次，年手术量400余台。副主任医师两名，主治医师两名，住院医师两名，主管护师两名，专科护士11人。专业开展各种大面积烧伤危重病员的抢救、监护、治疗工作，各种电击伤、电烧伤、化学药品烧伤早期切痂植皮手术治疗，各种中小面积烧伤、烫伤的无痛治疗，省内率先开展MEBT/MEBO创面治疗，促使创面无疤痕愈合。开展各种植皮整形手术，皮瓣转移手术，皮肤软组织... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "烧烫伤、瘢痕、组织修复等可作为候选"
+    ],
+    "differentiationHints": [
+      "普通慢性伤口与伤口治疗中心可能存在服务交叉"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-cb3861a9759c",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_sszxwka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-3831df9d1a2a",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "骨科",
+    "displayName": "骨科",
+    "division": "外科部",
+    "aliases": [
+      "骨头科",
+      "看骨头的",
+      "关节科"
+    ],
+    "summary": "面向骨、关节和四肢运动系统相关问题提供专科服务。",
+    "officialSummary": "绵阳市中心医院骨科为绵阳市重点专科，绵阳市骨科医疗质量控制分中心，四川省规范化医师培训基地。现有开放病床133张，拥有雄厚的专业技术力量，下设骨关节外科、创伤骨科、运动医学、手显微外科与修复重建、骨肿瘤五大分支。科室有医师17人、护士46人。其中，主任医师5人、副主任医师7人，医师5人，副主任护师1人，主管护师10人，硕士12人。骨科多年来承担多项省市级课题，承担卫生部百年十项负压封闭引流技术项目推广，是卫生部创面治疗培训基地，并取得了较大成果。曾荣获四川省科技进步一等奖1项，获四川省科技进步奖2项,绵阳市科技进步奖1项。2008年骨科被评为四川省抗震救灾先进集体。2009年科室参与的“挤压综合征临床救治技术及多学科协作应用”获2009年中华医学科技三等奖；四川省科技进步一等奖。2015年获批绵阳市医学重点学科；2016年8月通过四川省甲级重点专科评审；2019年通过四川省甲级重点专科动态管理评审。2020年开设骨科加速康复标准化病... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "关节、四肢骨骼、外伤后疼痛等可作为候选"
+    ],
+    "differentiationHints": [
+      "颈腰椎问题可与脊柱外科进一步区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-3831df9d1a2a",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_gukea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-ebde108e3b59",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "脊柱外科",
+    "displayName": "脊柱外科",
+    "division": "外科部",
+    "aliases": [
+      "脊柱科",
+      "颈腰椎科"
+    ],
+    "summary": "面向脊柱相关外科问题提供专科服务。",
+    "officialSummary": "我院脊柱外科成立于2003年，是四川省内首家独立发展的脊柱专科，在科室全体成员的不懈努力下，现在能开展脊柱外科各类手术，有专业病床共37张。脊柱外科范围省内内一流重点学科，省内先进水平，国内有一定知名度的专业学科，对周边县市产生辐射影响。科室争创“五个一”，即一流技术、一流设备、一流管理、一流服务、一流效益。各种医疗质量控制，管理制度健全及持续改进。现有主任医师1名，副主任医师3名，主治医师2名；博士研究生1名，硕士研究生2名，在读研究生1名。科室拥有先进的技术实力，能够开展所有的脊柱外科高精尖手术，形成了以外科手术治疗脊柱疾病的专业科室。 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "颈椎、腰椎、脊柱结构性问题或已有影像提示时可作为候选"
+    ],
+    "differentiationHints": [
+      "一般关节或四肢骨骼问题与骨科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-ebde108e3b59",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_jzwka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-ae030b887c0f",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "神经外科",
+    "displayName": "神经外科",
+    "division": "外科部",
+    "aliases": [
+      "脑外科",
+      "神外"
+    ],
+    "summary": "面向脑、脊髓及周围神经相关外科问题提供服务。",
+    "officialSummary": "绵阳市中心医院神经外科创建于上世纪50年代中期，是川西北地区最早拥有“脑外科”专业的地区医院，位于第一综合住院大楼12楼A区，现有床位66张，设置脊柱脊髓疾病及功能神经外科、神经肿瘤、脑血管病3个亚专业组，专科医师12名，其中主任医师2名，副主任医师5名，主治医师5名，博士研究生2名，硕士研究生6名。 科室门诊量超过8000人次，年收治病人2000余人次，年开颅手术量800余台，居四川省地市州级医院前列，2016年神经外科在医疗服务能力和医疗保障能力排名四川省三级综合医院第6位。目前开展的神经外科手术及诊疗项目：(1)重型颅脑外伤救治；(2)脑血管疾病（高血压脑出血、颅内动脉瘤）显微外科手术治疗；(3)神经系统肿瘤包括：鞍区肿瘤、脑胶质瘤、脑膜瘤、神经鞘瘤、脑转移癌、颅底肿瘤、血管网织细胞瘤等显微手术治疗(4）脊髓肿瘤的显微手术治疗；(5)脑积水及复杂环枕部先天畸形的外科治疗；(6)脑室镜技术应用和小儿神经外科疾病的治疗；(7）功能神... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有颅脑、脊髓病变或外科评估需求"
+    ],
+    "differentiationHints": [
+      "头晕、头痛、麻木等未明确需手术时与神经内科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [
+      "location-map-907230201350"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-ae030b887c0f",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_sjwka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-27043e3aa6d2",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "血管外科",
+    "displayName": "血管外科",
+    "division": "外科部",
+    "aliases": [
+      "血管科",
+      "周围血管科"
+    ],
+    "summary": "面向外周血管相关外科问题提供服务。",
+    "officialSummary": "绵阳市中心医院血管外科专业成立于2001年，专业经过10余年的发展，已经成为四川省川西西北地区第一家独立建制的血管外科专业科室，科室位于第一住院大楼12楼B区，床位数33张，年出院病人1000余人次，年门诊数量3500余人次，年手术500台次。科室现有医师6人，其中副主任医师1人、主治医师2人、住院医师3人。科室现有硕士研究生5人。血管外科目前诊治病种基本覆盖血管外科大部分疾病种类，其中以复杂腹主动脉瘤、胸主动脉夹层动脉瘤、急性肺梗塞介入手术为代表的血管外科高危、高风险、高精尖手术技术继续领先于省内同级别医院，进入国内先进发展行列。 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "静脉曲张、肢体血管问题或已有血管检查异常"
+    ],
+    "differentiationHints": [
+      "心脏及冠脉内科问题与心血管内科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-27043e3aa6d2",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xgwka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-d6b76928d03b",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "心胸外科",
+    "displayName": "心胸外科",
+    "division": "外科部",
+    "aliases": [
+      "胸外科",
+      "心脏外科"
+    ],
+    "summary": "面向胸部及心脏相关外科问题提供服务。",
+    "officialSummary": "一、科室发展史绵阳市中心医院心胸外科始建于二十世纪六十年代中期，当时即开展了食管癌、肺癌、胸外伤等胸部疾病的手术治疗；七十年代初期成功开展风心病二尖瓣狭窄闭式分离术及心包炎的手术治疗；八十年代中期成功开展体外循环直视手术。通过几代人不懈努力，专业不断发展壮大，集医疗、护理、教学、科研及管理为一体，在省内同级医院处于先进行列。心胸外科中国肺癌防治联盟授牌肺结节诊治分中心，中国研究型医院学会授牌加速康复外科示范病房，国家级住院医师规范化培训胸心外科专业基地，四川省医学会胸心外科专委会常委单位，四川大学华西医院胸外科学科联盟单位，绵阳市胸外科医疗质量控制中心，绵阳市医学会胸心外科专委会主委单位。二、人才梯队心胸外科医疗组共有14人：主任医师1名，副主任医师2名，主治医师6名，住院医师5人，其中有博士研究生1人，硕士研究生12人。护理组有护士25人：主管护师16人，护师9人。心胸外科医护人员具有深厚的专业知... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有胸部、心脏外科手术评估需求"
+    ],
+    "differentiationHints": [
+      "一般心血管内科问题与心血管内科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-d6b76928d03b",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xwka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-c6512529b527",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "眼科",
+    "displayName": "眼科",
+    "division": "外科部",
+    "aliases": [
+      "看眼睛的",
+      "眼病科"
+    ],
+    "summary": "面向眼部及视力相关问题提供专科服务。",
+    "officialSummary": "绵阳市中心医院眼科成立于1961年，是四川省卫生厅批准的省甲级重点专科、绵阳市眼病防治中心、市眼科质量控制中心、白内障与低视力康复中心、眼科专科医师培训基地，是全国唯一设在地市州的“健康快车无限极眼科显微手术培训中心”、cbm（国际克里斯多夫防盲组织）合作伙伴，川西北医教研中心。现有医护人员43人，其中高级职称16人、中级职称8人；博士及硕士8人。常年开放床位51张，年门诊量8万余人次，手术量5000余台，出院3000余人次。设白内障、青光眼、眼底病与眼外伤、斜弱视、角膜与眼表病、眼眶与眼整形、视光学、神经眼科8个亚专业。拥有飞秒激光手术系统、白内障超声乳化仪、准分子激光系统、玻璃体视网膜手术系统、手术显微镜、OCT、HRT、光学生物测量仪、眼底血管荧光造影及脉络膜造影、YAG及氩激光等近3000余万元进口高精设备。科室开展飞秒激光辅助白内障超声乳化、白内障超声乳化、包括多焦点人工晶体在内的各种人工晶体植入、飞秒全激光近视... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "视力变化、眼部不适、眼部病变等可作为候选"
+    ],
+    "differentiationHints": [
+      "眼周皮肤问题可能与皮肤科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [
+      "location-map-907230301413"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-c6512529b527",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yankea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-e0aa451611fb",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "耳鼻咽喉颌面外科病区",
+    "displayName": "耳鼻咽喉颌面外科病区",
+    "division": "外科部",
+    "aliases": [
+      "耳鼻喉科",
+      "五官科",
+      "看耳朵鼻子的"
+    ],
+    "summary": "面向耳、鼻、咽喉及颌面相关问题提供专科服务。",
+    "officialSummary": "耳鼻咽喉科简介一、耳鼻咽喉科概况耳鼻咽喉科为四川省甲级重点专科、绵阳市重点学科、绵阳市耳鼻咽喉科医疗质量控制中心、四川省新生儿听力障碍诊治分中心、绵阳市0-6岁儿童残疾筛查市级定点评估机构、国家级住院医师规范化培训基地、国际微笑列车定点医院、中国研究型医院学会眩晕医学专业委员会眩晕医学专科联盟单位、国家耳鼻咽喉疾病临床医学研究中心网络成员单位、川西北区域医疗中心头颈肿瘤诊疗中心和川西北区域医疗中心眩晕诊疗中心。年门诊量12万余人次，年住院病人3000余人次，年手术病人2800余台，业务覆盖川西北地区，年出院患者中外埠患者比例55%以上。为积极推进医改工作，提高医院资源的综合利用效率，在保证质量和安全的前提下，控制住院费用、降低平均住院日，大力推进舒适化医疗及快速康复手术，我科率先在省内开展声带息肉、颈部包块、鼻（背）部包块、肥大性鼻炎、部分扁桃体疾病、耳部包块等多个病种的日间手术。我科现有编制病床57张... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "耳痛、听力、鼻部、咽喉或颌面问题可作为候选"
+    ],
+    "differentiationHints": [
+      "口腔牙齿问题与口腔科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-e0aa451611fb",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_ebyhka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-0f390764b20c",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "小儿外科",
+    "displayName": "小儿外科",
+    "division": "外科部",
+    "aliases": [
+      "儿童外科",
+      "儿外科"
+    ],
+    "summary": "面向儿童外科相关问题提供专科服务。",
+    "officialSummary": "绵阳市中心医院小儿外科学科简介绵阳市中心医院小儿外科成立于1978年，是全国地市级医院中最早独立建制的小儿外科之一，也是绵阳市目前唯一体系完备的小儿外科专业科室。经过数十年发展，科室综合业务能力位居全省前列。我们始终秉承“专业、温暖、高质量”的服务理念，致力于为川西北及周边地区的儿童提供全面、优质的外科诊疗服务，并在临床、科研与教学领域持续深耕。科室现为国家先天性结构畸形定点救助单位、四川省医学会小儿外科副主任委员单位、绵阳市甲级重点专科、绵阳市小儿外科医疗质量控制中心挂靠单位，并牵头成立绵阳市小儿外科护理学会。目前开放床位42张，拥有一支结构合理、技术精湛的专业团队，其中临床医师8人（高级职称2人、主治医师3人，硕士研究生及以上学历4人），专业护理人员15人（含高级职称1人、主管护师10人）。科室高度重视人才培养，定期选派骨干前往英国大奥蒙德街儿童医院、北京儿童医院等国内外顶尖机构进修，持续引进先进... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "儿童明确外伤、外科结构问题或手术评估需求"
+    ],
+    "differentiationHints": [
+      "儿童一般内科问题与儿科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-0f390764b20c",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xewka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-def606b438f3",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "妇产科",
+    "displayName": "妇产科",
+    "division": "综合部",
+    "aliases": [
+      "妇科",
+      "产科",
+      "看妇科的"
+    ],
+    "summary": "面向妇科和产科相关问题提供专科服务。",
+    "officialSummary": "妇产科是国家卫健委“一带一路”医学人才培养联盟单位，卫生部内镜与微创医学妇科培训基地、国家住院医师规范化培训妇产科基地、2022年成为四川省首批省级临床重点专科、超声医学工程国家重点实验室批准的：高强度聚焦超声临床培训基地及高强度聚焦超声技术科研合作基地。是首批中国妇女盆底功能障碍防治项目单位、全国首批“分娩镇痛”试点单位、四川省医学会妇产科专委会副主任委员单位、四川省医学甲级重点专科、四川省母婴安全优质服务单位、绵阳市医学重点学科、绵阳市妇科微创技术诊治中心、绵阳市危重孕产妇诊治中心。是绵阳市医学会妇产科专委会主任委员单位、绵阳市医学会围产医学专委会主任委员单位、绵阳市医学会更年期保健专委会主任委员单位、绵阳市妇产科医疗质量控制中心主任委员单位、绵阳市护理学会妇产科护理专委会主任委员单位，在四川省医学重点学科（专科）科技影响力评价“妇产学”专业中综合排名第6名、地市州排名第一。科室技术力量... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "妇科不适、妊娠及产科相关需求可作为候选"
+    ],
+    "differentiationHints": [
+      "生育困难及辅助生殖需求与生殖医学中心区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [
+      "location-map-90723040139",
+      "location-map-907230201188",
+      "location-map-907230201264",
+      "location-map-907230201274",
+      "location-map-907230201275",
+      "location-map-907230201282",
+      "location-map-907230201284",
+      "location-map-907230201285",
+      "location-map-907230201286",
+      "location-map-907230201291",
+      "location-map-907230201292",
+      "location-map-907230201297",
+      "location-map-907230201298",
+      "location-map-907230201299",
+      "location-map-907230201300",
+      "location-map-907230201307",
+      "location-map-907230201325",
+      "location-map-907230201336",
+      "location-map-907230201337",
+      "location-map-907230201338",
+      "location-map-907230201339",
+      "location-map-907230201341",
+      "location-map-907230201342",
+      "location-map-907230201343",
+      "location-map-907230201344",
+      "location-map-90723040115",
+      "location-map-907230401115"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-def606b438f3",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_fuchankea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-65bbd0eaf0de",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "儿科",
+    "displayName": "儿科",
+    "division": "综合部",
+    "aliases": [
+      "儿童内科",
+      "小儿科"
+    ],
+    "summary": "面向儿童常见内科及综合健康问题提供服务。",
+    "officialSummary": "川西北区域医疗中心电子科技大学医学院附属绵阳医院·绵阳市中心医院儿童医学中心以儿内科、儿外科为主体，并涵盖儿童眼科、儿童耳鼻喉科、儿童康复科、儿童口腔科、儿童急诊科等儿科相关专业,专业技术达到省内先进水平。四川省卫计委2017年公布数据显示：儿童医学中心在四川省三级综合医院儿科医疗服务能力和服务质量评价中排名第一。本中心是省甲级重点专科，是区域专业疑难、危重疾病诊治的核心团队。儿童医学中心的宗旨和使命：以父母之心、父母之爱服务于所有儿童，以优质医疗服务为儿童健康保驾护航，推动区域内儿科学科专业技术发展、人才队伍建设，让区域内儿童不出绵阳，就能享受到一流的医疗服务。儿童医学中心是美国新生儿基金会中国三大全球合作伙伴之一：“新生计划-新生儿筛查全球合作伙伴”；香港儿童医健基金会高盛亚洲新生儿重症监护病房；国家（省）级儿科住院医师规范化培训基地；国家儿童医学中心互联网+肾脏专科联盟成员；泛珠三角新生... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "儿童发热、咳嗽、消化等一般内科问题可作为候选"
+    ],
+    "differentiationHints": [
+      "儿童明确外科问题与小儿外科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-65bbd0eaf0de",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_erkea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-72f4cf7a6d26",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "肿瘤科",
+    "displayName": "肿瘤科",
+    "division": "综合部",
+    "aliases": [
+      "肿瘤内科",
+      "癌症科",
+      "放化疗科"
+    ],
+    "summary": "面向已经发现或高度怀疑肿瘤及需要肿瘤综合治疗的患者提供服务。",
+    "officialSummary": "一、科室发展简史：绵阳市中心医院肿瘤科成立于1996年，经过多年发展，于2010年建成四川省甲级重点专科。2012年四川省肿瘤放射治疗规范化培训基地。2013年绵阳市肿瘤性疾病质控中心、绵阳市放疗质控中心。2014年建成四川省癌痛规范化治疗示范病房。2016年绵阳市癌症防治中心。2017年建成四川省乙级重点学科。2020年营养联盟病房（GPS病房）。2021年获批卫健委核技术医学转化重点实验室，2022年成为四川省公立医院标杆党支部，2023年成为四川省放射与治疗临床医学研究中心，2024年获全国公立医院临床科室标杆党支部。科室现有开放床位135张，设有GCP病房、普通病房、放疗机房、专科门诊、日间治疗平台、HIFU治疗中心、热疗室、臭氧治疗八大服务单元，形成以肿瘤放疗、化疗、生物治疗为主，辅以射频、海扶（HIFU）治疗、粒子治疗等手段的完整诊治体系。二、人员结构：科室现有医、护、技共87人，其中医疗25人、护理47人、放疗物理师及技师15人，其中：正高5人... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有肿瘤诊断、病理结果或明确肿瘤转诊信息"
+    ],
+    "differentiationHints": [
+      "未明确性质的一般症状优先相应器官专科"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-72f4cf7a6d26",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_zlka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-e3dd4c5936fb",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "康复医学科",
+    "displayName": "康复医学科",
+    "division": "综合部",
+    "aliases": [
+      "康复科",
+      "理疗科"
+    ],
+    "summary": "面向疾病或损伤后的功能评估与康复需求提供服务。",
+    "officialSummary": "绵阳市中心医院康复医学科门诊简介 绵阳市中心医院康复医学科成立于1958年，于2017年成为绵阳市医学甲级重点学科，并被授予多个国家级和省级荣誉，包括“国家康复医师规范化培训基地”、“国家高级认知障碍诊疗中心及记忆防治中心”、“郑州大学吞咽障碍研究所绵阳临床研究基地”、“中国康复医学会科普教育基地”、“四川省康复医学科医师规范化培训基地”等。科室现有床位55张，设有康复病房、康复治疗区和康复专科门诊，提供全面的康复医疗服务，涵盖神经康复、认知康复、吞咽康复、二便管理、骨关节康复、儿童康复及心肺康复等领域。服务项目康复医学科开展神经调控、高压氧治疗、吞咽障碍治疗、肉毒素注射治疗、物理治疗（PT）、作业治疗（OT）、言语治疗（ST）、感统训练（SI）、心肺康复治疗、辅具矫形器制作等多种现代及传统康复项目。其中，痉挛性疾病定向引导A型肉毒素注射、吞咽障碍FEES检查、气管切开佩戴说话瓣膜技术、间歇经口至食管管喂（I... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "术后、卒中后、损伤后功能恢复或明确康复需求"
+    ],
+    "differentiationHints": [
+      "急性原因未评估时先由相应临床专科处理"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-e3dd4c5936fb",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_kfyxka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-8f120795f91a",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "生殖医学中心",
+    "displayName": "生殖医学中心",
+    "division": "综合部",
+    "aliases": [
+      "生殖科",
+      "不孕不育科",
+      "试管婴儿中心"
+    ],
+    "summary": "面向不孕不育、生殖内分泌及辅助生殖相关需求提供服务。",
+    "officialSummary": "绵阳市中心医院生殖医学中心成立于1999年，是川西北地区较早开展不孕不育诊疗的科室，初建时就开展了不孕不育的常规检查及综合治疗，包括生育咨询、子宫输卵管造影、B超监测排卵生育指导、排卵障碍药物促排治疗，宫腹腔镜手术等临床工作。2002年获批开展丈夫精液人工授精技术（AIH），2016年获批开展体外受精-胚胎移植（IVF-ET）和卵胞浆内单精子显微注射（ICSI）技术（俗称试管婴儿），是川西北地区率先开展人类辅助生殖技术助孕服务的单位。年门诊量5万余人次，在中心全体工作人员的共同努力下，辅助生殖技术助孕成功率稳步提升，新鲜移植周期临床妊娠率超过55%，冻融移植周期临床妊娠率接近60%，囊胚移植妊娠率更是高达70%，丈夫精液人工授精临床妊娠率超过15%。各项技术助孕成功率达较好水平。 中心服务范围包括：不孕不育与生殖内分泌相关疾病的诊治，包括不孕症、多囊卵巢综合征、月经紊乱、高泌乳素血症、复发性流产、输卵管疾病、子宫内膜异... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "备孕困难、不孕不育或辅助生殖咨询"
+    ],
+    "differentiationHints": [
+      "一般妇科不适与妇产科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-8f120795f91a",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_szyxzxa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-4fd21a176632",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "疼痛科",
+    "displayName": "疼痛科",
+    "division": "综合部",
+    "aliases": [
+      "疼痛门诊",
+      "止痛科"
+    ],
+    "summary": "面向慢性或复杂疼痛的专业评估与治疗需求提供服务。",
+    "officialSummary": "绵阳市中心医院疼痛科“疼痛门诊”开设于80年代中期，是国内较早开设的疼痛门诊之一。2016年6月，在“疼痛门诊”的的基础上成立了独立的“疼痛科”。经过与国内知名医院疼痛科的联合协作，加入“华西疼痛专科医联体”，逐渐完善相关诊疗疾病和诊疗技术，并承担下级医院疼痛人才进修学习任务，现已发展成为集医疗、教学、科研为一体的医院重点科室。疼痛科现有医护人员21人，其中主任医师4人，副主任医师1人，主治医师1人，住院医师3人，护理团队12人。设门诊疼痛诊断室，附有创疼痛治疗室，常年全日开诊（周六下午、周日和国家法定节假日除外）；疼痛病房有30张病床，收治各种疼痛及相关疾患病人，年门诊量超过1.2万人次，神经阻滞治疗7000余例，收住院1000余人次，其中顽固疑难疼痛患者及完成影像引导下微创介入手术500余例。疼痛科医疗设备先进，配备有射频热凝治疗仪、臭氧发生器、等离子疼痛治疗仪，中频脉冲疼痛治疗仪、银质针巡检治疗仪、超声机、脊柱... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "长期疼痛且难以归入单一器官专科时可作为候选"
+    ],
+    "differentiationHints": [
+      "原因明确的急性局部问题优先对应专科"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-4fd21a176632",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_ttka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-e8eafd1155b8",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "门诊部",
+    "displayName": "门诊部",
+    "division": "门诊部",
+    "aliases": [
+      "门诊办公室"
+    ],
+    "summary": "承担门诊综合管理与流程协调职责。",
+    "officialSummary": "为提升患者就医体验及医疗服务，在院长/分管院领导领导下，负责门诊全面管理(环境管理、秩序管理、出勤管理、质量管理、流程管理。)一、负责辖区内的医务人员的医德医风建设1.加强门诊医德医风建设，拒收“红包”“回扣”等。2.做好门诊患者满意度调查，进行分析、整改，提高医疗服务水平。二、负责门诊的正常医疗秩序及病员的就医秩序1.负责门诊预约诊疗工作2.做好门诊便民服务和便民服务措施。3.负责双向转诊病人门诊就医工作。4.做好门诊环境和秩序管理，达到环境整洁、舒适、安全，工作有序。5.协调门诊部所属科室和医技、保卫、宣传、信息和后勤等部门的关系，搞好医疗服务质量和安全。三、负责门诊的投诉及纠纷管理1.做好门诊的医疗投诉工作，利用RCA工具进行分析、整改及缺陷管理。2.协助医教部处理门诊纠纷工作。四、组织门诊病员的咨询、诊治、危重病员的抢救及疑难病例的会诊；病员入院管理1.负责门诊的导医咨询和分诊工作。2.负责组织门诊危重病... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "门诊流程和管理咨询"
+    ],
+    "differentiationHints": [
+      "不是症状导诊科室"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-e8eafd1155b8",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_mzbgsa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-0cef3b56e1ce",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "急诊医学科",
+    "displayName": "急诊医学科",
+    "division": "门诊部",
+    "aliases": [
+      "急诊科",
+      "急救中心"
+    ],
+    "summary": "承担急诊医疗相关服务。当前 Agent 不处理紧急就医分流。",
+    "officialSummary": "绵阳市中心医院急诊科于1987年成立，绵阳市急救中心于1997年经四川省卫生厅批准成立后挂靠绵阳市中心医院。自成立以来，主要承担以下工作：全市重大突发公共卫生事件紧急医疗救援；日常急救医疗工作（包括院内急诊以及院前急救），承担绵阳市部分急、危、重症的院前急救、会诊任务；对全市从事急诊医学的医务人员进行业务培训；承担市内举办的各种大型活动的现场医疗急救工作；负责对全市的医疗急救工作进行指导。服务范围辐射整个川西北地区。急诊科现有一批作风过硬、技术精良的医护急救队伍。中心医疗组有主任医师2人，副主任医师6人，主治医师5人，住院医师13人，均为本科及以上学历，其中有硕士研究生2名。护理组有副主任护师3人、主管护师8人，护师(士) 41人，具有大专以上学历的占95%。多名医护人员被送到华西医科大学、北京市急救中心、四川省急救中心进修学习。急救中心医护人员定期进行疑难、危重、死亡病例讨论，不断总结诊治中的经验,提高诊治... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "仅用于用户明确查询急诊地点或流程"
+    ],
+    "differentiationHints": [
+      "本项目不主动进行紧急症状判断"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [
+      "location-map-90723030118"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-0cef3b56e1ce",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_jzyxka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-fbb0e6a3d4e3",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "超声医学科",
+    "displayName": "超声医学科",
+    "division": "门诊部",
+    "aliases": [
+      "超声科",
+      "B超室",
+      "彩超室",
+      "做B超的"
+    ],
+    "summary": "承担超声检查相关医技服务。",
+    "officialSummary": "绵阳市中心医院超声科成立于1984年，现有建筑面积近千平方米，其中工作用房二十三间，候诊面积达三百余平方米（候诊座椅多达130余张），设有各种超声诊断间二十余间，介入超声诊疗室两间，介入准备间和介入复苏观察室各一间；配备有先进的电子分诊叫号系统和信息标示，有良好的就诊环境；科室的医疗服务流程更趋合理，方便患者就医，尽量缩短患者的候诊时间，满足患者的就诊需求。科室现有技术人才实力雄厚：共有研究生叁名，在读在职研究生五人，其余医师均具有大学本科学历。科室现有医学影像及放射介入专业主任医师一名，副主任医师三人，主治医师九人，医师八人，规范化培训医师四名；主管护师１名，技术员十三名。专业人才梯队结构合理，共发表各种学术论文近百篇。科室正、副主任分别担任绵阳市医学会超声医学专业委员会正、主任委员；绵阳市超声医学质控中心正、副主任；还担任了多个国家级和省级超声学术专业学术委员会的副主任委员、副会长、常务委... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有超声检查单或医生医嘱时用于流程指引"
+    ],
+    "differentiationHints": [
+      "不是首诊症状分科科室"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [
+      "location-map-907230101201",
+      "location-map-90723010165",
+      "location-map-90723010170",
+      "location-map-907230301144",
+      "location-map-907230301146",
+      "location-map-907230301147",
+      "location-map-907230301149",
+      "location-map-907230301160",
+      "location-map-907230301166",
+      "location-map-907230301172",
+      "location-map-907230301177"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-fbb0e6a3d4e3",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_cska0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-0397040827c3",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "患者服务中心",
+    "displayName": "患者服务中心",
+    "division": "门诊部",
+    "aliases": [
+      "服务中心",
+      "咨询处",
+      "人工服务"
+    ],
+    "summary": "提供患者咨询、求助、投诉及入出院等一站式服务协调。",
+    "officialSummary": "职责一：患者一站式服务管理1、负责协调和处理全院患者服务咨询、建议、投诉、求助工作，以及上级交办、转办的有关患者服务的事件，对患者及家属反馈的信息进行及时解释处理，并做好“日清结、月统计、季分析”，对需系统改进的服务工作进行效果追踪。2、结合对患者和医院员工收集的意见、建议，不断优化服务流程，提升患者服务中心服务质量。职责二：住院患者一站式入院、出院管理 1、收集分析住院患者入出院办理流程需求及运行数据，适时优化，不断改进、整合入出院服务流程，为病人提供一站式入院、出院办理服务。2、指导患者办理入出院、医保审核相关手续，录入人脸识别信息。3、协助本院职工办理入出院、费用报销、补助申报手续。职责三：智慧虚拟病房建设和管理1、负责建设智慧虚拟病房，对床位统一管理，床位资源集中调配，确保患者及时收治入院。2、提供预约患者签床服务，及时通知正式入院。3、进行“全院一张床”管理，对有需求的预约患者和科... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "Agent 无法处理或需要人工协助时作为兜底"
+    ],
+    "differentiationHints": [
+      "不是症状导诊科室"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-0397040827c3",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_cryfwzxa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-5dcf4d72befd",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "伤口治疗中心",
+    "displayName": "伤口治疗中心",
+    "division": "门诊部",
+    "aliases": [
+      "伤口门诊",
+      "换药中心"
+    ],
+    "summary": "面向慢性或复杂伤口、造口等治疗需求提供服务。",
+    "officialSummary": "伤口治疗中心简介：2013年7月我院开设绵阳市首家“伤口造口门诊”，运用国际倡导的“伤口湿性愈合理论”和“造口处理TIME原则”对各种慢性疑难复杂伤口、造口和失禁性患者提供专业化、规范化的治疗，始终坚持“以病人为中心、以质量为核心、济世救人、造福社会”的服务宗旨，为患者提供更加优质、便捷的服务。一、伤口治疗1、处理各类慢性创面（如：术后延迟愈合的创面、糖尿病足溃疡、下肢静脉溃疡、压力性损伤等）；2、急性创伤伤口；3、肿瘤伤口、放射性治疗引起的慢性创面；4、化疗药物外渗伤口；5、引流管引起周围皮肤问题的创面；6、淋巴水肿护理等。二、造口护理1、造口术前定位，术后定期复查，指导患者造口的自我护理。2、处理造口及造口周围皮肤的并发症3、提供造口患者及家属的心理咨询，提高患者的生活质量4、提供电话随访及咨询服务三、失禁护理1、大、小便的失禁的处理2、留置导尿的护理3、护理用品选择的指导挂号科室：伤口造口护理门诊就诊... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有伤口、造口或换药需求"
+    ],
+    "differentiationHints": [
+      "新发严重外伤需由相应临床科室评估"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-5dcf4d72befd",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_skzlzxa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-46e57e4aa848",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "MDT平台中心",
+    "displayName": "MDT平台中心",
+    "division": "门诊部",
+    "aliases": [
+      "多学科会诊中心",
+      "MDT"
+    ],
+    "summary": "为符合条件的多学科诊疗需求提供协调平台。",
+    "officialSummary": " 暂无信息",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有医生建议进行多学科会诊"
+    ],
+    "differentiationHints": [
+      "不是普通首诊入口"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-46e57e4aa848",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_MDTptzx/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-82437c3beb9d",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "口腔科",
+    "displayName": "口腔科",
+    "division": "门诊部",
+    "aliases": [
+      "牙科",
+      "看牙的"
+    ],
+    "summary": "面向牙齿、牙周、口腔及颌面口腔相关问题提供服务。",
+    "officialSummary": "绵阳市中心医院口腔科始建于1951年，经过70多年的发展建设，特别是近几年科室规模、医疗水平快速发展，年门诊量达7万余人次，现已形成集医疗、教学、科研、牙病防治为一体的先进科室。2008年经四川省卫生厅批准成为绵阳市首家四川省口腔全科住院医师规范化培训基地，2014年成为国家级口腔住院医师规范化培训基地。2014年成立了成都医学院本科教学口腔科学教研室。2016年成为川北医学院口腔专业实习基地，2017年成为西南医科大学口腔本科实习基地、绵阳市高等医学专科学院护理专业专科实习基地。2016年第二届绵阳市医学会口腔专委会换届选举，绵阳市中心医院为主任委员单位。2008年5.12汶川特大地震救治工作中科室医护人员表现突出，荣获医院抗震救灾先进集体。2019年批准成为绵阳市医学重点学科。科室开设有口腔内科、口腔种植修复、口腔正畸、颌面外科专科专家门诊。口腔颌面外科病区开放病床10张，口腔急诊实行24小时值班制，是绵阳市唯一一家担负全市各类... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "牙痛、牙齿、牙龈、口腔问题可作为候选"
+    ],
+    "differentiationHints": [
+      "耳鼻咽喉及非牙源性颌面问题与耳鼻喉颌面外科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": true,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-82437c3beb9d",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_kqka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-b9578f5451d1",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "放射科",
+    "displayName": "放射科",
+    "division": "医技部",
+    "aliases": [
+      "影像科",
+      "CT室",
+      "拍片的地方",
+      "核磁共振"
+    ],
+    "summary": "承担X线、CT、磁共振等影像检查相关服务。",
+    "officialSummary": "绵阳市中心医院放射科组建于1953年，1991年经省卫生厅批准为四川省首批临床科室，1998年经市卫生局批准为绵阳市重点科室，2004年市卫生局批准成立绵阳市介入放射诊疗中心，2008年被省卫生厅确定为医学影像学住院医师规范化培训基地。2013年6月绵阳市放射医学质控中心挂靠该科室，2013年9月起，与西南科技大学联合面向全国招收医学影像技术本科学生；2014年成为国家级住院医师规范化培训基地；2015年绵阳市外周介入诊疗质控中心挂靠该科室；2015年成为省级影像专科医师培训基地。全科现拥有专业技术人员66人，其中正高级职称4人，副高级职称9人，中级17人。其中硕士生导师1人，博士在读1人，硕士11人。多人在国家级、省级及市级学术团体任职，中国介入医师分会神经介入专委会委员1名，中华放射学分会介入学组非血管介入专委会委员1名，中华影像技术分会数字学组委员1名，四川省介入专委会副主任委员1人，省介入医师分会常务委员1名、委员1名，省放射专委会常... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有影像检查单或医生医嘱时用于流程指引"
+    ],
+    "differentiationHints": [
+      "不是首诊症状分科科室"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [
+      "location-map-90723990165",
+      "location-map-907230101203",
+      "location-map-90723020191",
+      "location-map-907230301295",
+      "location-map-907230301326",
+      "location-map-907230301327",
+      "location-map-907230301343",
+      "location-map-907230301345",
+      "location-map-907230301346",
+      "location-map-907230301362",
+      "location-map-907230301363",
+      "location-map-907230301366",
+      "location-map-907230301368",
+      "location-map-907230301370"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-b9578f5451d1",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_fangshekea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-a9a650e0f66f",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "医学检验科",
+    "displayName": "医学检验科",
+    "division": "医技部",
+    "aliases": [
+      "检验科",
+      "化验室",
+      "抽血处",
+      "验血的"
+    ],
+    "summary": "承担临床检验、采血和样本检验相关服务。",
+    "officialSummary": "一、实验室基本情况医学检验科1939年随建院成立，现用实验室面积3000余平方米，包括二楼检验科、急诊检验室（设在急救中心）、分子遗传实验室、新冠核酸检测实验室和发热门诊检验，均完全按照BSL-2级实验室生物安全防护设计要求进行建设。二楼检验科设有采血大厅、体液送检大厅和各类临床实验室，其中微生物实验室、HIV初筛实验室和PCR实验室达到生物安全BSL-2级加强型防护水平。 二、人员结构情况医学检验科现有专业技术人员82人和护理专业技术人员7人，其中主任技师5人，副主任技师/医师14人，主管技师/助理研究员34人，检验技师（士）29人，护师7人；博士研究生4人，硕士研究生16人，大学本科58人，大专11人。 三、学科建设检验科设有6个专业组，现为四川省医学甲级重点学科、绵阳市医学重点学科，系中国合格评定国家认可委员会(CNAS)认可的医学实验室、国家卫计委医药生物工程技术研究中心临床研究基地、国家住院医师规范化培训医学检验科基地、全国细... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有检验医嘱时用于流程指引"
+    ],
+    "differentiationHints": [
+      "不是首诊症状分科科室"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-a9a650e0f66f",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yxjyka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-a17efd84c976",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "输血科",
+    "displayName": "输血科",
+    "division": "医技部",
+    "aliases": [
+      "血库"
+    ],
+    "summary": "承担临床用血及输血相关专业服务。",
+    "officialSummary": "一、科室发展史：根据前卫生部要求及输血医学学科发展的需要，2002年绵阳中心医院血库从检验科分离，并重新组建成为独立的一级科室——输血科。二、人员结构：科室现有人员9名，其中副主任技师3名、主管技师2名、技师4名，拥有临床诊断硕士学历者1名，本科学历5人，专科学历3人。三、学科建设：经过10多年的发展，输血科现已是集供血、教学及科研为一体的、并承担一定监管职能的医技科室，主要承担ABO/Rh血型鉴定、贮血、配血、发血、临床输血咨询与会诊、合理用血监管、输血不良反应监测等各项医疗及管理任务，保证临床医疗用血安全。科室还承担了泸州医学院、川北医学院、成都医学院等院校检验、输血专业学生的实习带教工作，并承担进修医生关于输血技术的学习、培训等工作。2011年，绵阳市成立临床输血质量控制中心，绵阳中心医院为主任委员单位，承担中心工作，主要职责：贯彻落实国家有关医疗机构临床用血的法律、法规、规章和技术规范，指导本区域内医... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有临床用血安排时用于流程信息"
+    ],
+    "differentiationHints": [
+      "不是患者普通首诊科室"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-a17efd84c976",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_shuxuekea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-2154bdb83c54",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "药学部",
+    "displayName": "药学部",
+    "division": "医技部",
+    "aliases": [
+      "药房",
+      "取药处"
+    ],
+    "summary": "承担药事管理、药学服务及患者取药相关支持。",
+    "officialSummary": "基本概况：绵阳市中心医院药学部随着医院的建立而诞生并逐步发展，通过一代又一代药学工作者的努力，已成为融药事管理、药学服务、药学科研与教学为一体的技术职能科室。2011年将药剂科更名为药学部，同年成为国家卫计委临床药师培训基地，2013年正式下设二级科室临床药学室，2015年获批建设绵阳市临床药学甲级重点学科，2017年12月通过验收，2020年7月获批建设四川省药学甲级重点专科，同年备案成为药物临床试验机构，2022年获批国家紧缺人才培训基地（临床药师），是绵阳市医学会医院药学专委会主委单位。药学部现占地面积2500余平方米,下设临床药学室、门诊西药房、急诊药房、中药房、住院药房、静脉药物集中配置中心、西药库房、血药浓度检测室等部门。拥有Viva-E血药浓度监测仪、高效液相色谱仪、紫外分光光度计等仪器设备。目前主要承担药事管理、药品及消毒产品的采购和供应、处方（医嘱）调剂和点评、临床药学、药物临床试验、药学科研与教学、血药... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有处方后的取药或药学服务流程"
+    ],
+    "differentiationHints": [
+      "Agent 不修改处方或提供用药方案"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [
+      "location-map-907230101452",
+      "location-map-907230101480",
+      "location-map-907230201243"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-2154bdb83c54",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yaoxuebua0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-13f12d07d37c",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "病理科",
+    "displayName": "病理科",
+    "division": "医技部",
+    "aliases": [
+      "病理室"
+    ],
+    "summary": "承担病理检查与诊断支持服务。",
+    "officialSummary": "绵阳市中心医院病理科简介科室发展简史：病理科成立于1965年，至今已有60多年历史。经过多年的发展，于2020年成功申报四川省甲级重点专科。科室是绵阳市病理专委会、病理质控中心主任单位。承担着川西北地区及全市各级医院的疑难病理会诊、远程会诊工作。是国家级病理医师规范化培训基地，院内技师规范化培训基地，先后培养进修生、规培生60余人。现有医生15人，技术员14人，技术辅助人员4人。其中主任医师2人、副主任医师3人、主治医师5人、医师5人，主管技师5人、技师9人；共有博士研究生3人、硕士研究生11名。学科建设：科室承担省市级卫健委科研课题多项，获市级科技进步奖多项。已在国内公开刊物发表论文60余篇，其中SCI收录文章十余篇。科室开展工作项目：全身各系统疾病常规石蜡切片病理检查与诊断、疑难病理会诊、快速石蜡切片检查与诊断、术中快速冰冻切片病理诊断、尸体解剖病理诊断、细胞学病理诊断、分子病理检测及诊断、全自动快速免疫组织化学... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有病理检查或标本相关医嘱"
+    ],
+    "differentiationHints": [
+      "不是普通首诊科室"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-13f12d07d37c",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_binglikea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-bffe90d090de",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "临床营养科",
+    "displayName": "临床营养科",
+    "division": "医技部",
+    "aliases": [
+      "营养科",
+      "营养门诊"
+    ],
+    "summary": "提供临床营养评估与支持服务。",
+    "officialSummary": "科室发展简况：绵阳市中心医院营养科于1998年建科，2014年3月更名为营养膳食科，2016年3月独立为临床营养科，属医技科室。2013年5月，绵阳市临床营养质量控制中心挂靠我院临床营养科。2014年2月开设营养咨询门诊。人才结构：现有专业技术人员5人，其中主任医师1人，主管营养师2人，营养师1人，主管护师1人；学历层次：硕士研究生2人，在读硕士研究生1人，本科1人，专科1人。服务项目：目前主要承担医院住院患者的营养风险筛查和营养状况评价、营养会诊、营养查房、营养咨询、肠内营养治疗、以及肠外营养的指导建议等营养诊疗工作。可为患者提供个体化管喂饮食，口服肠内营养补充剂，为慢性病及代谢疾病（如糖尿病，痛风，肾病，高血压，肥胖症等）患者进行饮食指导，制定饮食治疗方案。营养咨询门诊可对慢性病及代谢疾病患者或特殊人群（如孕产妇、青少年、老年人等）进行饮食指导，根据患者病情及营养需要制定个体化的营养治疗方案。并通过电视台、电台、报... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有临床营养问题或医生转介"
+    ],
+    "differentiationHints": [
+      "普通体重或代谢问题可能与内分泌科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-bffe90d090de",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_lcyyka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-c8bbd56cd9fc",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "核医学科",
+    "displayName": "核医学科",
+    "division": "医技部",
+    "aliases": [
+      "核医学",
+      "ECT室"
+    ],
+    "summary": "承担核医学检查与治疗相关服务。",
+    "officialSummary": "绵阳市中心医院核医学科占地面积约600平方米，能开展多系统、多部位核素显像及核素治疗，是集检查与治疗为一体的分子医学科室，是多学科、技术融合的新型学科。科室拥有SPECT/CT断层融合仪、甲状腺功能摄碘仪、放射性粒子治疗计划系统（TPS）、90锶敷贴器等仪器，新引进的SPECT/CT断层融合仪，对甲状腺疾病、肿瘤、冠心病、肾脏疾病等的显像诊断有重要价值，一次检查既可获得脏器及病变的功能状态又可清晰显示病变脏器解剖学结构，具有定性、定位诊断能力，是功能影像与解剖影像完美结合的分子影像,也是影像学发展的方向。同时新场所还设置有专用核素治疗病房，编制床位6张，开展甲癌、甲亢、转移性骨肿瘤等住院治疗。开展业务：核素显像：全身骨肿瘤转移显像，心肌灌注显像，甲状腺显像，唾液腺显像，肺通气、灌注显像，肾小球滤过率测定显像，脑灌注显像等全身各系统显像，目前逐步形成了以假体松动与感染鉴别诊断、甲状旁腺、脑脊液漏、消化道出血、梅克... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有核医学检查或治疗医嘱"
+    ],
+    "differentiationHints": [
+      "普通影像检查与放射科、超声医学科区分"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-c8bbd56cd9fc",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_heyixuekea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-3bd6dec14305",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "重症医学科",
+    "displayName": "重症医学科",
+    "division": "手麻平台部",
+    "aliases": [
+      "ICU",
+      "重症监护室"
+    ],
+    "summary": "承担危重患者的重症监护服务。",
+    "officialSummary": "绵阳市中心医院重症医学科始建于1983年，2011年内、外监护室合并为综合ICU，床位24张；2015年扩展为2个病区，编制床位40张。重症医学科是绵阳市甲级重点学科、四川省甲级重点专科；绵阳市、四川省临床重点专科建设项目。是四川省重症区域医疗中心；四川省重症医学质控中心绵阳分中心；绵阳市重症医学质控中心；四川省二、三级医院重症医学科能力提升项目建设区域指导分中心单位；中国重症超声研究组成员单位；四川省重症医学常委单位、重症护理副主委单位；绵阳市重症医学、绵阳市重症护理、呼吸治疗护理学组主委单位。教学能力雄厚，承担四川省重症医学住院医师规范化培训基地、四川省重症监护专科护士培训基地、绵阳市呼吸治疗专科护士培训基地工作；同时承担电子科技大学、川北医学院、成都医学院重症医学专业硕士学位研究生培养。科室现有重症医学执业医师22人，硕士11人，其中四川省卫生健康委员会学术技术带头人1人、学术技术带头人后备人选1人，硕士... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "用于已有住院或转科状态的地点和流程说明"
+    ],
+    "differentiationHints": [
+      "不是普通门诊挂号入口"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [
+      "location-map-90723010176",
+      "location-map-907230101329",
+      "location-map-907230301600"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-3bd6dec14305",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_zzyxka0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-560c28b7b4f0",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "内镜中心",
+    "displayName": "内镜中心",
+    "division": "手麻平台部",
+    "aliases": [
+      "胃镜室",
+      "肠镜室",
+      "内窥镜中心"
+    ],
+    "summary": "承担消化内镜等检查治疗相关服务。",
+    "officialSummary": "绵阳市中心医院内镜中心于2011年成为独立科室，是一所大型的内镜检查治疗中心，占地面积1200余平米，硬件设施齐全，拥有医生检查间11间，独立高水平清洗消毒室3间，拥有先进的整体式内镜清洗消毒系统及其他配套的功能用房。本中心技术力量雄厚，是目前全国设计布局最合理的内镜检查治疗中心。本中心现目前有固定医护人员17人。其中主任医师2名，主治医师（在读硕士）1名，医师2名，主管护师4名，护师5名，护士3名。内镜中心每年胃肠镜检查数万余人次；普通胃肠镜检查、染色内镜、窄波内镜、2006年率先在川西北开展了胶囊内镜、2010年又率先在川西北单气囊小肠镜，现有川西北首家开展放大胃镜（侦查早癌）工作。并进行一系列镜下治疗：上消化道取异物术；注射药物止血术；高频及射频止血术；食管胃底静脉曲张出血的套扎及硬化、组织胶栓塞止血术；高频电刀、射频电刀取息肉；食管良恶狭窄扩张术及记忆合金支架安放术；食管支气管瘘带膜支架堵瘘术... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有胃镜、肠镜等内镜医嘱"
+    ],
+    "differentiationHints": [
+      "初诊消化问题通常先由消化内科评估"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-560c28b7b4f0",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_njzxa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-3a38acd7f9a6",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "麻醉科",
+    "displayName": "麻醉科",
+    "division": "手麻平台部",
+    "aliases": [
+      "麻醉门诊"
+    ],
+    "summary": "承担麻醉评估与麻醉相关专业服务。",
+    "officialSummary": "1.学科影响力绵阳市中心医院麻醉科成立于1988年，是集临床医疗、教学科研、人才培养于一体的麻醉手术中心。作为国家级住院医师规范化培训基地、中国医师协会麻醉医师分会舒适化医疗培训基地，以及四川省乙级重点学科、绵阳市临床麻醉质控分中心依托单位、川北麻醉专科联盟理事长单位，牵头构建区域性麻醉技术协作网络，辐射绵阳、广元、德阳、南充、陇南等地市。2022年获批四川省临床重点专科建设项目，2023年获批省绵阳市麻醉与神经调控重点实验室，2025年通过四川省临床重点专科建设验收，2026年获批四川省麻醉区域医疗中心。2022–2024年年均手术麻醉 90973例（ASA III级及以上占比14%），近5年年均无痛检查麻醉53583例、麻醉门诊接诊41119例，医疗技术、教学科研及区域辐射作用显著，具备申报四川省麻醉区域医疗中心的坚实基础。2.亚专业及技术特色麻醉科以精准化、舒适化为导向，依托十大亚专业组深度分工，构建覆盖全手术周期、贯通危重症诊疗的技... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有手术或检查前麻醉评估安排"
+    ],
+    "differentiationHints": [
+      "不是普通首诊科室"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [
+      "location-map-907230301355"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-3a38acd7f9a6",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_mazuikea0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-bca58d92f561",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "手术室",
+    "displayName": "手术室",
+    "division": "手麻平台部",
+    "aliases": [
+      "手术中心"
+    ],
+    "summary": "承担已安排手术的院内手术服务。",
+    "officialSummary": "绵阳市中心医院手术室成立于1936年，迄今已有近80年历史。是四川省手术室专业委员会常务委员单位，绵阳市手术室护理专业委员会主任委员单位，四川省手术室专科护士培训基地。科室荣获国家卫健委、健康界主办的进一步改善医疗服务行动计划西南赛区“优秀价值案例”，绵阳市市委、市人民政府颁发的“青年文明号”。2020年作为省内首个地级市医院成功获批四川省手术室专科护士培训基地，截止目前，共举办3期培训班，学员范围辐射绵阳、广元、广安、资阳、成都、阿坝州等地区。近五年，承办各级继续教育项目10次，其中国家级继续教育项目3项，省级继续教育项目4项，市级继续教育项目3项。在各级刊物上发表论文240余篇，其中SCI论文4篇，单篇IF2.5，Medline论文1篇，获得F1000Prime推荐1篇，核心期刊论文近20篇；获得省市级课题4项，获得四川省医学会科技成果三等奖两项，获实用新型专利13项，专著9部。科室护理人员在国际学术会议：美国伤口造口失禁护理学会50届... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有手术安排时用于流程指引"
+    ],
+    "differentiationHints": [
+      "不接受普通门诊自行选择"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [
+      "location-map-907230101393",
+      "location-map-907230101397"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-bca58d92f561",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_sssa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-78370cdaa4ce",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "消毒供应中心",
+    "displayName": "消毒供应中心",
+    "division": "手麻平台部",
+    "aliases": [
+      "供应室"
+    ],
+    "summary": "承担院内诊疗器械清洗、消毒、灭菌和供应。",
+    "officialSummary": "绵阳市中心医院消毒供应中心是医院内承担各科室所有可重复使用的诊疗器械、器具和物品的清洗、消毒、灭菌及无菌物品供应的部门。绵阳市中心医院新建的消毒供应中心于2011年10月正式投入使用，该中心现有工作人员30人，其中副主任护师1名，主管护师6名，护师8名，护士1名，技工3名，普工11名，是一支团结进取、积极向上、训练有素的专业队伍。消毒供应中心位于第一综合住院大楼东南面，面积1900平方米，分为一层的工作流程区域和附一层生活更衣区及库房。其去污区和无菌物品发放区分别设置有与手术室污洁相通的物流交换电梯。工作区域设备隔离实现屏障，严格区分为去污区，检查包装及灭菌区和无菌物品存放区，各区分设有人员出入缓冲间。在区域划分和布局流程上，形成了物品由污到洁，不交叉、不逆流的运行路线，空气流向由洁到污，去污区保持相对负压，检查包装及灭菌区保持相对正压，污水集中流至医院污水处理系统。根据该中心的规模和任务合理配置一系列具... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "非患者导诊目标"
+    ],
+    "differentiationHints": [
+      "不面向患者挂号"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-78370cdaa4ce",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xdgyzxa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-a30aeb1ae0a7",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "洗涤供应中心",
+    "displayName": "洗涤供应中心",
+    "division": "手麻平台部",
+    "aliases": [
+      "洗涤中心"
+    ],
+    "summary": "承担院内洗涤供应相关保障工作。",
+    "officialSummary": " 暂无信息",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "非患者导诊目标"
+    ],
+    "differentiationHints": [
+      "不面向患者挂号"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-a30aeb1ae0a7",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xdgyzx/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-169a2b83be32",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "介入中心",
+    "displayName": "介入中心",
+    "division": "手麻平台部",
+    "aliases": [
+      "介入手术中心"
+    ],
+    "summary": "承担已安排的介入诊疗相关服务。",
+    "officialSummary": " 暂无信息",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "已有介入医嘱时用于流程指引"
+    ],
+    "differentiationHints": [
+      "普通首诊需由相关临床科室评估"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-169a2b83be32",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_jrzx/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "project_reviewed"
+  },
+  {
+    "departmentId": "dept-08386ea84fde",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "医保科",
+    "displayName": "医保部",
+    "division": "行后职能科室",
+    "aliases": [
+      "医保窗口",
+      "医保咨询"
+    ],
+    "summary": "医院官网列出的医保科，官网当前未发布可提取的科室简介。",
+    "officialSummary": "医保科工作职责在院长/分管院长领导下，负责落实国家医保政策，为参保病人提供医保政策服务，为医院员工提供医保、商业补偿保险等服务。一、贯彻执行、宣传、落实国家医疗保险的各项政策与法规1、根据医保相关政策、定点服务协议，制定本院的相关管理制度、规定、服务流程。2、组织有关人员进行医疗保险有关政策、规定的学习培训。3、监督检查各科室对医疗保险政策、法规、定点医疗服务协议的执行情况。4、负责医保政策、制度、规定及医院医保业务的咨询解答。5、制定、维护、更新医保政策、流程等各类宣传栏目、OA系统及网站内容。二、审核参保患者医疗费用 1、按照医保政策，审核参保患者医疗费用质量，保障医保基金安全及参保患者权益。 2、根据合理检查、合理治疗、合理用药、合规收费等原则规范医疗行为，避免不合理医疗费用产生。3、及时反馈医保质量缺陷，并制定和落实整改措施。三、落实付费改革、医保服务医（护）师制度，提高费用质量 ... 查看详细 ",
+    "officialSummaryAvailability": "available",
+    "routingHints": [
+      "用户明确询问医保科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-08386ea84fde",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_ybglbgsa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-1d632ba79106",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "党委办公室",
+    "displayName": "党委办公室",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的党委办公室，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问党委办公室时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-1d632ba79106",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_djwbgsa0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-c531493a6309",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "纪委办公室",
+    "displayName": "纪委办公室",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的纪委办公室，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问纪委办公室时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-c531493a6309",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_jjjck_gzzz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-ea27922426a3",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "宣传科",
+    "displayName": "宣传科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的宣传科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问宣传科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-ea27922426a3",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xcka0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-ff0c072d3cba",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "社会工作科",
+    "displayName": "社会工作科",
+    "division": "行后职能科室",
+    "aliases": [
+      "社工科",
+      "志愿服务"
+    ],
+    "summary": "医院官网列出的社会工作科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问社会工作科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-ff0c072d3cba",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_shgzk_gzzz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-a15ec9cb49cb",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "院办公室",
+    "displayName": "院办公室",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的院办公室，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问院办公室时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-a15ec9cb49cb",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_ycbgsa0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-360eb55c7cc0",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "运营管理科",
+    "displayName": "运营管理科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的运营管理科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问运营管理科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-360eb55c7cc0",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yunyingbua0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-c2d8f9207e96",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "人力资源科",
+    "displayName": "人力资源科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的人力资源科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问人力资源科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-c2d8f9207e96",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_rlzyba0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-e8e564b9f16b",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "离退休管理科",
+    "displayName": "离退休管理科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的离退休管理科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问离退休管理科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-e8e564b9f16b",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_ltxglka0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-95f56f0e6a51",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "医务科",
+    "displayName": "医务科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的医务科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问医务科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-95f56f0e6a51",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yijiaobua0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-c3faa753e64e",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "医院感染管理科",
+    "displayName": "医院感染管理科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的医院感染管理科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问医院感染管理科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-c3faa753e64e",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yygrglka0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-5e6136daf5eb",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "教学科",
+    "displayName": "教学科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的教学科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问教学科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-5e6136daf5eb",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_kejiaokea0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-32c930c8305a",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "护理部",
+    "displayName": "护理部",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的护理部，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问护理部时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [
+      "location-map-907230301599"
+    ],
+    "sources": [
+      {
+        "sourceId": "official-department-32c930c8305a",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_hlbcwba0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-246e03e57227",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "财务科",
+    "displayName": "财务科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的财务科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问财务科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-246e03e57227",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_caiwubu_gzzz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-1c780ca1e641",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "收费科",
+    "displayName": "收费科",
+    "division": "行后职能科室",
+    "aliases": [
+      "收费处",
+      "缴费窗口",
+      "交钱的地方"
+    ],
+    "summary": "医院官网列出的收费科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问收费科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-1c780ca1e641",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_shoufeikea0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-eac067d7c67b",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "信息中心",
+    "displayName": "信息中心",
+    "division": "行后职能科室",
+    "aliases": [
+      "信息科"
+    ],
+    "summary": "医院官网列出的信息中心，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问信息中心时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-eac067d7c67b",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_xxzxa0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-215ebb6bcab7",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "病案管理科",
+    "displayName": "病案管理科",
+    "division": "行后职能科室",
+    "aliases": [
+      "病案室",
+      "病历复印"
+    ],
+    "summary": "医院官网列出的病案管理科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问病案管理科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-215ebb6bcab7",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_baglk_gzzz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-c1e65333eb67",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "安全保卫科",
+    "displayName": "安全保卫科",
+    "division": "行后职能科室",
+    "aliases": [
+      "保卫科",
+      "安保"
+    ],
+    "summary": "医院官网列出的安全保卫科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问安全保卫科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-c1e65333eb67",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_aqbwba0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-001100cab5ca",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "公共卫生和预防保健科",
+    "displayName": "公共卫生和预防保健科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的公共卫生和预防保健科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问公共卫生和预防保健科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-001100cab5ca",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yfbjk_gzzz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-c382002a07be",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "审计科",
+    "displayName": "审计科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的审计科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问审计科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-c382002a07be",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_shenjikea0_gzz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-b5110e8f8f80",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "资产管理科",
+    "displayName": "资产管理科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的资产管理科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问资产管理科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-b5110e8f8f80",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_zichankea0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-83951e2ac8a8",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "技能培训中心",
+    "displayName": "技能培训中心",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的技能培训中心，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问技能培训中心时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-83951e2ac8a8",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_jnpxzxa0_zz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-377f95523497",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "科技科",
+    "displayName": "科技科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的科技科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问科技科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-377f95523497",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_lcyxyjzxa0/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-46b1a31c7ff5",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "医院管理研究所",
+    "displayName": "医院管理研究所",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的医院管理研究所，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问医院管理研究所时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-46b1a31c7ff5",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yyglyjs/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-edc255bef249",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "工会办公室",
+    "displayName": "工会办公室",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的工会办公室，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问工会办公室时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-edc255bef249",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_ghbgs/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-199fbc8cd16f",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "医患关系办公室",
+    "displayName": "医患关系办公室",
+    "division": "行后职能科室",
+    "aliases": [
+      "投诉办公室",
+      "医患办"
+    ],
+    "summary": "医院官网列出的医患关系办公室，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问医患关系办公室时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-199fbc8cd16f",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yhgxbgs/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-b73f2f3dccdb",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "中心实验室",
+    "displayName": "中心实验室",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的中心实验室，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问中心实验室时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-b73f2f3dccdb",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_zxsys/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-ee52a9dddc45",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "医学装备科",
+    "displayName": "医学装备科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的医学装备科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问医学装备科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-ee52a9dddc45",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_yxgcka0_ksjj/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-8d9628bf26a2",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "采购科",
+    "displayName": "采购科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的采购科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问采购科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-8d9628bf26a2",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_caigongkea0_ksjj/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-213e1b64b866",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "后勤保障科",
+    "displayName": "后勤保障科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的后勤保障科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问后勤保障科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-213e1b64b866",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_houqinbua0_ksjj/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-5feb7547f379",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "基本建设科",
+    "displayName": "基本建设科",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的基本建设科，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问基本建设科时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-5feb7547f379",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_jbjska0_ksjj/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-5f8884c39d9f",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "物资调配与供应中心",
+    "displayName": "物资调配与供应中心",
+    "division": "行后职能科室",
+    "aliases": [],
+    "summary": "医院官网列出的物资调配与供应中心，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问物资调配与供应中心时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-5f8884c39d9f",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_wzdpygyzx_gzzz/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-2f10c1723a15",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "医院伦理委员会",
+    "displayName": "医院伦理委员会",
+    "division": "其他",
+    "aliases": [],
+    "summary": "医院官网列出的医院伦理委员会，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问医院伦理委员会时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-2f10c1723a15",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_wyh_ksjs/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  },
+  {
+    "departmentId": "dept-7e2fec788b07",
+    "hospitalId": "hospital-mianyang-central",
+    "name": "药物（医疗器械）临床试验机构",
+    "displayName": "药物（医疗器械）临床试验机构",
+    "division": "其他",
+    "aliases": [],
+    "summary": "医院官网列出的药物（医疗器械）临床试验机构，官网当前未发布可提取的科室简介。",
+    "officialSummary": null,
+    "officialSummaryAvailability": "not_published",
+    "routingHints": [
+      "用户明确询问药物（医疗器械）临床试验机构时可作为信息或流程候选"
+    ],
+    "differentiationHints": [
+      "信息不足时不据此直接判断症状归属"
+    ],
+    "clarifyingQuestions": [
+      "您最想解决的主要问题是什么？",
+      "主要不舒服的位置在哪里？",
+      "这种情况持续多久了？"
+    ],
+    "routingEnabled": false,
+    "locationIds": [],
+    "sources": [
+      {
+        "sourceId": "official-department-7e2fec788b07",
+        "dataOrigin": "official_public",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "official_public",
+        "url": "https://www.myszxyy.cn/departments_ywylqxlcsyjg_ksjs/"
+      },
+      {
+        "sourceId": "project-department-curation",
+        "dataOrigin": "project_curated",
+        "fetchedAt": "2026-08-12T21:08:40+08:00",
+        "freshness": "periodic",
+        "reviewStatus": "project_reviewed"
+      }
+    ],
+    "dataOrigin": "project_curated",
+    "routingReviewStatus": "unreviewed"
+  }
+]

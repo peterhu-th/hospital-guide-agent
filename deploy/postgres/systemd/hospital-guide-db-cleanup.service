@@ -1,0 +1,8 @@
+[Unit]
+Description=Remove expired hospital guide patient data
+After=postgresql.service
+
+[Service]
+Type=oneshot
+User=hospital_app
+ExecStart=/usr/bin/psql --set=ON_ERROR_STOP=1 --dbname=hospital_guide --no-psqlrc --file=/opt/hospital-guide/scripts/cleanup.sql

@@ -1,0 +1,15 @@
+{
+  "appointmentId": "appointment-contract-test",
+  "sessionId": "session-contract-test",
+  "patientId": "patient-contract-test",
+  "departmentId": "dept-gastroenterology",
+  "doctorId": "doctor-contract-test",
+  "slotId": "slot-contract-test",
+  "status": "BOOKED",
+  "billingStatus": "UNPAID",
+  "checkInStatus": "NOT_CHECKED_IN",
+  "queueDetails": null,
+  "cancelledReason": null,
+  "createdAt": "2026-08-12T10:00:00+08:00",
+  "updatedAt": "2026-08-12T10:05:00+08:00"
+}

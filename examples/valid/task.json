@@ -1,0 +1,12 @@
+{
+  "taskId": "task-contract-payment",
+  "type": "PAYMENT",
+  "title": "前往收费窗口完成检查缴费",
+  "status": "PENDING",
+  "dependsOn": [],
+  "relatedEntity": { "entityType": "bill", "entityId": "bill-contract-test" },
+  "locationId": "location-payment",
+  "createdAt": "2026-08-12T10:10:00+08:00",
+  "updatedAt": "2026-08-12T10:10:00+08:00",
+  "dataOrigin": "hospital_runtime"
+}

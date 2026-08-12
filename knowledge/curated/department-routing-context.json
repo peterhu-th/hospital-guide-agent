@@ -1,0 +1,1937 @@
+{
+  "notice": "本文件为项目整理数据，不是医院发布的诊断或分科规则。",
+  "departments": [
+    {
+      "departmentId": "dept-f5846a42d8d4",
+      "name": "呼吸与危重症医学科",
+      "displayName": "呼吸与危重症医学科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向呼吸系统相关问题提供专科门诊服务。",
+      "routingHints": [
+        "咳嗽、咳痰、喘息、呼吸系统慢性问题可作为候选"
+      ],
+      "differentiationHints": [
+        "鼻咽部局部问题与耳鼻咽喉科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-a0458b883836",
+      "name": "内分泌科",
+      "displayName": "内分泌科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向糖尿病、甲状腺及其他内分泌代谢相关问题提供专科服务。",
+      "routingHints": [
+        "血糖、甲状腺、代谢相关诉求可作为候选"
+      ],
+      "differentiationHints": [
+        "一般营养咨询与临床营养科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-8c63dfb82259",
+      "name": "皮肤科",
+      "displayName": "皮肤科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向皮肤、毛发、指甲及相关问题提供专科服务。",
+      "routingHints": [
+        "皮疹、瘙痒、皮肤损害等表达可作为候选"
+      ],
+      "differentiationHints": [
+        "明确外伤伤口与伤口治疗中心或外科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-92d9deea497c",
+      "name": "神经内科",
+      "displayName": "神经内科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向神经系统内科相关问题提供专科服务。",
+      "routingHints": [
+        "头晕、头痛、肢体麻木、记忆或运动异常等可作为候选"
+      ],
+      "differentiationHints": [
+        "明确需要手术评估的脑、脊髓问题与神经外科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-d87037453a1a",
+      "name": "肾病内科",
+      "displayName": "肾病内科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向肾脏疾病及相关内科问题提供专科服务。",
+      "routingHints": [
+        "肾功能、尿检异常、水肿等表达可作为候选"
+      ],
+      "differentiationHints": [
+        "结石、排尿梗阻及泌尿系统外科问题与泌尿外科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-64800e429762",
+      "name": "血透中心",
+      "displayName": "血透中心",
+      "division": "内科部",
+      "routingEnabled": false,
+      "summary": "为已经明确需要血液净化治疗的患者提供相关服务。",
+      "routingHints": [
+        "已有透析医嘱或固定透析患者的流程咨询"
+      ],
+      "differentiationHints": [
+        "首次肾脏问题通常先由肾病内科评估"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-a7b2973e7172",
+      "name": "消化内科",
+      "displayName": "消化内科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向消化系统相关问题提供内科专科服务。",
+      "routingHints": [
+        "反酸、胃部不适、腹胀、消化异常等可作为候选"
+      ],
+      "differentiationHints": [
+        "明显需要外科处理的腹部问题与普通外科、肝胆外科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-a0160de6d9ff",
+      "name": "心血管内科",
+      "displayName": "心血管内科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向心血管系统内科相关问题提供专科服务。",
+      "routingHints": [
+        "心慌、血压、活动后胸闷等表达可作为候选"
+      ],
+      "differentiationHints": [
+        "已明确需要心胸外科手术评估时与心胸外科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-948bacda4a9b",
+      "name": "风湿免疫科",
+      "displayName": "风湿免疫科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向风湿免疫相关问题提供专科服务。",
+      "routingHints": [
+        "多关节反复不适、自身免疫相关既往诊断等可作为候选"
+      ],
+      "differentiationHints": [
+        "单纯外伤或局部骨关节机械性问题与骨科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-63dbbc719408",
+      "name": "血液内科",
+      "displayName": "血液内科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向血液系统相关问题提供内科专科服务。",
+      "routingHints": [
+        "血常规持续异常、贫血或已有血液系统诊断等可作为候选"
+      ],
+      "differentiationHints": [
+        "输血执行与输血科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-4db23d582307",
+      "name": "中西医结合科",
+      "displayName": "中西医结合科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "提供中医及中西医结合相关门诊服务。",
+      "routingHints": [
+        "用户明确希望接受中医或中西医结合方式时可作为候选"
+      ],
+      "differentiationHints": [
+        "不以中医偏好替代明确专科需求"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-f754e8e16c80",
+      "name": "老年综合科",
+      "displayName": "老年综合科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向老年患者多系统慢性问题和综合评估需求提供服务。",
+      "routingHints": [
+        "老年人同时存在多个慢性问题或难以确定单一专科时可作为候选"
+      ],
+      "differentiationHints": [
+        "单一系统问题清晰时优先对应专科"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-6aa3481cbd67",
+      "name": "感染科",
+      "displayName": "感染科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向感染性疾病及相关问题提供专科服务。",
+      "routingHints": [
+        "已有感染性疾病线索或转诊信息时可作为候选"
+      ],
+      "differentiationHints": [
+        "普通呼吸症状与呼吸科、发热就诊流程区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-bf652c010e9a",
+      "name": "全科医学科",
+      "displayName": "全科医学科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向常见慢性病初诊、复诊和无法明确单一专科的综合需求提供服务。",
+      "routingHints": [
+        "多个常见问题并存或用户无法定位专科时可作为候选"
+      ],
+      "differentiationHints": [
+        "专科指向明确时优先专科"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-604e27429eff",
+      "name": "心身医学科",
+      "displayName": "心身医学科",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "面向睡眠、情绪与躯体不适相互影响等心身相关问题提供服务。",
+      "routingHints": [
+        "失眠、情绪与身体不适长期相互影响等可作为候选"
+      ],
+      "differentiationHints": [
+        "先排除明确器质性专科问题"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-a247129da41b",
+      "name": "发热门诊",
+      "displayName": "发热门诊",
+      "division": "内科部",
+      "routingEnabled": true,
+      "summary": "为需要按医院发热就诊流程处理的患者提供服务。",
+      "routingHints": [
+        "用户明确询问医院发热就诊流程时可作为候选"
+      ],
+      "differentiationHints": [
+        "是否开放及当前流程必须使用医院实时确认信息"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-b8957ac1e012",
+      "name": "健康管理中心",
+      "displayName": "健康管理中心",
+      "division": "内科部",
+      "routingEnabled": false,
+      "summary": "提供健康体检和健康管理相关服务。",
+      "routingHints": [
+        "用户明确提出体检、健康评估或体检报告管理"
+      ],
+      "differentiationHints": [
+        "已有明确不适通常应进入对应临床科室"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-07a507ab6051",
+      "name": "临床介入放射专业",
+      "displayName": "临床介入放射专业",
+      "division": "内科部",
+      "routingEnabled": false,
+      "summary": "为已有医生评估或医嘱的介入放射诊疗提供专业服务。",
+      "routingHints": [
+        "已有明确介入诊疗建议或转诊信息"
+      ],
+      "differentiationHints": [
+        "普通影像检查与放射科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-11916b32f21a",
+      "name": "泌尿外科",
+      "displayName": "泌尿外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向泌尿系统及男性生殖系统相关外科问题提供服务。",
+      "routingHints": [
+        "排尿、泌尿系结石、前列腺及相关外科问题可作为候选"
+      ],
+      "differentiationHints": [
+        "肾功能内科问题与肾病内科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-42a6893f09bc",
+      "name": "普通外科",
+      "displayName": "普通外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向常见普通外科相关问题提供服务。",
+      "routingHints": [
+        "体表包块、腹部外科问题、疝等可作为候选"
+      ],
+      "differentiationHints": [
+        "按器官系统明确属于乳腺、肝胆等专科时优先专科"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-308dc64d18d8",
+      "name": "乳腺外科",
+      "displayName": "乳腺外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向乳腺相关问题提供外科专科服务。",
+      "routingHints": [
+        "乳房肿块、疼痛、乳头异常等可作为候选"
+      ],
+      "differentiationHints": [
+        "哺乳期一般保健问题可能需结合妇产科或其他服务"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-19a5d3329b35",
+      "name": "肝胆外科",
+      "displayName": "肝胆外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向肝、胆及相关外科问题提供专科服务。",
+      "routingHints": [
+        "已有胆囊、胆管、肝脏外科线索或转诊信息"
+      ],
+      "differentiationHints": [
+        "一般消化不适与消化内科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-cb3861a9759c",
+      "name": "烧伤整形外科",
+      "displayName": "烧伤整形外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向烧伤、创面修复及整形外科相关问题提供服务。",
+      "routingHints": [
+        "烧烫伤、瘢痕、组织修复等可作为候选"
+      ],
+      "differentiationHints": [
+        "普通慢性伤口与伤口治疗中心可能存在服务交叉"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-3831df9d1a2a",
+      "name": "骨科",
+      "displayName": "骨科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向骨、关节和四肢运动系统相关问题提供专科服务。",
+      "routingHints": [
+        "关节、四肢骨骼、外伤后疼痛等可作为候选"
+      ],
+      "differentiationHints": [
+        "颈腰椎问题可与脊柱外科进一步区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-ebde108e3b59",
+      "name": "脊柱外科",
+      "displayName": "脊柱外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向脊柱相关外科问题提供专科服务。",
+      "routingHints": [
+        "颈椎、腰椎、脊柱结构性问题或已有影像提示时可作为候选"
+      ],
+      "differentiationHints": [
+        "一般关节或四肢骨骼问题与骨科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-ae030b887c0f",
+      "name": "神经外科",
+      "displayName": "神经外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向脑、脊髓及周围神经相关外科问题提供服务。",
+      "routingHints": [
+        "已有颅脑、脊髓病变或外科评估需求"
+      ],
+      "differentiationHints": [
+        "头晕、头痛、麻木等未明确需手术时与神经内科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-27043e3aa6d2",
+      "name": "血管外科",
+      "displayName": "血管外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向外周血管相关外科问题提供服务。",
+      "routingHints": [
+        "静脉曲张、肢体血管问题或已有血管检查异常"
+      ],
+      "differentiationHints": [
+        "心脏及冠脉内科问题与心血管内科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-d6b76928d03b",
+      "name": "心胸外科",
+      "displayName": "心胸外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向胸部及心脏相关外科问题提供服务。",
+      "routingHints": [
+        "已有胸部、心脏外科手术评估需求"
+      ],
+      "differentiationHints": [
+        "一般心血管内科问题与心血管内科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-c6512529b527",
+      "name": "眼科",
+      "displayName": "眼科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向眼部及视力相关问题提供专科服务。",
+      "routingHints": [
+        "视力变化、眼部不适、眼部病变等可作为候选"
+      ],
+      "differentiationHints": [
+        "眼周皮肤问题可能与皮肤科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-e0aa451611fb",
+      "name": "耳鼻咽喉颌面外科病区",
+      "displayName": "耳鼻咽喉颌面外科病区",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向耳、鼻、咽喉及颌面相关问题提供专科服务。",
+      "routingHints": [
+        "耳痛、听力、鼻部、咽喉或颌面问题可作为候选"
+      ],
+      "differentiationHints": [
+        "口腔牙齿问题与口腔科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-0f390764b20c",
+      "name": "小儿外科",
+      "displayName": "小儿外科",
+      "division": "外科部",
+      "routingEnabled": true,
+      "summary": "面向儿童外科相关问题提供专科服务。",
+      "routingHints": [
+        "儿童明确外伤、外科结构问题或手术评估需求"
+      ],
+      "differentiationHints": [
+        "儿童一般内科问题与儿科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-def606b438f3",
+      "name": "妇产科",
+      "displayName": "妇产科",
+      "division": "综合部",
+      "routingEnabled": true,
+      "summary": "面向妇科和产科相关问题提供专科服务。",
+      "routingHints": [
+        "妇科不适、妊娠及产科相关需求可作为候选"
+      ],
+      "differentiationHints": [
+        "生育困难及辅助生殖需求与生殖医学中心区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-65bbd0eaf0de",
+      "name": "儿科",
+      "displayName": "儿科",
+      "division": "综合部",
+      "routingEnabled": true,
+      "summary": "面向儿童常见内科及综合健康问题提供服务。",
+      "routingHints": [
+        "儿童发热、咳嗽、消化等一般内科问题可作为候选"
+      ],
+      "differentiationHints": [
+        "儿童明确外科问题与小儿外科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-72f4cf7a6d26",
+      "name": "肿瘤科",
+      "displayName": "肿瘤科",
+      "division": "综合部",
+      "routingEnabled": true,
+      "summary": "面向已经发现或高度怀疑肿瘤及需要肿瘤综合治疗的患者提供服务。",
+      "routingHints": [
+        "已有肿瘤诊断、病理结果或明确肿瘤转诊信息"
+      ],
+      "differentiationHints": [
+        "未明确性质的一般症状优先相应器官专科"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-e3dd4c5936fb",
+      "name": "康复医学科",
+      "displayName": "康复医学科",
+      "division": "综合部",
+      "routingEnabled": true,
+      "summary": "面向疾病或损伤后的功能评估与康复需求提供服务。",
+      "routingHints": [
+        "术后、卒中后、损伤后功能恢复或明确康复需求"
+      ],
+      "differentiationHints": [
+        "急性原因未评估时先由相应临床专科处理"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-8f120795f91a",
+      "name": "生殖医学中心",
+      "displayName": "生殖医学中心",
+      "division": "综合部",
+      "routingEnabled": true,
+      "summary": "面向不孕不育、生殖内分泌及辅助生殖相关需求提供服务。",
+      "routingHints": [
+        "备孕困难、不孕不育或辅助生殖咨询"
+      ],
+      "differentiationHints": [
+        "一般妇科不适与妇产科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-4fd21a176632",
+      "name": "疼痛科",
+      "displayName": "疼痛科",
+      "division": "综合部",
+      "routingEnabled": true,
+      "summary": "面向慢性或复杂疼痛的专业评估与治疗需求提供服务。",
+      "routingHints": [
+        "长期疼痛且难以归入单一器官专科时可作为候选"
+      ],
+      "differentiationHints": [
+        "原因明确的急性局部问题优先对应专科"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-e8eafd1155b8",
+      "name": "门诊部",
+      "displayName": "门诊部",
+      "division": "门诊部",
+      "routingEnabled": false,
+      "summary": "承担门诊综合管理与流程协调职责。",
+      "routingHints": [
+        "门诊流程和管理咨询"
+      ],
+      "differentiationHints": [
+        "不是症状导诊科室"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-0cef3b56e1ce",
+      "name": "急诊医学科",
+      "displayName": "急诊医学科",
+      "division": "门诊部",
+      "routingEnabled": true,
+      "summary": "承担急诊医疗相关服务。当前 Agent 不处理紧急就医分流。",
+      "routingHints": [
+        "仅用于用户明确查询急诊地点或流程"
+      ],
+      "differentiationHints": [
+        "本项目不主动进行紧急症状判断"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-fbb0e6a3d4e3",
+      "name": "超声医学科",
+      "displayName": "超声医学科",
+      "division": "门诊部",
+      "routingEnabled": false,
+      "summary": "承担超声检查相关医技服务。",
+      "routingHints": [
+        "已有超声检查单或医生医嘱时用于流程指引"
+      ],
+      "differentiationHints": [
+        "不是首诊症状分科科室"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-0397040827c3",
+      "name": "患者服务中心",
+      "displayName": "患者服务中心",
+      "division": "门诊部",
+      "routingEnabled": false,
+      "summary": "提供患者咨询、求助、投诉及入出院等一站式服务协调。",
+      "routingHints": [
+        "Agent 无法处理或需要人工协助时作为兜底"
+      ],
+      "differentiationHints": [
+        "不是症状导诊科室"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-5dcf4d72befd",
+      "name": "伤口治疗中心",
+      "displayName": "伤口治疗中心",
+      "division": "门诊部",
+      "routingEnabled": true,
+      "summary": "面向慢性或复杂伤口、造口等治疗需求提供服务。",
+      "routingHints": [
+        "已有伤口、造口或换药需求"
+      ],
+      "differentiationHints": [
+        "新发严重外伤需由相应临床科室评估"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-46e57e4aa848",
+      "name": "MDT平台中心",
+      "displayName": "MDT平台中心",
+      "division": "门诊部",
+      "routingEnabled": false,
+      "summary": "为符合条件的多学科诊疗需求提供协调平台。",
+      "routingHints": [
+        "已有医生建议进行多学科会诊"
+      ],
+      "differentiationHints": [
+        "不是普通首诊入口"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-82437c3beb9d",
+      "name": "口腔科",
+      "displayName": "口腔科",
+      "division": "门诊部",
+      "routingEnabled": true,
+      "summary": "面向牙齿、牙周、口腔及颌面口腔相关问题提供服务。",
+      "routingHints": [
+        "牙痛、牙齿、牙龈、口腔问题可作为候选"
+      ],
+      "differentiationHints": [
+        "耳鼻咽喉及非牙源性颌面问题与耳鼻喉颌面外科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-b9578f5451d1",
+      "name": "放射科",
+      "displayName": "放射科",
+      "division": "医技部",
+      "routingEnabled": false,
+      "summary": "承担X线、CT、磁共振等影像检查相关服务。",
+      "routingHints": [
+        "已有影像检查单或医生医嘱时用于流程指引"
+      ],
+      "differentiationHints": [
+        "不是首诊症状分科科室"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-a9a650e0f66f",
+      "name": "医学检验科",
+      "displayName": "医学检验科",
+      "division": "医技部",
+      "routingEnabled": false,
+      "summary": "承担临床检验、采血和样本检验相关服务。",
+      "routingHints": [
+        "已有检验医嘱时用于流程指引"
+      ],
+      "differentiationHints": [
+        "不是首诊症状分科科室"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-a17efd84c976",
+      "name": "输血科",
+      "displayName": "输血科",
+      "division": "医技部",
+      "routingEnabled": false,
+      "summary": "承担临床用血及输血相关专业服务。",
+      "routingHints": [
+        "已有临床用血安排时用于流程信息"
+      ],
+      "differentiationHints": [
+        "不是患者普通首诊科室"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-2154bdb83c54",
+      "name": "药学部",
+      "displayName": "药学部",
+      "division": "医技部",
+      "routingEnabled": false,
+      "summary": "承担药事管理、药学服务及患者取药相关支持。",
+      "routingHints": [
+        "已有处方后的取药或药学服务流程"
+      ],
+      "differentiationHints": [
+        "Agent 不修改处方或提供用药方案"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-13f12d07d37c",
+      "name": "病理科",
+      "displayName": "病理科",
+      "division": "医技部",
+      "routingEnabled": false,
+      "summary": "承担病理检查与诊断支持服务。",
+      "routingHints": [
+        "已有病理检查或标本相关医嘱"
+      ],
+      "differentiationHints": [
+        "不是普通首诊科室"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-bffe90d090de",
+      "name": "临床营养科",
+      "displayName": "临床营养科",
+      "division": "医技部",
+      "routingEnabled": false,
+      "summary": "提供临床营养评估与支持服务。",
+      "routingHints": [
+        "已有临床营养问题或医生转介"
+      ],
+      "differentiationHints": [
+        "普通体重或代谢问题可能与内分泌科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-c8bbd56cd9fc",
+      "name": "核医学科",
+      "displayName": "核医学科",
+      "division": "医技部",
+      "routingEnabled": false,
+      "summary": "承担核医学检查与治疗相关服务。",
+      "routingHints": [
+        "已有核医学检查或治疗医嘱"
+      ],
+      "differentiationHints": [
+        "普通影像检查与放射科、超声医学科区分"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-3bd6dec14305",
+      "name": "重症医学科",
+      "displayName": "重症医学科",
+      "division": "手麻平台部",
+      "routingEnabled": false,
+      "summary": "承担危重患者的重症监护服务。",
+      "routingHints": [
+        "用于已有住院或转科状态的地点和流程说明"
+      ],
+      "differentiationHints": [
+        "不是普通门诊挂号入口"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-560c28b7b4f0",
+      "name": "内镜中心",
+      "displayName": "内镜中心",
+      "division": "手麻平台部",
+      "routingEnabled": false,
+      "summary": "承担消化内镜等检查治疗相关服务。",
+      "routingHints": [
+        "已有胃镜、肠镜等内镜医嘱"
+      ],
+      "differentiationHints": [
+        "初诊消化问题通常先由消化内科评估"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-3a38acd7f9a6",
+      "name": "麻醉科",
+      "displayName": "麻醉科",
+      "division": "手麻平台部",
+      "routingEnabled": false,
+      "summary": "承担麻醉评估与麻醉相关专业服务。",
+      "routingHints": [
+        "已有手术或检查前麻醉评估安排"
+      ],
+      "differentiationHints": [
+        "不是普通首诊科室"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-bca58d92f561",
+      "name": "手术室",
+      "displayName": "手术室",
+      "division": "手麻平台部",
+      "routingEnabled": false,
+      "summary": "承担已安排手术的院内手术服务。",
+      "routingHints": [
+        "已有手术安排时用于流程指引"
+      ],
+      "differentiationHints": [
+        "不接受普通门诊自行选择"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-78370cdaa4ce",
+      "name": "消毒供应中心",
+      "displayName": "消毒供应中心",
+      "division": "手麻平台部",
+      "routingEnabled": false,
+      "summary": "承担院内诊疗器械清洗、消毒、灭菌和供应。",
+      "routingHints": [
+        "非患者导诊目标"
+      ],
+      "differentiationHints": [
+        "不面向患者挂号"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-a30aeb1ae0a7",
+      "name": "洗涤供应中心",
+      "displayName": "洗涤供应中心",
+      "division": "手麻平台部",
+      "routingEnabled": false,
+      "summary": "承担院内洗涤供应相关保障工作。",
+      "routingHints": [
+        "非患者导诊目标"
+      ],
+      "differentiationHints": [
+        "不面向患者挂号"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-169a2b83be32",
+      "name": "介入中心",
+      "displayName": "介入中心",
+      "division": "手麻平台部",
+      "routingEnabled": false,
+      "summary": "承担已安排的介入诊疗相关服务。",
+      "routingHints": [
+        "已有介入医嘱时用于流程指引"
+      ],
+      "differentiationHints": [
+        "普通首诊需由相关临床科室评估"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "project_reviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-08386ea84fde",
+      "name": "医保科",
+      "displayName": "医保部",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的医保科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问医保科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-1d632ba79106",
+      "name": "党委办公室",
+      "displayName": "党委办公室",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的党委办公室，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问党委办公室时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-c531493a6309",
+      "name": "纪委办公室",
+      "displayName": "纪委办公室",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的纪委办公室，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问纪委办公室时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-ea27922426a3",
+      "name": "宣传科",
+      "displayName": "宣传科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的宣传科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问宣传科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-ff0c072d3cba",
+      "name": "社会工作科",
+      "displayName": "社会工作科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的社会工作科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问社会工作科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-a15ec9cb49cb",
+      "name": "院办公室",
+      "displayName": "院办公室",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的院办公室，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问院办公室时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-360eb55c7cc0",
+      "name": "运营管理科",
+      "displayName": "运营管理科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的运营管理科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问运营管理科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-c2d8f9207e96",
+      "name": "人力资源科",
+      "displayName": "人力资源科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的人力资源科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问人力资源科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-e8e564b9f16b",
+      "name": "离退休管理科",
+      "displayName": "离退休管理科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的离退休管理科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问离退休管理科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-95f56f0e6a51",
+      "name": "医务科",
+      "displayName": "医务科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的医务科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问医务科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-c3faa753e64e",
+      "name": "医院感染管理科",
+      "displayName": "医院感染管理科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的医院感染管理科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问医院感染管理科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-5e6136daf5eb",
+      "name": "教学科",
+      "displayName": "教学科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的教学科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问教学科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-32c930c8305a",
+      "name": "护理部",
+      "displayName": "护理部",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的护理部，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问护理部时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-246e03e57227",
+      "name": "财务科",
+      "displayName": "财务科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的财务科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问财务科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-1c780ca1e641",
+      "name": "收费科",
+      "displayName": "收费科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的收费科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问收费科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-eac067d7c67b",
+      "name": "信息中心",
+      "displayName": "信息中心",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的信息中心，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问信息中心时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-215ebb6bcab7",
+      "name": "病案管理科",
+      "displayName": "病案管理科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的病案管理科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问病案管理科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-c1e65333eb67",
+      "name": "安全保卫科",
+      "displayName": "安全保卫科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的安全保卫科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问安全保卫科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-001100cab5ca",
+      "name": "公共卫生和预防保健科",
+      "displayName": "公共卫生和预防保健科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的公共卫生和预防保健科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问公共卫生和预防保健科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-c382002a07be",
+      "name": "审计科",
+      "displayName": "审计科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的审计科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问审计科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-b5110e8f8f80",
+      "name": "资产管理科",
+      "displayName": "资产管理科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的资产管理科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问资产管理科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-83951e2ac8a8",
+      "name": "技能培训中心",
+      "displayName": "技能培训中心",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的技能培训中心，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问技能培训中心时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-377f95523497",
+      "name": "科技科",
+      "displayName": "科技科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的科技科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问科技科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-46b1a31c7ff5",
+      "name": "医院管理研究所",
+      "displayName": "医院管理研究所",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的医院管理研究所，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问医院管理研究所时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-edc255bef249",
+      "name": "工会办公室",
+      "displayName": "工会办公室",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的工会办公室，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问工会办公室时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-199fbc8cd16f",
+      "name": "医患关系办公室",
+      "displayName": "医患关系办公室",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的医患关系办公室，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问医患关系办公室时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-b73f2f3dccdb",
+      "name": "中心实验室",
+      "displayName": "中心实验室",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的中心实验室，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问中心实验室时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-ee52a9dddc45",
+      "name": "医学装备科",
+      "displayName": "医学装备科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的医学装备科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问医学装备科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-8d9628bf26a2",
+      "name": "采购科",
+      "displayName": "采购科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的采购科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问采购科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-213e1b64b866",
+      "name": "后勤保障科",
+      "displayName": "后勤保障科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的后勤保障科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问后勤保障科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-5feb7547f379",
+      "name": "基本建设科",
+      "displayName": "基本建设科",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的基本建设科，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问基本建设科时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-5f8884c39d9f",
+      "name": "物资调配与供应中心",
+      "displayName": "物资调配与供应中心",
+      "division": "行后职能科室",
+      "routingEnabled": false,
+      "summary": "医院官网列出的物资调配与供应中心，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问物资调配与供应中心时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-2f10c1723a15",
+      "name": "医院伦理委员会",
+      "displayName": "医院伦理委员会",
+      "division": "其他",
+      "routingEnabled": false,
+      "summary": "医院官网列出的医院伦理委员会，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问医院伦理委员会时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    },
+    {
+      "departmentId": "dept-7e2fec788b07",
+      "name": "药物（医疗器械）临床试验机构",
+      "displayName": "药物（医疗器械）临床试验机构",
+      "division": "其他",
+      "routingEnabled": false,
+      "summary": "医院官网列出的药物（医疗器械）临床试验机构，官网当前未发布可提取的科室简介。",
+      "routingHints": [
+        "用户明确询问药物（医疗器械）临床试验机构时可作为信息或流程候选"
+      ],
+      "differentiationHints": [
+        "信息不足时不据此直接判断症状归属"
+      ],
+      "clarifyingQuestions": [
+        "您最想解决的主要问题是什么？",
+        "主要不舒服的位置在哪里？",
+        "这种情况持续多久了？"
+      ],
+      "routingReviewStatus": "unreviewed",
+      "dataOrigin": "project_curated"
+    }
+  ]
+}

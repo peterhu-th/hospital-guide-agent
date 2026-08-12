@@ -1,0 +1,17 @@
+{
+  "departmentId": "dept-gastroenterology",
+  "hospitalId": "hospital-mianyang-central",
+  "name": "消化内科",
+  "displayName": "消化内科",
+  "division": "内科部",
+  "aliases": ["消化科", "看胃的科"],
+  "summary": "提供消化系统相关门诊服务。",
+  "routingHints": ["用户表达消化系统不适时可作为候选科室"],
+  "differentiationHints": ["明确外伤或需要手术评估时需与外科区分"],
+  "clarifyingQuestions": ["主要不舒服的位置在哪里？"],
+  "routingEnabled": true,
+  "locationIds": ["location-gastroenterology"],
+  "sources": [{ "sourceId": "source-dept-gastro", "dataOrigin": "official_public", "url": "https://www.myszxyy.cn/departments/", "fetchedAt": "2026-08-12T10:00:00+08:00", "freshness": "periodic", "reviewStatus": "official_public" }],
+  "dataOrigin": "project_curated",
+  "routingReviewStatus": "unreviewed"
+}

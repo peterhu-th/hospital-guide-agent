@@ -1,0 +1,19 @@
+{
+  "locationId": "location-gastroenterology",
+  "hospitalId": "hospital-mianyang-central",
+  "mapId": "90872",
+  "mapFeatureId": "poi-demo-gastro",
+  "canonicalName": "消化内科",
+  "mapLabel": "消化内科",
+  "aliases": ["消化科", "看胃的地方"],
+  "building": "门诊",
+  "floorId": "F3",
+  "floorLabel": "3层",
+  "category": "department",
+  "departmentIds": ["dept-gastroenterology"],
+  "routeEnabled": true,
+  "mapStatus": "mapped",
+  "coordinates": { "x": 11660746.29, "y": 3692537.30 },
+  "sources": [{ "sourceId": "map-90872", "dataOrigin": "map_data", "freshness": "stable", "reviewStatus": "unreviewed" }],
+  "dataOrigin": "map_data"
+}

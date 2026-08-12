@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/medical-record.schema.json",
+  "title": "Versioned Medical Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["recordId", "encounterId", "patientId", "status", "statements", "versions", "createdAt", "updatedAt"],
+  "properties": {
+    "recordId": { "$ref": "common.schema.json#/$defs/medicalRecordId" },
+    "encounterId": { "$ref": "common.schema.json#/$defs/encounterId" },
+    "patientId": { "$ref": "common.schema.json#/$defs/patientId" },
+    "status": { "type": "string", "enum": ["OPEN", "SIGNED", "CLOSED"] },
+    "statements": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/statement" }
+    },
+    "versions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/version" }
+    },
+    "relatedEntities": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityReference" }
+    },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  },
+  "$defs": {
+    "statement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statementId", "rawText", "statedBy", "certainty", "statedAt", "createdAt"],
+      "properties": {
+        "statementId": { "$ref": "common.schema.json#/$defs/statementId" },
+        "sourceTurnId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/turnId" }, { "type": "null" }] },
+        "rawText": { "type": "string", "minLength": 1, "maxLength": 4000 },
+        "statedBy": { "type": "string", "enum": ["PATIENT", "FAMILY"] },
+        "certainty": { "type": "string", "enum": ["ASSERTED", "UNCERTAIN", "DENIED", "UNKNOWN"] },
+        "normalizedContent": { "type": ["object", "null"] },
+        "normalizationModel": { "type": ["string", "null"] },
+        "doctorVerifiedBy": { "oneOf": [{ "$ref": "common.schema.json#/$defs/doctorId" }, { "type": "null" }] },
+        "doctorVerifiedAt": { "oneOf": [{ "$ref": "common.schema.json#/$defs/isoDateTime" }, { "type": "null" }] },
+        "statedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+        "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+      }
+    },
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["versionNo", "content", "authorType", "changeReason", "createdAt"],
+      "properties": {
+        "versionNo": { "type": "integer", "minimum": 1 },
+        "content": {
+          "type": "object",
+          "required": ["chiefComplaint", "symptomTimeline", "pastHistory", "medications", "allergies", "patientQuestions", "departmentRecommendations", "doctorNotes", "doctorAssessment", "doctorPlan"],
+          "properties": {
+            "chiefComplaint": { "type": ["string", "null"] },
+            "symptomTimeline": { "type": "array", "items": { "type": "object" } },
+            "pastHistory": { "type": "array", "items": { "type": "object" } },
+            "medications": { "type": "array", "items": { "type": "object" } },
+            "allergies": { "type": "array", "items": { "type": "object" } },
+            "patientQuestions": { "type": "array", "items": { "type": "string" } },
+            "departmentRecommendations": { "type": "array", "items": { "type": "object" } },
+            "doctorNotes": { "type": ["string", "null"] },
+            "doctorAssessment": { "type": ["string", "null"] },
+            "doctorPlan": { "type": ["string", "null"] }
+          }
+        },
+        "authorType": { "type": "string", "enum": ["AGENT", "DOCTOR", "SYSTEM"] },
+        "authorDoctorId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/doctorId" }, { "type": "null" }] },
+        "changeReason": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+      }
+    }
+  }
+}

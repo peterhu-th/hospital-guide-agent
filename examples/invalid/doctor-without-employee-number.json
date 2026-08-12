@@ -1,0 +1,8 @@
+{
+  "doctorId": "doctor-contract-invalid",
+  "hospitalId": "hospital-mianyang-central",
+  "displayName": "缺少工号的测试医生",
+  "contact": {},
+  "createdAt": "2026-08-12T10:00:00+08:00",
+  "updatedAt": "2026-08-12T10:00:00+08:00"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/appointment.schema.json",
+  "title": "Appointment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["appointmentId", "patientId", "departmentId", "doctorId", "slotId", "status", "billingStatus", "checkInStatus", "createdAt", "updatedAt"],
+  "properties": {
+    "appointmentId": { "$ref": "common.schema.json#/$defs/appointmentId" },
+    "sessionId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/sessionId" }, { "type": "null" }] },
+    "patientId": { "$ref": "common.schema.json#/$defs/patientId" },
+    "departmentId": { "$ref": "common.schema.json#/$defs/departmentId" },
+    "doctorId": { "$ref": "common.schema.json#/$defs/doctorId" },
+    "slotId": { "$ref": "common.schema.json#/$defs/slotId" },
+    "status": { "type": "string", "enum": ["DRAFT", "PENDING_CONFIRMATION", "BOOKED", "CHECKED_IN", "WAITING", "CONSULTING", "COMPLETED", "CANCELLED", "DOCTOR_SUSPENDED", "MISSED"] },
+    "billingStatus": { "type": "string", "enum": ["UNBILLED", "NOT_REQUIRED", "UNPAID"] },
+    "checkInStatus": { "type": "string", "enum": ["NOT_CHECKED_IN", "TOO_EARLY", "CHECKED_IN", "MISSED"] },
+    "queueDetails": { "type": ["object", "null"] },
+    "cancelledReason": { "type": ["string", "null"] },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
+  }
+}
