@@ -30,6 +30,15 @@ install -o root -g hospital_app -m 0640 "${temporary_environment}" "${environmen
 
 rm -f "${source_file}"
 systemctl restart hospital-guide.service
-systemctl is-active --quiet hospital-guide.service
-curl --fail --silent --show-error http://127.0.0.1:3000/api/health >/dev/null
-echo "API configuration installed and hospital-guide restarted successfully."
+for attempt in {1..20}; do
+    if systemctl is-active --quiet hospital-guide.service \
+        && curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then
+        echo "API configuration installed and hospital-guide restarted successfully."
+        exit 0
+    fi
+    sleep 1
+done
+
+echo "hospital-guide did not become ready within 20 seconds." >&2
+systemctl status hospital-guide.service --no-pager >&2 || true
+exit 1

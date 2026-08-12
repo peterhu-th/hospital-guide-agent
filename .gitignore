@@ -1,20 +1,64 @@
-# Local planning documents, notes and server access records
+# User-owned documents, deployment records, and local API credentials
 docs/
-tests/
+
+# Environment files and credentials
 .env
 .env.*
+!.env.example
 environment.local.ps1
 *.key
 *.pem
+*.p12
+*.pfx
 
-# Build and dependency output
+# Dependencies and build/test output
 node_modules/
 dist/
-__pycache__/
-*.py[cod]
+build/
+coverage/
+.nyc_output/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Local runtime state (database, generated key, review code and logs)
+# Local runtime state
 .local/
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+*.pid
+
+# Local deployment artifacts and database backups
+*.bak
+*.backup
+*.dump
+*.tar.gz
+
+# Python cache and local virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
