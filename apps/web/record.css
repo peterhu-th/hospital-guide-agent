@@ -1,0 +1,8 @@
+.record-grid label.agent-prefilled::after {
+  content: "Agent 已整理，待医生核实";
+  display: block;
+  margin-top: .35rem;
+  color: #657873;
+  font-size: .78rem;
+  font-weight: 500;
+}

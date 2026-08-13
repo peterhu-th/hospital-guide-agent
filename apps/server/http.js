@@ -10,6 +10,16 @@ const mimeTypes = {
   ".ttf": "font/ttf", ".png": "image/png", ".svg": "image/svg+xml",
 };
 
+function sendHtmlDownload(res, filename, html) {
+  const body = Buffer.from(html, "utf8");
+  res.writeHead(200, {
+    "Content-Type": "text/html; charset=utf-8", "Content-Length": body.length,
+    "Content-Disposition": `attachment; filename*=UTF-8''${encodeURIComponent(filename)}`,
+    "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff",
+  });
+  res.end(body);
+}
+
 function cookies(req) {
   return Object.fromEntries((req.headers.cookie ?? "").split(";").filter(Boolean).map((part) => {
     const index = part.indexOf("=");
@@ -46,6 +56,30 @@ function sendJson(res, status, data, headers = {}) {
 
 function success(res, data, status = 200, headers = {}) { sendJson(res, status, { success: true, data, requestTime: new Date().toISOString() }, headers); }
 
+function sendEvent(res, event, data) {
+  res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
+}
+
+async function streamAgentResponse(res, service, context, body, config) {
+  res.writeHead(200, {
+    "Content-Type": "text/event-stream; charset=utf-8", "Cache-Control": "no-cache, no-transform",
+    Connection: "keep-alive", "X-Accel-Buffering": "no",
+    ...(context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {}),
+  });
+  sendEvent(res, "message.accepted", { message: body.message });
+  sendEvent(res, "assistant.status", { text: "正在处理" });
+  try {
+    const result = await service.agentMessage(context.row, body, { onDelta: (delta) => sendEvent(res, "assistant.delta", { delta }) });
+    sendEvent(res, "assistant.completed", { turnId: result.turnId, text: result.text, intent: result.intent, currentStage: result.currentStage, model: result.model ?? null });
+    // Actions are deliberately emitted only after assistant.completed so cards always end the turn.
+    sendEvent(res, "assistant.actions", { actions: result.assistantActions });
+    res.end();
+  } catch (error) {
+    sendEvent(res, "error", errorEnvelope(error));
+    res.end();
+  }
+}
+
 function match(path, pattern) {
   const keys = [];
   const regex = new RegExp(`^${pattern.replace(/:([A-Za-z]+)/g, (_, key) => { keys.push(key); return "([^/]+)"; })}$`);
@@ -72,12 +106,12 @@ function safeStatic(root, pathname) {
   return full === root || full.startsWith(`${root}${sep}`) ? full : null;
 }
 
-export function createHospitalServer(service, config) {
+export function createHospitalServer(service, config, speech) {
   return createServer(async (req, res) => {
     res.setHeader("X-Frame-Options", "SAMEORIGIN");
     res.setHeader("Referrer-Policy", "no-referrer");
-    res.setHeader("Permissions-Policy", "geolocation=(), microphone=(), camera=()");
-    res.setHeader("Content-Security-Policy", "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.fengmap.com https://*.fengmap.cool; font-src 'self' https://*.fengmap.com https://*.fengmap.cool; connect-src 'self' https://*.fengmap.com https://*.fengmap.cool; worker-src 'self' blob:");
+    res.setHeader("Permissions-Policy", "geolocation=(self), microphone=(self), camera=()");
+    res.setHeader("Content-Security-Policy", "default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.fengmap.com https://*.fengmap.cool; font-src 'self' https://*.fengmap.com https://*.fengmap.cool; connect-src 'self' https://*.fengmap.com https://*.fengmap.cool wss://iat.cn-huabei-1.xf-yun.com; media-src 'self' blob:; worker-src 'self' blob:");
     const url = new URL(req.url, `http://${req.headers.host ?? "localhost"}`);
     const path = url.pathname;
     const jar = cookies(req);
@@ -93,8 +127,8 @@ export function createHospitalServer(service, config) {
     let params;
     try {
       if (req.method === "GET" && path === "/api/health") return success(res, { status: "ok", hospital: config.hospitalName, database: service.db.engine ?? "unknown", now: new Date().toISOString() });
-      if (req.method === "GET" && path === "/api/config") return success(res, { hospital: service.knowledge.hospital, administratorInitialized: service.administratorSetupStatus().initialized, map: { mapId: config.fengmapMapId, available: true, sdkConfigured: Boolean(config.fengmapAppName && config.fengmapKey), appName: config.fengmapAppName, webApiKey: config.fengmapKey }, simulationNotice: service.knowledge.simulationManifest.notice });
-      if (req.method === "GET" && path === "/api/departments") return success(res, service.knowledge.listDepartments());
+      if (req.method === "GET" && path === "/api/config") return success(res, { hospital: service.knowledge.hospital, administratorInitialized: service.administratorSetupStatus().initialized, map: { mapId: config.fengmapMapId, available: true, sdkConfigured: Boolean(config.fengmapAppName && config.fengmapKey), appName: config.fengmapAppName, webApiKey: config.fengmapKey }, speech: speech.capabilities(), simulationNotice: service.knowledge.simulationManifest.notice });
+      if (req.method === "GET" && path === "/api/departments") return success(res, service.knowledge.listDepartments({ bookingOnly: url.searchParams.get("bookingEligible") === "true", query: url.searchParams.get("q") ?? "", limit: url.searchParams.get("limit") ?? 100 }));
       if (req.method === "GET" && path === "/api/locations") return success(res, service.knowledge.searchLocations(url.searchParams.get("q")));
       if (req.method === "GET" && path === "/api/routes") return success(res, service.knowledge.staticRoute(url.searchParams.get("start"), url.searchParams.get("end")));
       if (req.method === "GET" && path === "/api/practices") return success(res, service.listPractices({ departmentId: url.searchParams.get("departmentId"), date: url.searchParams.get("date") }));
@@ -108,15 +142,50 @@ export function createHospitalServer(service, config) {
         const result = service.createPatientProfile(context.row, await readBody(req));
         return success(res, result, 201, context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {});
       }
+      if (req.method === "POST" && path === "/api/patient/profile/virtual") {
+        const context = patient();
+        const result = service.createVirtualPatientProfile(context.row);
+        return success(res, result, 201, context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {});
+      }
       if (req.method === "DELETE" && path === "/api/patient/session") { service.endPatientSession(patient().row); return success(res, { ended: true }, 200, { "Set-Cookie": clearCookie("patient_session", config) }); }
       if (req.method === "GET" && path === "/api/patient/messages") { const context = patient(); return success(res, service.conversation(context.row), 200, context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {}); }
       if (req.method === "POST" && path === "/api/agent/messages") {
         const context = patient();
         return success(res, await service.agentMessage(context.row, await readBody(req)), 201, context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {});
       }
+      if (req.method === "POST" && path === "/api/agent/messages/stream") {
+        const context = patient();
+        return streamAgentResponse(res, service, context, await readBody(req), config);
+      }
+      if (req.method === "POST" && path === "/api/speech/transcription-session") {
+        const context = patient();
+        return success(res, speech.transcriptionSession(), 201, context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {});
+      }
+      if (req.method === "POST" && path === "/api/speech/synthesis") {
+        const context = patient();
+        const body = await readBody(req);
+        const audio = await speech.synthesize(body.text);
+        res.writeHead(200, { "Content-Type": "audio/mpeg", "Content-Length": audio.length, "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff", ...(context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {}) });
+        return res.end(audio);
+      }
       if (req.method === "POST" && path === "/api/patient/actions") return success(res, service.preparePatientAction(patient().row, await readBody(req)), 201);
       if ((params = match(path, "/api/patient/actions/:id/confirm")) && req.method === "POST") return success(res, service.confirmPatientAction(patient().row, params.id), 201);
+      if (req.method === "POST" && path === "/api/patient/conversation/undo") {
+        const context = patient();
+        return success(res, service.prepareConversationUndo(context.row), 201, context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {});
+      }
+      if ((params = match(path, "/api/patient/conversation/undo/:id/confirm")) && req.method === "POST") return success(res, service.confirmConversationUndo(patient().row, params.id));
+      if ((params = match(path, "/api/patient/conversation/undo/:id/cancel")) && req.method === "POST") return success(res, service.cancelConversationUndo(patient().row, params.id));
       if (req.method === "GET" && path === "/api/patient/journey") { const context = patient(); return success(res, service.patientJourney(context.row), 200, context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {}); }
+      if (req.method === "GET" && path === "/api/patient/proactive-update") { const context = patient(); return success(res, await service.proactivePatientUpdate(context.row), 200, context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {}); }
+      if (req.method === "GET" && path === "/api/patient/map-context") { const context = patient(); return success(res, service.patientMapContext(context.row), 200, context.created ? { "Set-Cookie": cookie("patient_session", context.token, config, 72 * 3600) } : {}); }
+      if ((params = match(path, "/api/patient/bills/:id/simulated-payment")) && req.method === "POST") return success(res, service.payBillWithSimulation(patient().row, params.id), 201);
+      if ((params = match(path, "/api/patient/tasks/:id/complete")) && req.method === "POST") return success(res, service.completePatientTask(patient().row, params.id));
+      if ((params = match(path, "/api/patient/return-visits/:id/check-in")) && req.method === "POST") return success(res, service.checkInReturnVisit(patient().row, params.id));
+      if ((params = match(path, "/api/patient/appointments/:id/record-export")) && req.method === "GET") {
+        const exported = service.exportMedicalRecord(patient().row, params.id);
+        return sendHtmlDownload(res, exported.filename, exported.html);
+      }
       if ((params = match(path, "/api/appointments/:id/cancel")) && req.method === "POST") return success(res, service.cancelAppointment(patient().row, params.id));
       if ((params = match(path, "/api/appointments/:id/check-in")) && req.method === "POST") return success(res, service.checkInPatient(patient().row, params.id));
       if ((params = match(path, "/api/appointments/:id/reschedule")) && req.method === "POST") return success(res, service.rescheduleAppointment(patient().row, params.id, (await readBody(req)).practiceId));
@@ -131,13 +200,15 @@ export function createHospitalServer(service, config) {
       }
       if (req.method === "POST" && path === "/api/doctors/logout") { const session = doctorWrite(); service.logoutDoctor(session); return success(res, { loggedOut: true }, 200, { "Set-Cookie": clearCookie("doctor_session", config) }); }
       if (req.method === "GET" && path === "/api/doctors/practices") { const session = doctor(); return success(res, service.listPractices({}, session.doctor_id)); }
+      if (req.method === "GET" && path === "/api/doctors/order-catalog") { doctor(); return success(res, service.doctorOrderCatalog()); }
       if (req.method === "POST" && path === "/api/doctors/practices") return success(res, service.createPractice(doctorWrite(), await readBody(req)), 201);
       if ((params = match(path, "/api/doctors/practices/:id/status")) && req.method === "PUT") return success(res, service.updatePracticeStatus(doctorWrite(), params.id, (await readBody(req)).status));
       if (req.method === "GET" && path === "/api/doctors/appointments") return success(res, service.listDoctorAppointments(doctor()));
-      if ((params = match(path, "/api/doctors/appointments/:id/transition")) && req.method === "POST") return success(res, service.transitionAppointment(doctorWrite(), params.id, (await readBody(req)).action));
+      if ((params = match(path, "/api/doctors/appointments/:id/transition")) && req.method === "POST") { const body = await readBody(req); return success(res, service.transitionAppointment(doctorWrite(), params.id, body.action, body)); }
       if ((params = match(path, "/api/doctors/appointments/:id/record")) && req.method === "GET") return success(res, service.getRecordForDoctor(doctor(), params.id));
       if ((params = match(path, "/api/doctors/records/:id")) && req.method === "PUT") return success(res, service.saveRecord(doctorWrite(), params.id, await readBody(req)));
       if ((params = match(path, "/api/doctors/records/:id/orders")) && req.method === "POST") return success(res, service.createOrder(doctorWrite(), params.id, await readBody(req)), 201);
+      if ((params = match(path, "/api/doctors/orders/:id/revoke")) && req.method === "POST") return success(res, service.revokeOrder(doctorWrite(), params.id));
       if ((params = match(path, "/api/doctors/orders/:id/simulated-result")) && req.method === "POST") return success(res, service.simulateOrderResult(doctorWrite(), params.id, (await readBody(req)).objectType), 201);
       if (req.method === "GET" && path === "/api/administrators/setup") return success(res, service.administratorSetupStatus());
       if (req.method === "POST" && path === "/api/administrators/setup") return success(res, service.initializeAdministrator(await readBody(req)), 201);
@@ -159,7 +230,25 @@ export function createHospitalServer(service, config) {
         if (file && serveFile(res, file, true)) return;
       }
       if (req.method === "GET") {
-        const targetPath = path === "/" ? "/index.html" : path;
+        const canonicalRedirects = {
+          "/": "/user", "/index.html": "/user", "/user/": "/user",
+          "/doctor.html": "/doctor", "/doctor/": "/doctor",
+          "/admin.html": "/admin", "/admin/": "/admin",
+          "/map.html": "/map", "/map/": "/map",
+        };
+        const canonicalPath = canonicalRedirects[path];
+        if (canonicalPath) {
+          res.writeHead(302, { Location: canonicalPath, "Cache-Control": "no-store" });
+          res.end();
+          return;
+        }
+        const portalPages = { "/user": "/index.html", "/doctor": "/doctor.html", "/admin": "/admin.html", "/map": "/map.html" };
+        if (portalPages[path] && url.search) {
+          res.writeHead(302, { Location: path, "Cache-Control": "no-store" });
+          res.end();
+          return;
+        }
+        const targetPath = portalPages[path] ?? path;
         const file = safeStatic(config.staticRoot, targetPath);
         if (file && serveFile(res, file)) return;
       }

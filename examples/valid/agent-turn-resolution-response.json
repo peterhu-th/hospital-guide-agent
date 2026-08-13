@@ -1,0 +1,11 @@
+{
+  "contractType": "agent_turn_resolution_response",
+  "intent": "LOCATION_HELP",
+  "handled": true,
+  "confidence": 0.96,
+  "answer": "我已为您打开大厅的位置搜索。",
+  "entities": { "destination": "大厅" },
+  "extractedFacts": [],
+  "shouldRequestHumanHelp": false,
+  "containsDiagnosis": false
+}

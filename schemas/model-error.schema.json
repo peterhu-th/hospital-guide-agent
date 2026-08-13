@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/model-error.schema.json",
+  "title": "Safe Model Error",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["code", "stage", "message", "retryable", "attempt", "occurredAt"],
+  "properties": {
+    "code": {
+      "type": "string",
+      "enum": [
+        "MODEL_NOT_CONFIGURED",
+        "MODEL_TIMEOUT",
+        "MODEL_NETWORK_ERROR",
+        "MODEL_HTTP_ERROR",
+        "MODEL_RESPONSE_BODY_ERROR",
+        "MODEL_EMPTY_RESPONSE",
+        "MODEL_JSON_PARSE_ERROR",
+        "MODEL_CONTRACT_ERROR",
+        "MODEL_UNKNOWN_ERROR"
+      ]
+    },
+    "stage": { "type": "string", "enum": ["DEPARTMENT_ROUTING", "WAITING_INTERVIEW", "PATIENT_REPLY_STREAM"] },
+    "message": { "type": "string", "minLength": 1 },
+    "retryable": { "type": "boolean" },
+    "attempt": { "type": "integer", "minimum": 0 },
+    "httpStatus": { "type": "integer", "minimum": 100, "maximum": 599 },
+    "occurredAt": { "type": "string", "format": "date-time" }
+  }
+}

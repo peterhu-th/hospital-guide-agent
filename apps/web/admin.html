@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN" translate="no" class="notranslate">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>管理员工作台｜某医院导诊演示</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-portal="admin">
+  <header class="topbar">
+    <div class="portal-brand"><strong>某医院导诊演示</strong><span class="badge simulation-badge">模拟</span></div>
+  </header>
+  <main>
+    <section id="view-admin" class="view active">
+      <div id="adminAuth" class="grid auth-grid">
+        <article id="adminSetupCard" class="card"><h1>首次初始化管理员</h1><p class="notice">仅在系统不存在管理员时开放。初始化完成后不可再次使用此入口。</p><form id="adminSetupForm" class="form-grid"><label>管理员姓名<input name="displayName" required></label><label>六位工号<input name="employeeNumber" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required></label><label>密码（至少8位）<input name="password" type="password" minlength="8" autocomplete="new-password" required></label><button>初始化管理员</button></form></article>
+        <article class="card"><h1>管理员登录</h1><form id="adminLoginForm" class="form-grid"><label>六位工号<input name="employeeNumber" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="username" required></label><label>密码<input name="password" type="password" minlength="8" autocomplete="current-password" required></label><button>登录</button></form></article>
+      </div>
+      <div id="adminDashboard" class="hidden"><article class="card"><div class="section-head"><div><h1 id="adminWelcome">管理员工作台</h1><p class="muted">审核医生注册申请、激活或停用医生账号。所有操作写入审计记录。</p></div><button id="adminLogout" class="danger">安全退出</button></div></article><article class="card wide"><div class="section-head"><h2>医生账号</h2><button id="refreshAdminDoctors" class="secondary">刷新</button></div><div id="adminDoctors" class="result-list"></div></article></div>
+    </section>
+  </main>
+  <footer class="source-footer"><strong>非官方声明：</strong>本项目是独立导诊技术演示，未与医院建立合作，也不代表医院提供或认可本服务。页面使用的公开资料涉及绵阳市中心医院，仅用于说明信息对应的医院；资料来源为该院官网公开内容与地图数据，动态信息请向医院核实。</footer>
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@
     "toolCallId": { "type": "string", "pattern": "^tool-call-[a-zA-Z0-9-]+$" },
     "tool": {
       "type": "string",
-      "enum": ["get_patient_context", "create_patient_profile", "search_departments", "search_doctors", "list_appointment_slots", "create_appointment", "cancel_appointment", "change_appointment", "get_active_appointments", "check_in", "get_queue_status", "get_medical_orders", "get_bills", "get_examination_tasks", "schedule_examination", "get_prescriptions", "get_pharmacy_tasks", "search_locations", "calculate_static_route", "get_next_tasks", "request_human_service", "get_medical_record", "save_medical_record_revision"]
+      "enum": ["get_patient_context", "create_patient_profile", "search_departments", "search_doctors", "list_appointment_slots", "create_appointment", "cancel_appointment", "change_appointment", "prepare_undo_last_turn", "confirm_undo_last_turn", "get_active_appointments", "check_in", "get_queue_status", "get_medical_orders", "get_bills", "complete_examination", "complete_pharmacy_pickup", "set_return_visit", "check_in_return_visit", "export_medical_record", "get_examination_tasks", "schedule_examination", "get_prescriptions", "get_pharmacy_tasks", "search_locations", "calculate_static_route", "get_next_tasks", "request_human_service", "get_medical_record", "save_medical_record_revision"]
     },
     "success": { "type": "boolean" },
     "data": {},

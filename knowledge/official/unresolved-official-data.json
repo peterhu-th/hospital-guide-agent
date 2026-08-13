@@ -48,7 +48,7 @@
       "itemId": "unresolved-outpatient-schedule",
       "topic": "门诊时间与医生出诊",
       "status": "volatile_image_only",
-      "fallback": "不写入实时号源结论；阶段 2 使用已声明的模拟医生和号源"
+      "fallback": "不写入实时号源结论；运行时使用明确声明的演示医生和号源"
     },
     {
       "itemId": "unresolved-complete-public-processes",

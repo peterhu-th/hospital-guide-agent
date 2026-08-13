@@ -14,7 +14,7 @@
     "expiresAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
     "patientId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/patientId" }, { "type": "null" }] },
     "userRole": { "type": "string", "enum": ["patient", "family"] },
-    "currentStage": { "type": "string", "enum": ["UNKNOWN", "PRE_VISIT", "APPOINTMENT", "ARRIVAL", "CHECK_IN", "WAITING", "CONSULTATION", "AFTER_CONSULTATION", "PAYMENT", "EXAMINATION", "RETURN_VISIT", "PHARMACY", "COMPLETED"] },
+    "currentStage": { "type": "string", "enum": ["UNKNOWN", "PRE_VISIT", "APPOINTMENT", "ARRIVAL", "CHECK_IN", "WAITING", "CONSULTATION", "POST_VISIT", "AFTER_CONSULTATION", "PAYMENT", "ORDER_FULFILLMENT", "EXAMINATION", "RETURN_VISIT", "PHARMACY", "COMPLETED"] },
     "facts": {
       "type": "array",
       "items": {
@@ -53,7 +53,7 @@
         "required": ["actionId", "actionType", "status", "parameters", "createdAt", "expiresAt"],
         "properties": {
           "actionId": { "$ref": "common.schema.json#/$defs/actionId" },
-          "actionType": { "type": "string", "enum": ["CREATE_APPOINTMENT", "CANCEL_APPOINTMENT", "CHANGE_APPOINTMENT"] },
+          "actionType": { "type": "string", "enum": ["CREATE_APPOINTMENT", "CANCEL_APPOINTMENT", "CHANGE_APPOINTMENT", "UNDO_LAST_CONVERSATION_TURN"] },
           "status": { "type": "string", "enum": ["PENDING_CONFIRMATION", "CONFIRMED", "REJECTED", "EXECUTED", "EXPIRED"] },
           "parameters": { "type": "object" },
           "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },

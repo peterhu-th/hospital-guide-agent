@@ -14,8 +14,7 @@
     "doctor_diagnosis",
     "doctor_order",
     "doctor_prescription",
-    "bill",
-    "payment_success"
+    "bill"
   ],
   "allowedObjectTypes": [
     {
@@ -57,9 +56,38 @@
       "trigger": "医生明确选择演示设备数据",
       "requiredLabel": "模拟生成：未连接真实医疗设备，不代表患者实际测量值",
       "forbiddenClaims": ["患者真实生命体征", "医生已核验"]
+    },
+    {
+      "objectType": "simulated_payment",
+      "examples": ["挂号费模拟支付", "检查费模拟支付", "药费模拟支付"],
+      "limitation": "未连接真实支付渠道",
+      "trigger": "患者在明确标注为模拟支付的卡片中主动确认",
+      "requiredLabel": "模拟支付：不会产生真实扣款",
+      "forbiddenClaims": ["真实支付成功", "真实资金扣款", "第三方支付渠道已受理"]
     }
   ],
-  "paymentRule": "未接入真实支付渠道时，账单只能保持待缴费，不允许模拟支付成功或真实扣款。",
+  "paymentRule": "未接入真实支付渠道；仅允许由患者在明确标注为模拟支付的界面中确认成功，不调用第三方、不产生真实扣款，并记录provider=SIMULATED。",
+  "demoCatalogs": [
+    {
+      "path": "knowledge/demo/order-catalog.json",
+      "scope": "挂号费、常见检查、常见药品、演示价格与固定地图地点",
+      "requiredLabel": "演示数据，不代表医院真实目录、价格、库存或医生建议"
+    },
+    {
+      "path": "knowledge/demo/doctor-schedule-reference.json",
+      "scope": "少量医生的周期性出诊查询演示参考；不是挂号号源，不生成业务医生或出诊实例",
+      "requiredLabel": "模拟出诊参考，不是医院官方排班，也不代表实时号源"
+    }
+  ],
+  "testingFixtures": [
+    {
+      "fixtureId": "virtual-patient-male-65",
+      "scope": "患者主动点击“使用虚拟信息”后创建的65岁男性测试档案",
+      "requiredLabel": "虚拟测试身份，不对应真实个人",
+      "activationRule": "只能由患者界面的显式按钮触发，不得由Agent自动创建",
+      "retentionHours": 72
+    }
+  ],
   "doctorAuthorityRule": "Agent不得质疑、反驳、评价、纠正或覆盖医生保存的诊断、处方、医嘱和病历内容。",
   "instances": []
 }

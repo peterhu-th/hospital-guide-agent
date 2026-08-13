@@ -14,7 +14,7 @@
     "name": { "type": "string", "minLength": 1 },
     "performingDepartmentId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/departmentId" }, { "type": "null" }] },
     "locationId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/locationId" }, { "type": "null" }] },
-    "status": { "type": "string", "enum": ["CREATED", "PENDING_PAYMENT", "PENDING_APPOINTMENT", "SCHEDULED", "CHECKED_IN", "IN_PROGRESS", "COMPLETED", "REPORT_READY", "CANCELLED"] },
+    "status": { "type": "string", "enum": ["CREATED", "PENDING_PAYMENT", "PENDING_APPOINTMENT", "SCHEDULED", "CHECKED_IN", "IN_PROGRESS", "FULFILLED", "COMPLETED", "REPORT_READY", "REVOKED", "CANCELLED"] },
     "requiresPayment": { "type": "boolean" },
     "requiresAppointment": { "type": "boolean" },
     "preparationText": { "type": ["string", "null"] },

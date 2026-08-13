@@ -23,29 +23,42 @@
     "request": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["contractType", "task", "userExpression", "patientContext", "confirmedFacts", "candidateDepartments", "constraints"],
+      "required": ["contractType", "task", "userExpression", "patientContext", "confirmedFacts", "conversationSummary", "candidateDepartments", "constraints"],
       "properties": {
         "contractType": { "const": "department_routing_request" },
         "task": { "const": "DEPARTMENT_RECOMMENDATION" },
-        "userExpression": { "type": "string", "minLength": 1, "maxLength": 4000 },
+        "userExpression": { "type": "string", "minLength": 1, "maxLength": 500 },
         "patientContext": {
           "type": "object",
           "additionalProperties": false,
           "required": ["ageRange", "sex"],
           "properties": {
             "ageRange": { "type": "string", "enum": ["unknown", "0-17", "18-49", "50-59", "60-69", "70+"] },
-            "sex": { "type": "string", "enum": ["unknown", "female", "male", "other", "unwilling"] }
+            "sex": { "type": ["string", "null"], "enum": [null, "female", "male"] }
           }
         },
-        "confirmedFacts": { "type": "array", "items": { "type": "object" } },
+        "confirmedFacts": {
+          "type": "array", "maxItems": 4,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["field", "value", "source"],
+            "properties": {
+              "field": { "type": "string", "minLength": 1 },
+              "value": { "type": "string", "minLength": 1, "maxLength": 120 },
+              "source": { "type": "string", "enum": ["PATIENT_CONFIRMED", "DOCTOR_CONFIRMED"] }
+            }
+          }
+        },
+        "conversationSummary": { "type": "string", "maxLength": 240 },
         "candidateDepartments": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/departmentCandidate" } },
         "constraints": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["allowedDepartmentIds", "maxRecommendations", "diagnosisForbidden"],
+          "required": ["allowedDepartmentIds", "maxRecommendations", "minimumAcceptedConfidence", "diagnosisForbidden"],
           "properties": {
             "allowedDepartmentIds": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/departmentId" }, "uniqueItems": true },
             "maxRecommendations": { "const": 2 },
+            "minimumAcceptedConfidence": { "const": 0.8 },
             "diagnosisForbidden": { "const": true }
           }
         }
@@ -54,7 +67,7 @@
     "response": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["contractType", "intent", "extractedFacts", "recommendations", "shouldAskQuestion", "clarificationQuestion", "shouldRequestHumanHelp", "containsDiagnosis"],
+      "required": ["contractType", "intent", "extractedFacts", "recommendations", "shouldAskQuestion", "clarificationQuestion", "shouldRequestHumanHelp", "suggestedTool", "containsDiagnosis"],
       "properties": {
         "contractType": { "const": "department_routing_response" },
         "intent": { "type": "string", "enum": ["DEPARTMENT_RECOMMENDATION", "HOSPITAL_QA", "OTHER"] },
@@ -89,12 +102,17 @@
         "shouldAskQuestion": { "type": "boolean" },
         "clarificationQuestion": { "type": ["string", "null"] },
         "shouldRequestHumanHelp": { "type": "boolean" },
+        "suggestedTool": { "type": "string", "enum": ["NONE", "SHOW_APPOINTMENT_SERVICE", "REQUEST_HUMAN_SERVICE"] },
         "containsDiagnosis": { "const": false }
       },
       "allOf": [
         {
           "if": { "properties": { "shouldAskQuestion": { "const": true } } },
           "then": { "properties": { "clarificationQuestion": { "type": "string", "minLength": 1 } } }
+        },
+        {
+          "if": { "properties": { "intent": { "enum": ["HOSPITAL_QA", "OTHER"] } } },
+          "then": { "properties": { "recommendations": { "maxItems": 0 } } }
         }
       ],
       "description": "Application validation must enforce that every recommendation.departmentId belongs to the request constraints.allowedDepartmentIds and candidateDepartments."

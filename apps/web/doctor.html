@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN" translate="no" class="notranslate">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>医生工作台｜某医院导诊演示</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/record.css">
+</head>
+<body data-portal="doctor">
+  <header class="topbar">
+    <div class="portal-brand"><strong>某医院导诊演示</strong><span class="badge simulation-badge">模拟</span></div>
+  </header>
+  <main>
+    <section id="view-doctor" class="view active">
+      <div id="doctorAuth" class="grid auth-grid">
+        <article class="card"><h1>医生登录</h1><form id="doctorLoginForm" class="form-grid"><label>六位院内工号<input name="employeeNumber" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="username" placeholder="例如 260101" required></label><label>密码<input name="password" type="password" minlength="8" autocomplete="current-password" required></label><button>登录</button></form></article>
+        <article class="card"><h2>医生注册</h2><p class="notice">注册只创建演示系统内账号申请，状态为“待审核”，不代表已通过医院人事核验。</p><form id="doctorRegisterForm" class="form-grid"><label>姓名<input name="displayName" required></label><label>六位院内工号<input name="employeeNumber" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="例如 260101" required></label><label>密码（至少 8 位）<input name="password" type="password" minlength="8" required></label><button>提交注册</button></form></article>
+        <article class="card"><h2>账号审核状态</h2><p class="notice"><strong>链路位置：</strong>医生注册 → 待管理员审核 → 管理员激活 → 可登录。审核由管理员工作台完成，不再使用本地 CLI 审核码。</p></article>
+      </div>
+      <div id="doctorDashboard" class="hidden">
+        <article class="card"><div class="section-head"><div><h1 id="doctorWelcome">医生工作台</h1><p id="doctorNotice" class="notice"></p></div><button id="doctorLogout" class="danger">安全退出</button></div></article>
+        <div class="grid doctor-grid">
+          <article class="card"><h2>发布出诊号源</h2><form id="practiceForm" class="form-grid"><label>科室大类<select id="doctorDepartmentDivision" required></select></label><label>具体科室<select id="doctorDepartment" name="departmentId" required disabled><option value="">请先选择科室大类</option></select></label><label>日期<input name="serviceDate" type="date" required></label><label>开始<input name="startTime" type="time" required value="08:00"></label><label>结束<input name="endTime" type="time" required value="17:00"></label><label>号源数<input name="capacity" type="number" min="1" max="200" value="10" required></label><button>发布号源</button></form><div id="doctorPractices" class="result-list"></div></article>
+          <article class="card"><div class="section-head"><h2>我的接诊患者</h2><button id="refreshDoctorAppointments" class="secondary">刷新</button></div><div id="doctorAppointments" class="result-list"></div></article>
+        </div>
+        <article id="recordEditor" class="card wide hidden" aria-hidden="true"><div class="section-head"><h2>患者病历</h2><button id="closeRecordEditor" class="secondary" type="button">关闭病历</button></div><p class="notice">病历仅能从“我的接诊患者”打开。Agent 从患者主动提供的信息中整理病历草稿，并直接填入对应字段；医生可核实和修改。患者对话原文不会显示，医生保存的内容不会被 Agent 覆盖或质疑。</p><form id="recordForm" class="record-grid"><label>主诉<textarea name="chiefConcern"></textarea></label><label>现病情况<textarea name="presentIllness"></textarea></label><label>既往情况<textarea name="history"></textarea></label><label>用药情况<textarea name="medications"></textarea></label><label>过敏情况<textarea name="allergies"></textarea></label><label>检查结果（仅医生可编辑）<textarea name="examinationResults"></textarea></label><label>医生判断<textarea name="doctorAssessment"></textarea></label><label>处理计划<textarea name="plan"></textarea></label><label>本次修改原因<input name="changeReason" required value="医生接诊补充"></label><button>版本化保存病历</button></form><hr><section class="order-workspace"><div class="order-composer"><h3>添加检查或处方</h3><form id="orderForm" class="order-form"><label>类型<select name="orderType"><option value="EXAMINATION">检查</option><option value="PRESCRIPTION">处方</option></select></label><label>项目<select id="orderCatalogItem" name="catalogItemId" required><option value="">请选择项目</option></select></label><label>数量<input name="quantity" type="number" min="1" max="20" value="1" required></label><label class="order-notes">补充说明（选填）<textarea name="doctorNotes" maxlength="1000"></textarea></label><button id="orderSubmitButton" type="submit">添加检查</button></form><small id="orderCatalogNotice" class="muted">目录、价格和地点均为演示数据。</small></div><div class="order-list-panel"><div class="section-head"><h3>已创建医嘱</h3><span id="orderCount" class="badge">0 项</span></div><div id="recordOrders"></div></div></section></article>
+      </div>
+    </section>
+  </main>
+  <footer class="source-footer"><strong>非官方声明：</strong>本项目是独立导诊技术演示，未与医院建立合作，也不代表医院提供或认可本服务。页面使用的公开资料涉及绵阳市中心医院，仅用于说明信息对应的医院；资料来源为该院官网公开内容与地图数据，动态信息请向医院核实。</footer>
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

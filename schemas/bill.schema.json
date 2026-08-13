@@ -28,10 +28,15 @@
     "insuranceAmount": { "type": "number", "minimum": 0 },
     "personalAmount": { "type": "number", "minimum": 0 },
     "currency": { "const": "CNY" },
-    "status": { "type": "string", "enum": ["UNPAID", "CANCELLED"] },
-    "paymentGuidance": { "const": "请前往收费窗口或医保部办理缴费" },
+    "status": { "type": "string", "enum": ["UNPAID", "PAID", "CANCELLED"] },
+    "paymentProvider": { "type": ["string", "null"], "enum": [null, "SIMULATED"] },
+    "paymentGuidance": { "type": "string", "minLength": 1, "maxLength": 100 },
     "createdAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
     "updatedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" }
   },
-  "description": "Until a real payment provider is connected, PAID and refund states are deliberately impossible."
+  "allOf": [{
+    "if": { "properties": { "status": { "const": "PAID" } }, "required": ["status"] },
+    "then": { "required": ["paymentProvider"], "properties": { "paymentProvider": { "const": "SIMULATED" } } }
+  }],
+  "description": "PAID is allowed only for explicitly labelled simulated payments; no real provider is connected."
 }

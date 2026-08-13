@@ -1,0 +1,11 @@
+{
+  "toolCallId": "tool-call-record-facts",
+  "tool": "append_structured_patient_facts",
+  "parameters": {
+    "facts": [{ "field": "vitalSigns", "normalizedValue": "血压：150/95 mmHg" }],
+    "encounterStatus": "CALLED"
+  },
+  "patientVisibleFeedback": false,
+  "requestedAt": "2026-08-13T12:00:00+08:00",
+  "requestSource": "agent_orchestrator"
+}

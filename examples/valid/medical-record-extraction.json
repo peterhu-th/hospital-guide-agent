@@ -5,10 +5,11 @@
     {
       "field": "patientAllergies",
       "normalizedValue": "患者自述可能存在青霉素过敏，未核验",
-      "patientWords": "我可能对青霉素过敏，但不确定",
       "certainty": "UNCERTAIN",
       "sourceTurnId": "turn-example",
       "createdBy": "AGENT",
+      "writePolicy": "AUTO_BEFORE_CONSULTATION",
+      "patientVisibleToolFeedback": false,
       "verifiedByDoctor": false
     }
   ],

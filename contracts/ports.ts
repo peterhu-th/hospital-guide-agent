@@ -1,5 +1,5 @@
 /**
- * 阶段 0 的可替换端口。
+ * 可替换的领域端口。
  *
  * 领域和应用层只能依赖这些端口，不能直接依赖 IndexedDB、数据库、
  * DeepSeek SDK、蜂鸟 SDK 或具体医院系统客户端。
@@ -21,7 +21,6 @@ export interface DoctorRegistrationInput extends JsonObject {
   readonly displayName: string;
   readonly employeeNumber: string;
   readonly password: string;
-  readonly contact: JsonObject;
 }
 
 export interface DoctorLoginInput extends JsonObject {
@@ -52,7 +51,7 @@ export interface SessionStore<TSession extends VersionedSession> {
 }
 
 /**
- * @deprecated 仅供阶段 0 历史契约回归。实名患者、医生账号和病历必须由
+ * @deprecated 仅供旧版浏览器存储契约回归。实名患者、医生账号和病历必须由
  * 后端 Repository 持久化，浏览器不得作为身份证号或病历的主存储。
  */
 export type LegacyBrowserSessionStore<TSession extends VersionedSession> =
@@ -81,7 +80,7 @@ export interface PracticeScheduleRepository {
 export interface MedicalRecordRepository {
   getForPatient(patientId: string): Promise<JsonObject | null>;
   getForDoctor(input: JsonObject): Promise<JsonObject | null>;
-  appendPatientStatement(input: JsonObject): Promise<ToolResult>;
+  appendConfirmedPatientFact(input: JsonObject): Promise<ToolResult>;
   saveDoctorRevision(input: MedicalRecordRevisionInput): Promise<ToolResult>;
   listVersions(recordId: string): Promise<readonly JsonObject[]>;
 }
@@ -110,7 +109,18 @@ export interface DepartmentRoutingResponse extends JsonObject {
   readonly contractType: "department_routing_response";
 }
 
+export interface AgentTurnResolutionRequest extends JsonObject {
+  readonly contractType: "agent_turn_resolution_request";
+}
+
+export interface AgentTurnResolutionResponse extends JsonObject {
+  readonly contractType: "agent_turn_resolution_response";
+}
+
 export interface LlmProvider {
+  resolveTurn(
+    request: AgentTurnResolutionRequest,
+  ): Promise<AgentTurnResolutionResponse>;
   recommendDepartment(
     request: DepartmentRoutingRequest,
   ): Promise<DepartmentRoutingResponse>;
@@ -159,6 +169,8 @@ export interface KnowledgeRepository {
   getHospitalProfile(): Promise<JsonObject>;
   getDepartment(departmentId: string): Promise<JsonObject | null>;
   search(query: string, limit: number): Promise<readonly JsonObject[]>;
+  searchDoctors(query: JsonObject): Promise<readonly JsonObject[]>;
+  listScheduledDoctors(query: JsonObject): Promise<readonly JsonObject[]>;
 }
 
 export interface Clock {

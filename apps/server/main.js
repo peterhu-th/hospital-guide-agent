@@ -5,6 +5,7 @@ import { KnowledgeRepository } from "./knowledge.js";
 import { HospitalService } from "./service.js";
 import { DeepSeekDepartmentRouter } from "./deepseek.js";
 import { PostgresDatabase } from "./postgres.js";
+import { XfyunSpeechService } from "./speech.js";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 
@@ -14,8 +15,9 @@ export function buildApplication(overrides = {}) {
   const knowledge = new KnowledgeRepository(config.knowledgeRoot);
   const departmentRouter = new DeepSeekDepartmentRouter(config, knowledge);
   const service = new HospitalService(database, knowledge, config, departmentRouter);
-  const server = createHospitalServer(service, config);
-  return { config, database, knowledge, service, server };
+  const speech = overrides.speechService ?? new XfyunSpeechService(config);
+  const server = createHospitalServer(service, config, speech);
+  return { config, database, knowledge, service, speech, server };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

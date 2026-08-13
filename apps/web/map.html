@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN" translate="no" class="notranslate">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>院内地图｜某医院导诊演示</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/vendor/fengmap/toolBarStyle.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-portal="map" class="map-mode">
+  <header class="topbar">
+    <div class="portal-brand"><strong>某医院导诊演示</strong><span class="badge simulation-badge">模拟</span></div>
+  </header>
+  <main>
+    <section id="view-map" class="view active">
+      <div class="map-workspace">
+        <div id="hospitalMap" class="map-container" role="img" aria-label="院内交互地图"></div>
+        <div class="map-page-bar">
+          <button id="exitMap" type="button" aria-label="退出院内地图">← 退出地图</button>
+          <span class="badge map-status">地图尚未加载</span>
+        </div>
+        <aside class="map-controls" aria-label="地点搜索和路线设置">
+          <div class="map-controls-head"><strong>地点与路线</strong><button class="secondary" id="reloadMap" type="button">重载地图</button></div>
+          <form id="mapLocationSearch" class="inline-form"><input name="query" maxlength="40" placeholder="搜索科室、窗口或设施" required><button>搜索</button></form>
+          <div id="mapAppointmentSuggestions" class="result-list compact-results hidden" aria-live="polite"></div>
+          <div id="mapLocationResults" class="result-list compact-results"><p class="muted">先搜索一个地点。</p></div>
+          <form id="mapRouteForm" class="form-grid"><label>起点<select name="start" required><option value="current-location" selected>我的当前位置</option></select></label><label>终点<select name="end" required><option value="">请从搜索结果设置</option></select></label><label class="check-label"><input name="barrierFree" type="checkbox"> 无障碍路线</label><button>开始院内导航</button></form>
+          <div id="mapRouteResult" class="result-list" aria-live="polite"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <dialog id="locationAlert" class="warning-dialog" aria-labelledby="locationAlertTitle"><h2 id="locationAlertTitle">当前位置不在医院范围内</h2><p id="locationAlertMessage">院内路线仅适用于到院后的步行指引。</p><button type="button" data-close-location-alert>我知道了</button></dialog>
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script src="/vendor/fengmap/fengmap.map.min.js"></script>
+  <script src="/vendor/fengmap/fengmap.plugin.ui.min.js"></script>
+  <script src="/vendor/fengmap/fengmap.analyser.min.js"></script>
+  <script src="/vendor/fengmap/fengmap.plugin.navi.min.js"></script>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

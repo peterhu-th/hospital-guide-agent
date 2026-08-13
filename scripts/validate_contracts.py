@@ -1,4 +1,4 @@
-"""Validate phase-0 JSON contracts without third-party packages."""
+"""Validate JSON contracts without third-party packages."""
 
 from __future__ import annotations
 

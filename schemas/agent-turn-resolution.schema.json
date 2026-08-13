@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hospital-guide.local/schemas/agent-turn-resolution.schema.json",
+  "title": "Agent current-turn resolution contract",
+  "oneOf": [
+    { "$ref": "#/$defs/request" },
+    { "$ref": "#/$defs/response" }
+  ],
+  "$defs": {
+    "intent": {
+      "enum": ["MEDICAL_INFORMATION", "LOCATION_HELP", "APPOINTMENT_HELP", "PAYMENT_HELP", "QUEUE_HELP", "HUMAN_HELP", "SESSION_MANAGEMENT", "DOCTOR_QUERY", "PATIENT_JOURNEY_QUERY", "CANCEL_APPOINTMENT", "EMOTIONAL_SUPPORT", "EMERGENCY_ASSISTANCE", "OTHER"]
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field", "normalizedValue", "confidence"],
+      "properties": {
+        "field": { "enum": ["chiefConcern", "symptoms", "timeline", "vitalSigns", "patientHistory", "patientMedications", "patientAllergies", "patientQuestions"] },
+        "normalizedValue": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contractType", "task", "userExpression", "patientContext", "confirmedFacts", "conversationSummary", "currentStage", "workflowState", "allowedIntents", "constraints"],
+      "properties": {
+        "contractType": { "const": "agent_turn_resolution_request" },
+        "task": { "const": "RESOLVE_CURRENT_TURN" },
+        "userExpression": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "patientContext": { "type": ["object", "null"] },
+        "confirmedFacts": { "type": "array", "items": { "type": "object" } },
+        "conversationSummary": { "type": "string", "maxLength": 240 },
+        "currentStage": { "type": "string", "minLength": 1 },
+        "workflowState": { "type": "object" },
+        "allowedIntents": { "type": "array", "items": { "$ref": "#/$defs/intent" }, "uniqueItems": true },
+        "constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["diagnosisForbidden", "minimumConfidence", "maxAnswerLength"],
+          "properties": {
+            "diagnosisForbidden": { "const": true },
+            "minimumConfidence": { "const": 0.8 },
+            "maxAnswerLength": { "const": 160 }
+          }
+        }
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contractType", "intent", "handled", "confidence", "answer", "entities", "extractedFacts", "shouldRequestHumanHelp", "containsDiagnosis"],
+      "properties": {
+        "contractType": { "const": "agent_turn_resolution_response" },
+        "intent": { "$ref": "#/$defs/intent" },
+        "handled": { "type": "boolean" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "answer": { "type": "string", "maxLength": 160 },
+        "entities": { "type": "object" },
+        "extractedFacts": { "type": "array", "items": { "$ref": "#/$defs/fact" }, "maxItems": 4 },
+        "shouldRequestHumanHelp": { "type": "boolean" },
+        "containsDiagnosis": { "const": false }
+      }
+    }
+  }
+}

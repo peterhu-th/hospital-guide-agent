@@ -14,7 +14,7 @@
         "按医嘱完成检查、取药或缴费"
       ],
       "dataOrigin": "project_curated",
-      "simulationNotice": "流程骨架为项目整理；阶段 2 起所有挂号、缴费和业务结果均为模拟",
+      "simulationNotice": "流程骨架为项目整理；挂号和缴费业务结果均为演示系统数据",
       "sourceIds": [
         "official-guider-index",
         "official-patient-flow"
@@ -42,7 +42,7 @@
         "从用户表达识别地点别名",
         "返回地图中的标准标签和楼层",
         "地图与官网不一致时采用地图结果",
-        "阶段 1 不提供实时定位和动态导航"
+        "当前不提供实时定位和动态导航"
       ],
       "dataOrigin": "project_curated",
       "sourceIds": [

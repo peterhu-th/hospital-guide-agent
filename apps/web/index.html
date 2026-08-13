@@ -1,104 +1,40 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" translate="no" class="notranslate">
 <head>
   <meta charset="utf-8">
+  <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>绵阳市中心医院导诊</title>
-  <link rel="stylesheet" href="/vendor/fengmap/toolBarStyle.css">
+  <title>某医院导诊演示</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body data-portal="patient">
   <header class="topbar">
-    <div><strong>绵阳市中心医院</strong><span>文字导诊与医院业务演示</span></div>
-    <nav aria-label="主导航">
-      <button data-view="patient" class="nav-button active">患者服务</button>
-      <button data-view="map">院内地图</button>
-      <button data-view="doctor">医生工作台</button>
-      <button data-view="admin">管理员</button>
-    </nav>
+    <div class="portal-brand"><strong>某医院导诊演示</strong><span class="badge simulation-badge">模拟</span></div>
   </header>
   <main>
     <section id="view-patient" class="view active">
-      <div class="grid patient-grid">
-        <article class="card chat-card">
-          <h1>您好，需要我帮您做什么？</h1>
-          <p class="muted">可询问挂号、就诊状态、缴费、医保部或院内地点。本阶段不提供线上问诊，也不生成诊断。</p>
-          <div id="chatMessages" class="messages" aria-live="polite"></div>
-          <div class="quick-actions"><button type="button" data-quick-message="请告诉我现在应该做什么">我不知道下一步</button><button type="button" data-quick-message="我没听明白，请简单说明">没听明白</button><button type="button" data-quick-message="请告诉我去哪里找工作人员">找工作人员</button></div>
-          <form id="chatForm" class="inline-form">
-            <label class="sr-only" for="chatInput">输入问题</label>
-            <input id="chatInput" maxlength="4000" placeholder="例如：我想挂号，应该怎么做？" required>
-            <button type="submit">发送</button>
-          </form>
-        </article>
-        <aside class="stack">
-          <article class="card" id="profileCard">
-            <h2>挂号前手工建档</h2>
-            <p class="notice">姓名和身份证号必须由患者本人手工填写；性别、年龄由有效身份证号自动识别，Agent 不会从对话填入。资料默认保存 72 小时。</p>
-            <div id="profileStatus"></div>
-            <form id="profileForm" class="form-grid">
-              <label>姓名<input name="fullName" autocomplete="name" required></label>
-              <label>身份证号<input id="identityNumber" name="identityNumber" autocomplete="off" inputmode="text" maxlength="18" required></label>
-              <label>自动识别性别<input id="derivedSex" readonly placeholder="输入有效身份证号后自动识别"></label>
-              <label>自动识别年龄<input id="derivedAge" readonly placeholder="输入有效身份证号后自动识别"></label>
-              <button type="submit">确认并建立本次就诊档案</button>
-            </form>
-          </article>
-          <article class="card">
-            <h2>查询并挂号</h2>
-            <form id="practiceSearchForm" class="form-grid">
-              <label>科室<select id="patientDepartment" name="departmentId" required></select></label>
-              <label>日期<input id="patientDate" name="date" type="date" required></label>
-              <button type="submit">查询号源</button>
-            </form>
-            <div id="practiceResults" class="result-list"></div>
-          </article>
-        </aside>
-      </div>
-      <article class="card wide">
-        <div class="section-head"><h2>我的就诊与下一步</h2><button id="refreshJourney" class="secondary">刷新</button></div>
-        <div id="journeyResults" class="result-list"></div>
+      <article class="card chat-card patient-conversation">
+        <div class="section-head patient-chat-head"><div><h1>您好，需要我帮您做什么？</h1><p class="muted"></p></div><div class="patient-chat-controls"><button id="autoReadToggle" class="secondary" type="button" aria-pressed="true">🔊 自动朗读：开</button><button id="endPatientSession" class="danger hidden" type="button">结束本次就诊</button></div></div>
+        <div id="chatMessages" class="messages" aria-live="polite"></div>
+        <div class="quick-actions"><button type="button" data-quick-message="我想挂号">我要挂号</button><button type="button" data-quick-message="请打开院内地图我要查找地点">查找地点</button><button type="button" data-quick-message="请告诉我去哪里找工作人员">工作人员</button><button id="undoLastTurn" class="secondary" type="button" aria-label="撤销上一条输入">↶ 撤销上条</button></div>
+        <form id="chatForm" class="inline-form patient-chat-form">
+          <label class="sr-only" for="chatInput">输入问题</label>
+          <input id="chatInput" maxlength="500" required>
+          <button id="voiceInput" class="secondary voice-input" type="button" aria-pressed="false" aria-label="开始语音输入">🎙 语音</button>
+          <button type="submit">发送</button>
+        </form>
       </article>
-    </section>
-
-    <section id="view-map" class="view">
-      <article class="card map-card">
-        <div class="section-head"><div><h1>院内地图</h1><p class="muted">地图编号 90872，可拖动、缩放和切换楼层。定位与实时导航暂缓。</p></div><div class="actions"><span id="mapStatus" class="badge">准备加载</span><button id="reloadMap" class="secondary" type="button">重新加载</button></div></div>
-        <div id="fengmapContainer" class="map-container" role="img" aria-label="绵阳市中心医院室内地图"></div>
-        <form id="locationSearchForm" class="inline-form"><input id="locationQuery" placeholder="搜索科室、窗口、卫生间等地点" required><button>搜索地点</button></form>
-        <div id="locationResults" class="result-list"></div>
-        <form id="routeForm" class="form-grid"><h2>静态路线指引</h2><label>起点<select id="routeStart" name="start" required><option value="">先搜索并选择起点</option></select></label><label>终点<select id="routeEnd" name="end" required><option value="">先搜索并选择终点</option></select></label><button>生成文字路线</button></form>
-        <div id="routeResult" class="result-list"></div>
-      </article>
-    </section>
-
-    <section id="view-doctor" class="view">
-      <div id="doctorAuth" class="grid auth-grid">
-        <article class="card"><h1>医生登录</h1><form id="doctorLoginForm" class="form-grid"><label>六位院内工号<input name="employeeNumber" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="username" placeholder="例如 260101" required></label><label>密码<input name="password" type="password" minlength="8" autocomplete="current-password" required></label><button>登录</button></form></article>
-        <article class="card"><h2>医生注册</h2><p class="notice">注册只创建系统内账号申请，状态为“待审核”，不代表已通过绵阳市中心医院人事核验。</p><form id="doctorRegisterForm" class="form-grid"><label>姓名<input name="displayName" required></label><label>六位院内工号<input name="employeeNumber" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="例如 260101" required></label><label>密码（至少 8 位）<input name="password" type="password" minlength="8" required></label><label>联系方式（可选）<input name="contact"></label><button>提交注册</button></form></article>
-        <article class="card"><h2>账号审核状态</h2><p class="notice"><strong>链路位置：</strong>医生注册 → 待管理员审核 → 管理员激活 → 可登录。审核由管理员工作台完成，不再使用本地 CLI 审核码。</p></article>
-      </div>
-      <div id="doctorDashboard" class="hidden">
-        <article class="card"><div class="section-head"><div><h1 id="doctorWelcome">医生工作台</h1><p id="doctorNotice" class="notice"></p></div><button id="doctorLogout" class="danger">安全退出</button></div></article>
-        <div class="grid doctor-grid">
-          <article class="card"><h2>发布出诊号源</h2><form id="practiceForm" class="form-grid"><label>科室<select id="doctorDepartment" name="departmentId" required></select></label><label>日期<input name="serviceDate" type="date" required></label><label>开始<input name="startTime" type="time" required value="08:00"></label><label>结束<input name="endTime" type="time" required value="12:00"></label><label>号源数<input name="capacity" type="number" min="1" max="200" value="10" required></label><button>发布号源</button></form><div id="doctorPractices" class="result-list"></div></article>
-          <article class="card"><div class="section-head"><h2>我的接诊患者</h2><button id="refreshDoctorAppointments" class="secondary">刷新</button></div><div id="doctorAppointments" class="result-list"></div></article>
-        </div>
-        <article id="recordEditor" class="card wide hidden"><h2>患者病历</h2><p class="notice">患者原话永久保留且不可修改。医生保存内容具有权威性，Agent 不会评价、纠正、质疑或覆盖。</p><div id="patientStatements" class="statements"></div><form id="recordForm" class="record-grid"><label>主诉<textarea name="chiefConcern"></textarea></label><label>现病情况<textarea name="presentIllness"></textarea></label><label>既往情况<textarea name="history"></textarea></label><label>用药情况<textarea name="medications"></textarea></label><label>过敏情况<textarea name="allergies"></textarea></label><label>医生判断<textarea name="doctorAssessment"></textarea></label><label>处理计划<textarea name="plan"></textarea></label><label>本次修改原因<input name="changeReason" required value="医生接诊补充"></label><button>版本化保存病历</button></form><hr><h3>创建医嘱与待缴费账单</h3><form id="orderForm" class="form-grid"><label>类型<select name="orderType"><option value="EXAMINATION">检查医嘱</option><option value="PRESCRIPTION">处方</option></select></label><label>名称<input name="title" required></label><label>详细内容<textarea name="details" required></textarea></label><label>费用（元，可为 0）<input name="amountYuan" type="number" min="0" step="0.01" value="0"></label><button>由医生创建</button></form><div id="recordOrders" class="result-list"></div></article>
-      </div>
-    </section>
-
-    <section id="view-admin" class="view">
-      <div id="adminAuth" class="grid auth-grid">
-        <article id="adminSetupCard" class="card"><h1>首次初始化管理员</h1><p class="notice">仅在系统不存在管理员时开放。初始化完成后不可再次使用此入口。</p><form id="adminSetupForm" class="form-grid"><label>管理员姓名<input name="displayName" required></label><label>六位工号<input name="employeeNumber" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required></label><label>密码（至少8位）<input name="password" type="password" minlength="8" autocomplete="new-password" required></label><button>初始化管理员</button></form></article>
-        <article class="card"><h1>管理员登录</h1><form id="adminLoginForm" class="form-grid"><label>六位工号<input name="employeeNumber" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="username" required></label><label>密码<input name="password" type="password" minlength="8" autocomplete="current-password" required></label><button>登录</button></form></article>
-      </div>
-      <div id="adminDashboard" class="hidden"><article class="card"><div class="section-head"><div><h1 id="adminWelcome">管理员工作台</h1><p class="muted">审核医生注册申请、激活或停用医生账号。所有操作写入审计记录。</p></div><button id="adminLogout" class="danger">安全退出</button></div></article><article class="card wide"><div class="section-head"><h2>医生账号</h2><button id="refreshAdminDoctors" class="secondary">刷新</button></div><div id="adminDoctors" class="result-list"></div></article></div>
     </section>
   </main>
+  <dialog id="calledAlert" class="critical-dialog" aria-labelledby="calledAlertTitle">
+    <div class="critical-dialog-icon" aria-hidden="true">!</div>
+    <h2 id="calledAlertTitle">医生已叫号</h2>
+    <p id="calledAlertMessage">请前往诊室就诊。</p>
+    <button type="button" data-close-called>我知道了，立即前往</button>
+  </dialog>
+  <footer class="source-footer"><strong>非官方声明：</strong>本项目是独立导诊技术演示，不提供医院服务。页面使用的公开资料涉及绵阳市中心医院，资料来源为该院官网公开内容与地图数据，动态信息请向医院核实。</footer>
   <div id="toast" class="toast hidden" role="status"></div>
-  <script src="/vendor/fengmap/fengmap.map.min.js"></script>
-  <script src="/vendor/fengmap/fengmap.plugin.ui.min.js"></script>
   <script type="module" src="/app.js"></script>
 </body>
 </html>

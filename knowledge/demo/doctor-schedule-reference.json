@@ -1,0 +1,14 @@
+{
+  "version": "2026-08-demo-1",
+  "dataOrigin": "project_demo_reference",
+  "notice": "模拟出诊参考，仅用于演示按日期查询，不是医院官方排班，也不代表实时号源。",
+  "rules": [
+    { "doctorReferenceId": "doctorref-2ab5fbeda32f", "weekdays": [1, 4], "period": "MORNING", "startTime": "08:00", "endTime": "12:00", "validFrom": "2026-08-01", "validUntil": "2026-09-30" },
+    { "doctorReferenceId": "doctorref-6b0db3fc432c", "weekdays": [2, 5], "period": "AFTERNOON", "startTime": "13:30", "endTime": "17:00", "validFrom": "2026-08-01", "validUntil": "2026-09-30" },
+    { "doctorReferenceId": "doctorref-c4d08283dd66", "weekdays": [1, 3], "period": "MORNING", "startTime": "08:00", "endTime": "12:00", "validFrom": "2026-08-01", "validUntil": "2026-09-30" },
+    { "doctorReferenceId": "doctorref-1dc0590c4a6a", "weekdays": [2, 4], "period": "MORNING", "startTime": "08:00", "endTime": "12:00", "validFrom": "2026-08-01", "validUntil": "2026-09-30" },
+    { "doctorReferenceId": "doctorref-c051a9856866", "weekdays": [3, 5], "period": "AFTERNOON", "startTime": "13:30", "endTime": "17:00", "validFrom": "2026-08-01", "validUntil": "2026-09-30" },
+    { "doctorReferenceId": "doctorref-81f475ecb17b", "weekdays": [1, 5], "period": "AFTERNOON", "startTime": "13:30", "endTime": "17:00", "validFrom": "2026-08-01", "validUntil": "2026-09-30" },
+    { "doctorReferenceId": "doctorref-ef85997b346b", "weekdays": [2, 4], "period": "AFTERNOON", "startTime": "13:30", "endTime": "17:00", "validFrom": "2026-08-01", "validUntil": "2026-09-30" }
+  ]
+}

@@ -3,18 +3,12 @@
   "encounterId": "encounter-contract-test",
   "patientId": "patient-contract-test",
   "status": "OPEN",
-  "statements": [{
-    "statementId": "statement-contract-test",
-    "sourceTurnId": "turn-contract-test",
-    "rawText": "我可能对青霉素过敏",
-    "statedBy": "PATIENT",
+  "confirmedFacts": [{
+    "factId": "fact-contract-test",
+    "field": "patientAllergies",
+    "normalizedValue": "可能对青霉素过敏",
     "certainty": "UNCERTAIN",
-    "normalizedContent": { "allergy": "青霉素", "certainty": "possible", "verified": false },
-    "normalizationModel": "deepseek-contract-test",
-    "doctorVerifiedBy": null,
-    "doctorVerifiedAt": null,
-    "statedAt": "2026-08-12T10:01:00+08:00",
-    "createdAt": "2026-08-12T10:01:01+08:00"
+    "confirmedAt": "2026-08-12T10:01:01+08:00"
   }],
   "versions": [{
     "versionNo": 1,
@@ -27,12 +21,13 @@
       "patientQuestions": ["应该挂哪个科室？"],
       "departmentRecommendations": [{ "departmentId": "dept-gastroenterology", "reason": "消化道症状" }],
       "doctorNotes": null,
+      "examinationResults": null,
       "doctorAssessment": null,
       "doctorPlan": null
     },
     "authorType": "AGENT",
     "authorDoctorId": null,
-    "changeReason": "根据患者本轮主动表达生成初始结构",
+    "changeReason": "根据患者确认的结构化信息生成初始结构",
     "createdAt": "2026-08-12T10:02:00+08:00"
   }],
   "relatedEntities": [{ "entityType": "appointment", "entityId": "appointment-contract-test" }],

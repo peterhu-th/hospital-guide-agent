@@ -9,11 +9,12 @@
     "toolCallId": { "type": "string", "pattern": "^tool-call-[a-zA-Z0-9-]+$" },
     "tool": {
       "type": "string",
-      "enum": ["get_patient_context", "create_patient_profile", "search_departments", "search_doctors", "list_appointment_slots", "create_appointment", "cancel_appointment", "change_appointment", "get_active_appointments", "check_in", "get_queue_status", "get_medical_orders", "get_bills", "get_examination_tasks", "schedule_examination", "get_prescriptions", "get_pharmacy_tasks", "search_locations", "calculate_static_route", "get_next_tasks", "request_human_service", "get_medical_record", "save_medical_record_revision"]
+      "enum": ["get_patient_context", "create_patient_profile", "create_virtual_patient_profile", "search_departments", "search_doctors", "list_scheduled_doctors", "list_appointment_slots", "create_appointment", "cancel_appointment", "change_appointment", "prepare_undo_last_turn", "confirm_undo_last_turn", "get_active_appointments", "get_my_appointments", "get_my_prescriptions", "get_my_examinations", "get_my_all", "check_in", "get_queue_status", "get_medical_orders", "get_bills", "get_unpaid_bills", "pay_bill_simulated", "complete_examination", "complete_pharmacy_pickup", "set_return_visit", "check_in_return_visit", "export_medical_record", "get_post_visit_orders", "get_order_destinations", "get_examination_tasks", "schedule_examination", "get_prescriptions", "get_pharmacy_tasks", "search_locations", "calculate_static_route", "open_indoor_map", "get_next_tasks", "show_current_task", "request_human_service", "request_nurse_assistance_simulated", "get_medical_record", "append_structured_patient_facts", "save_medical_record_revision"]
     },
     "parameters": { "type": "object" },
     "actionId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/actionId" }, { "type": "null" }] },
     "userConfirmed": { "type": "boolean" },
+    "patientVisibleFeedback": { "type": "boolean" },
     "idempotencyKey": { "type": ["string", "null"], "minLength": 8 },
     "requestedAt": { "$ref": "common.schema.json#/$defs/isoDateTime" },
     "requestSource": { "type": "string", "enum": ["agent_orchestrator", "user_interface", "doctor_workbench"] }
@@ -23,7 +24,7 @@
       "if": {
         "required": ["tool"],
         "properties": {
-          "tool": { "enum": ["create_appointment", "cancel_appointment", "change_appointment"] }
+          "tool": { "enum": ["create_appointment", "cancel_appointment", "change_appointment", "confirm_undo_last_turn"] }
         }
       },
       "then": {
@@ -32,6 +33,26 @@
           "actionId": { "$ref": "common.schema.json#/$defs/actionId" },
           "userConfirmed": { "const": true },
           "idempotencyKey": { "type": "string", "minLength": 8 }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["tool"],
+        "properties": { "tool": { "const": "append_structured_patient_facts" } }
+      },
+      "then": {
+        "required": ["patientVisibleFeedback"],
+        "properties": {
+          "patientVisibleFeedback": { "const": false },
+          "parameters": {
+            "type": "object",
+            "required": ["facts", "encounterStatus"],
+            "properties": {
+              "facts": { "type": "array", "minItems": 1, "maxItems": 4 },
+              "encounterStatus": { "enum": ["PRE_APPOINTMENT", "PENDING_PAYMENT", "BOOKED", "CHECKED_IN", "CALLED"] }
+            }
+          }
         }
       }
     }

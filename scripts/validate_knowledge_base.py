@@ -1,4 +1,4 @@
-"""Validate phase-1 knowledge completeness, provenance and cross-file references."""
+"""Validate knowledge completeness, provenance and cross-file references."""
 
 from __future__ import annotations
 
@@ -27,6 +27,8 @@ EXPECTED_FILES = [
     "map/location-aliases.json",
     "map/department-location-mapping.json",
     "map/source-conflicts.json",
+    "demo/order-catalog.json",
+    "demo/doctor-schedule-reference.json",
 ]
 
 
@@ -64,6 +66,7 @@ def main() -> int:
         mappings = load("map/department-location-mapping.json")
         insurance = load("official/insurance-reference.json")
         simulation_manifest = load("simulation-manifest.json")
+        schedule_reference = load("demo/doctor-schedule-reference.json")
 
         catalog_names = [name for division in catalog["divisions"].values() for name in division]
         require(len(catalog_names) == 92, f"official catalog count changed: {len(catalog_names)}")
@@ -108,6 +111,10 @@ def main() -> int:
         require(doctors["count"] == len(doctors["doctors"]) == 641, "doctor reference count mismatch")
         require(all(item["availability"] == "unknown_not_realtime" for item in doctors["doctors"]), "doctor references must not imply availability")
         require(all(item["dataOrigin"] == "official_public" for item in doctors["doctors"]), "doctor origin mismatch")
+        doctor_reference_ids = {item["referenceId"] for item in doctors["doctors"]}
+        require(schedule_reference["dataOrigin"] == "project_demo_reference", "doctor schedule reference must be marked as demo")
+        require(all(rule["doctorReferenceId"] in doctor_reference_ids for rule in schedule_reference["rules"]), "doctor schedule references unknown doctor")
+        require("不是医院官方排班" in schedule_reference["notice"], "doctor schedule simulation notice is incomplete")
         require(len(sources["sources"]) >= 102, "source registry is incomplete")
         registered_source_ids = {item["sourceId"] for item in sources["sources"]}
         referenced_official_ids = {ref["sourceId"] for item in departments for ref in item["sources"] if ref["dataOrigin"] == "official_public"}
@@ -122,7 +129,12 @@ def main() -> int:
         require(insurance["confirmationDestination"] == "医保部", "insurance confirmation destination must be 医保部")
         require(not simulation_manifest["instances"], "no simulated instances may be preloaded")
         forbidden_simulated = set(simulation_manifest["forbiddenSimulatedEntities"])
-        require({"patient", "doctor", "appointment_slot", "appointment", "medical_record", "payment_success"} <= forbidden_simulated, "simulation forbidden list is incomplete")
+        require({"patient", "doctor", "appointment_slot", "appointment", "medical_record"} <= forbidden_simulated, "simulation forbidden list is incomplete")
+        demo_catalog = load("demo/order-catalog.json")
+        require(demo_catalog["dataOrigin"] == "project_demo_catalog", "order catalog must be explicitly marked as demo data")
+        require(all(item["locationId"] in location_ids for item in demo_catalog["examinations"] + demo_catalog["medications"]), "demo order catalog contains unknown map locations")
+        virtual_fixture = next(item for item in simulation_manifest["testingFixtures"] if item["fixtureId"] == "virtual-patient-male-65")
+        require(virtual_fixture["retentionHours"] == 72 and "显式按钮" in virtual_fixture["activationRule"], "virtual patient fixture policy is incomplete")
 
         forbidden = {"simulated", "演示数据"}
         official_documents = [hospital, departments, doctors, load("official/service-contacts.json"), load("official/insurance-reference.json")]
@@ -133,13 +145,13 @@ def main() -> int:
         failures.append(str(error))
 
     if failures:
-        print("FAILED phase-1 knowledge validation")
+        print("FAILED knowledge validation")
         for failure in failures:
             print(f"- {failure}")
         return 1
 
     mapped = sum(item["mapStatus"] == "mapped" for item in mappings["mappings"])
-    print("PASS 15 phase-1 deliverables present")
+    print("PASS 16 knowledge deliverables present")
     print("PASS 92/92 official departments structured and sourced")
     print("PASS 92/92 departments have model-ready routing context")
     print("PASS 641 official doctor references marked non-realtime")

@@ -19,9 +19,11 @@
     { "schema": "session-state.schema.json", "instance": "valid/session-state.json" },
     { "schema": "agent-request.schema.json", "instance": "valid/agent-request.json" },
     { "schema": "agent-event.schema.json", "instance": "valid/agent-event.json" },
+    { "schema": "agent-turn-resolution.schema.json", "instance": "valid/agent-turn-resolution-response.json" },
     { "schema": "department-routing.schema.json", "instance": "valid/department-routing-request.json" },
     { "schema": "department-routing.schema.json", "instance": "valid/department-routing-response.json" },
     { "schema": "tool-call.schema.json", "instance": "valid/tool-call.json" },
+    { "schema": "tool-call.schema.json", "instance": "valid/tool-call-record-facts.json" },
     { "schema": "tool-result.schema.json", "instance": "valid/tool-result.json" }
   ],
   "invalid": [

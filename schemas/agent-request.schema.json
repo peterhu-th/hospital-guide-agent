@@ -10,7 +10,7 @@
     "turnId": { "$ref": "common.schema.json#/$defs/turnId" },
     "sessionId": { "$ref": "common.schema.json#/$defs/sessionId" },
     "baseRevision": { "type": "integer", "minimum": 0 },
-    "message": { "type": "string", "minLength": 1, "maxLength": 4000 },
+    "message": { "type": "string", "minLength": 1, "maxLength": 500 },
     "entryContext": {
       "type": "string",
       "enum": ["CHAT", "APPOINTMENT", "ARRIVAL", "PAYMENT_OR_EXAMINATION", "LOCATION_SEARCH", "MAP_BROWSER"]

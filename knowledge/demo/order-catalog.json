@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "dataOrigin": "project_demo_catalog",
+  "notice": "以下挂号费用、检查项目、药品条目与价格仅用于业务流程演示，不代表医院真实目录、价格、库存或医生建议。检查和处方必须由登录医生选择创建。",
+  "registration": {
+    "catalogItemId": "registration-general",
+    "name": "门诊挂号费（演示）",
+    "amountCents": 1000
+  },
+  "examinations": [
+    {
+      "catalogItemId": "exam-blood-routine",
+      "name": "血常规",
+      "details": "常见检验项目；具体采样要求以医生和现场工作人员说明为准。",
+      "amountCents": 2500,
+      "locationId": "location-map-907230201192"
+    },
+    {
+      "catalogItemId": "exam-urinalysis",
+      "name": "尿常规",
+      "details": "常见检验项目；具体留样要求以医生和现场工作人员说明为准。",
+      "amountCents": 1800,
+      "locationId": "location-map-907230201192"
+    },
+    {
+      "catalogItemId": "exam-liver-renal-function",
+      "name": "肝肾功能",
+      "details": "常见生化检验项目；是否空腹以医生和现场工作人员说明为准。",
+      "amountCents": 6800,
+      "locationId": "location-map-907230201192"
+    },
+    {
+      "catalogItemId": "exam-chest-xray",
+      "name": "胸部X线",
+      "details": "常见影像检查项目；检查前请按现场要求准备。",
+      "amountCents": 8000,
+      "locationId": "location-map-907230101203"
+    },
+    {
+      "catalogItemId": "exam-ecg",
+      "name": "心电图",
+      "details": "常见功能检查项目；检查前请按现场要求准备。",
+      "amountCents": 3000,
+      "locationId": "location-map-90723990166"
+    }
+  ],
+  "medications": [
+    {
+      "catalogItemId": "med-acetaminophen",
+      "name": "对乙酰氨基酚",
+      "details": "处方条目；用法、用量和疗程仅以医生保存的医嘱为准。",
+      "amountCents": 1280,
+      "locationId": "location-map-907230101452"
+    },
+    {
+      "catalogItemId": "med-ibuprofen-sr",
+      "name": "布洛芬缓释胶囊",
+      "details": "处方条目；用法、用量和疗程仅以医生保存的医嘱为准。",
+      "amountCents": 1860,
+      "locationId": "location-map-907230101452"
+    },
+    {
+      "catalogItemId": "med-omeprazole",
+      "name": "奥美拉唑肠溶胶囊",
+      "details": "处方条目；用法、用量和疗程仅以医生保存的医嘱为准。",
+      "amountCents": 2240,
+      "locationId": "location-map-907230101452"
+    },
+    {
+      "catalogItemId": "med-loratadine",
+      "name": "氯雷他定片",
+      "details": "处方条目；用法、用量和疗程仅以医生保存的医嘱为准。",
+      "amountCents": 1580,
+      "locationId": "location-map-907230101452"
+    }
+  ]
+}

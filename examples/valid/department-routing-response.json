@@ -6,5 +6,6 @@
   "shouldAskQuestion": false,
   "clarificationQuestion": null,
   "shouldRequestHumanHelp": false,
+  "suggestedTool": "SHOW_APPOINTMENT_SERVICE",
   "containsDiagnosis": false
 }

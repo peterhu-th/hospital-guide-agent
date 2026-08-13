@@ -117,7 +117,7 @@
       "required": ["actionId", "actionType", "summary", "requiresExplicitConfirmation", "parameters"],
       "properties": {
         "actionId": { "$ref": "common.schema.json#/$defs/actionId" },
-        "actionType": { "type": "string", "enum": ["CREATE_APPOINTMENT", "CANCEL_APPOINTMENT", "CHANGE_APPOINTMENT"] },
+        "actionType": { "type": "string", "enum": ["CREATE_APPOINTMENT", "CANCEL_APPOINTMENT", "CHANGE_APPOINTMENT", "UNDO_LAST_CONVERSATION_TURN"] },
         "summary": { "type": "string", "minLength": 1 },
         "requiresExplicitConfirmation": { "const": true },
         "parameters": { "type": "object" },

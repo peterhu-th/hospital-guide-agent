@@ -23,13 +23,15 @@ function readApiConfig(path) {
   try {
     const lines = readFileSync(path, "utf8").replace(/^\uFEFF/, "").split(/\r?\n/);
     let section = "";
-    const values = { deepseek: {}, fengmap: {} };
+    const values = { deepseek: {}, fengmap: {}, xfyunIat: {}, xfyunTts: {} };
     for (const rawLine of lines) {
       const line = rawLine.trim();
       if (!line || line.startsWith("#")) continue;
       const separator = line.search(/[：:=]/);
       if (separator < 0) {
-        section = /蜂鸟\s*(SDK|地图)/i.test(line) ? "fengmap" : (/DeepSeek/i.test(line) ? "deepseek" : "");
+        section = /讯飞.*方言.*识别/i.test(line) ? "xfyunIat"
+          : (/讯飞.*(超拟人|语音合成)/i.test(line) ? "xfyunTts"
+            : (/蜂鸟\s*(SDK|地图)/i.test(line) ? "fengmap" : (/DeepSeek/i.test(line) ? "deepseek" : "")));
         continue;
       }
       if (!section) continue;
@@ -42,9 +44,20 @@ function readApiConfig(path) {
       appName: values.fengmap.appname ?? "",
       mapId: values.fengmap.mapid ?? "",
       webApiKey: values.fengmap.apikey ?? "",
+      xfyunIat: {
+        appId: values.xfyunIat.appid ?? "",
+        apiKey: values.xfyunIat.apikey ?? "",
+        apiSecret: values.xfyunIat.apisecret ?? "",
+      },
+      xfyunTts: {
+        appId: values.xfyunTts.appid ?? "",
+        apiKey: values.xfyunTts.apikey ?? "",
+        apiSecret: values.xfyunTts.apisecret ?? "",
+        apiPassword: values.xfyunTts.apipassword ?? "",
+      },
     };
   } catch (error) {
-    if (error.code === "ENOENT") return { deepseekApiKey: "", appName: "", mapId: "", webApiKey: "" };
+    if (error.code === "ENOENT") return { deepseekApiKey: "", appName: "", mapId: "", webApiKey: "", xfyunIat: {}, xfyunTts: {} };
     throw error;
   }
 }
@@ -78,9 +91,23 @@ export function loadConfig(overrides = {}) {
     deepseekBaseUrl: overrides.deepseekBaseUrl ?? process.env.DEEPSEEK_BASE_URL ?? "https://api.deepseek.com",
     deepseekModel: overrides.deepseekModel ?? process.env.DEEPSEEK_MODEL ?? "deepseek-v4-flash",
     deepseekTimeoutMs: Number(overrides.deepseekTimeoutMs ?? process.env.DEEPSEEK_TIMEOUT_MS ?? 12_000),
-    hospitalName: "绵阳市中心医院",
+    hospitalName: "某医院",
     fengmapAppName: overrides.fengmapAppName ?? process.env.FENGMAP_APP_NAME ?? fileApiConfig.appName,
     fengmapMapId: fengmapMapId || "90872",
     fengmapKey: overrides.fengmapKey ?? process.env.FENGMAP_KEY ?? fileApiConfig.webApiKey,
+    xfyunIat: {
+      appId: overrides.xfyunIatAppId ?? process.env.XFYUN_IAT_APP_ID ?? fileApiConfig.xfyunIat?.appId ?? "",
+      apiKey: overrides.xfyunIatApiKey ?? process.env.XFYUN_IAT_API_KEY ?? fileApiConfig.xfyunIat?.apiKey ?? "",
+      apiSecret: overrides.xfyunIatApiSecret ?? process.env.XFYUN_IAT_API_SECRET ?? fileApiConfig.xfyunIat?.apiSecret ?? "",
+    },
+    xfyunTts: {
+      appId: overrides.xfyunTtsAppId ?? process.env.XFYUN_TTS_APP_ID ?? fileApiConfig.xfyunTts?.appId ?? "",
+      apiKey: overrides.xfyunTtsApiKey ?? process.env.XFYUN_TTS_API_KEY ?? fileApiConfig.xfyunTts?.apiKey ?? "",
+      apiSecret: overrides.xfyunTtsApiSecret ?? process.env.XFYUN_TTS_API_SECRET ?? fileApiConfig.xfyunTts?.apiSecret ?? "",
+      apiPassword: overrides.xfyunTtsApiPassword ?? process.env.XFYUN_TTS_API_PASSWORD ?? fileApiConfig.xfyunTts?.apiPassword ?? "",
+    },
+    xfyunIatUrl: overrides.xfyunIatUrl ?? process.env.XFYUN_IAT_URL ?? "wss://iat.cn-huabei-1.xf-yun.com/v1",
+    xfyunTtsUrl: overrides.xfyunTtsUrl ?? process.env.XFYUN_TTS_URL ?? "wss://cbm01.cn-huabei-1.xf-yun.com/v1/private/mcd9m97e6",
+    xfyunTtsVoice: overrides.xfyunTtsVoice ?? process.env.XFYUN_TTS_VOICE ?? "x5_lingxiaoxuan_flow",
   };
 }

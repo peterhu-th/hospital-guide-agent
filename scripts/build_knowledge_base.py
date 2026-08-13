@@ -1,4 +1,4 @@
-"""Build phase-1 offline knowledge artifacts from traceable source snapshots."""
+"""Build offline knowledge artifacts from traceable source snapshots."""
 
 from __future__ import annotations
 
@@ -401,7 +401,7 @@ def build() -> None:
         ],
         "sources": [source_ref("official-hospital-introduction", "official_public", "https://www.myszxyy.cn/into_hos/", freshness="periodic")],
         "dataOrigin": "official_public",
-        "version": "phase1-2026-08-12",
+        "version": "knowledge-2026-08-12",
     }
 
     contacts = {
@@ -425,7 +425,7 @@ def build() -> None:
                 "title": "门诊就医总览",
                 "steps": ["选择或推荐科室", "模拟查询号源", "模拟挂号", "到地图地点报到", "就诊后查看模拟医嘱", "按医嘱完成检查、取药或缴费"],
                 "dataOrigin": "project_curated",
-                "simulationNotice": "流程骨架为项目整理；阶段 2 起所有挂号、缴费和业务结果均为模拟",
+                "simulationNotice": "流程骨架为项目整理；挂号和缴费业务结果均为演示系统数据",
                 "sourceIds": ["official-guider-index", "official-patient-flow"],
             },
             {
@@ -438,7 +438,7 @@ def build() -> None:
             {
                 "guideId": "guide-indoor-place-search",
                 "title": "院内地点搜索",
-                "steps": ["从用户表达识别地点别名", "返回地图中的标准标签和楼层", "地图与官网不一致时采用地图结果", "阶段 1 不提供实时定位和动态导航"],
+                "steps": ["从用户表达识别地点别名", "返回地图中的标准标签和楼层", "地图与官网不一致时采用地图结果", "当前不提供实时定位和动态导航"],
                 "dataOrigin": "project_curated",
                 "sourceIds": ["map-90872"],
             },
@@ -478,7 +478,7 @@ def build() -> None:
                 "itemId": "unresolved-outpatient-schedule",
                 "topic": "门诊时间与医生出诊",
                 "status": "volatile_image_only",
-                "fallback": "不写入实时号源结论；阶段 2 使用已声明的模拟医生和号源",
+                "fallback": "不写入实时号源结论；运行时使用明确声明的演示医生和号源",
             },
             {
                 "itemId": "unresolved-complete-public-processes",
@@ -609,7 +609,7 @@ def build() -> None:
     write_json("map/source-conflicts.json", source_conflicts)
 
     print(
-        f"Built phase 1: {len(departments)} departments, {len(doctors)} doctor references, "
+        f"Built knowledge base: {len(departments)} departments, {len(doctors)} doctor references, "
         f"{len(map_locations)} POIs, {len(department_names) - len(unmapped_departments)} mapped departments."
     )
 

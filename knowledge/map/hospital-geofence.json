@@ -1,0 +1,14 @@
+{
+  "center": {
+    "latitude": 31.4589,
+    "longitude": 104.75027
+  },
+  "radiusMeters": 600,
+  "accuracyNotice": "该范围仅用于判断用户是否位于主院区附近，不能识别院内楼层或精确室内点位。",
+  "dataOrigin": "open_map_reference",
+  "source": {
+    "name": "OpenStreetMap 衍生地图参考",
+    "url": "https://mapcarta.com/W827619081",
+    "reviewedAt": "2026-08-13"
+  }
+}

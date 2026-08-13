@@ -9,7 +9,8 @@
   "personalAmount": 20,
   "currency": "CNY",
   "status": "PAID",
-  "paymentGuidance": "请前往收费窗口或医保部办理缴费",
+  "paymentProvider": null,
+  "paymentGuidance": "模拟支付已完成",
   "createdAt": "2026-08-12T10:10:00+08:00",
   "updatedAt": "2026-08-12T10:10:00+08:00"
 }
