@@ -1,5 +1,7 @@
 # User-owned documents, deployment records, and local API credentials
 docs/
+assets/
+vendor/
 
 # Environment files and credentials
 .env
