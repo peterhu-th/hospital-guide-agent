@@ -7,8 +7,8 @@
     "node": ">=24.0.0"
   },
   "scripts": {
-    "start": "node --disable-warning=ExperimentalWarning apps/server/main.js",
-    "dev": "node --disable-warning=ExperimentalWarning --watch apps/server/main.js",
+    "start": "node --env-file-if-exists=.env.local --disable-warning=ExperimentalWarning apps/server/main.js",
+    "dev": "node --env-file-if-exists=.env.local --disable-warning=ExperimentalWarning --watch apps/server/main.js",
     "runtime:counts": "node --disable-warning=ExperimentalWarning scripts/inspect_runtime_counts.js",
     "evaluate:routing": "node scripts/evaluate_routing.js",
     "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.js"

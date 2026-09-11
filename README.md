@@ -394,12 +394,11 @@ npm start
 
 ### 8.3 可选服务配置
 
-如需启用大模型、语音或在线地图，可复制本地环境变量示例并填写自己的凭据：
+如需启用大模型、语音或在线地图，可复制环境变量示例并填写自己的凭据。`npm start` 和 `npm run dev` 会自动加载 `.env.local`：
 
 ```powershell
-Copy-Item environment.example.ps1 environment.local.ps1
-. .\environment.local.ps1
+Copy-Item .env.example .env.local
 npm start
 ```
 
-`environment.local.ps1`、`.local/` 和本地 API 配置均已被 Git 忽略，不应上传真实密钥。完整的蜂鸟地图显示还需要授权的 SDK 文件位于 `vendor/fengmap-js-sdk-v3.2.0/`；缺少该资源不会阻止患者、医生和管理员页面启动，但地图页只保留地点文字信息，无法绘制在线室内地图。
+Windows PowerShell 用户也可以继续使用 `environment.example.ps1`，复制为 `environment.local.ps1` 并在当前终端中加载。`.env.local`、`environment.local.ps1`、`.local/` 和本地 API 配置均已被 Git 忽略，不应上传真实密钥。完整的蜂鸟地图显示还需要授权的 SDK 文件位于 `vendor/fengmap-js-sdk-v3.2.0/`；缺少该资源不会阻止患者、医生和管理员页面启动，但地图页只保留地点文字信息，无法绘制在线室内地图。

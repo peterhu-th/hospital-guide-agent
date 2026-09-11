@@ -22,6 +22,15 @@ export function buildApplication(overrides = {}) {
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const app = buildApplication();
+  app.server.once("error", (error) => {
+    if (error.code === "EADDRINUSE") {
+      console.error(`启动失败：${app.config.host}:${app.config.port} 已被占用。请关闭占用该端口的进程，或在 .env.local 中设置其他 PORT。`);
+    } else {
+      console.error(`启动失败：${error.message}`);
+    }
+    app.database.close();
+    process.exitCode = 1;
+  });
   app.server.listen(app.config.port, app.config.host, () => {
     console.log(`${app.config.hospitalName}最小业务系统已启动：http://${app.config.host}:${app.config.port}`);
     console.log(`医生账号由管理员工作台审核，不使用本地 CLI 审核码。`);
