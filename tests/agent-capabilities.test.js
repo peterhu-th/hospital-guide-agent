@@ -14,6 +14,12 @@ const app = buildApplication({
 });
 let baseUrl;
 
+function futureDate(days = 30) {
+  const date = new Date();
+  date.setUTCDate(date.getUTCDate() + days);
+  return date.toISOString().slice(0, 10);
+}
+
 class Client {
   constructor() { this.cookies = new Map(); }
   async request(path, { method = "GET", body } = {}) {
@@ -119,8 +125,9 @@ test("conversation cancellation reuses explicit confirmation and releases the sl
   const department = app.knowledge.departments.find((item) => app.knowledge.isBookingEligible(item));
   const doctorId = "doctor-cancel-test";
   const practiceId = "practice-cancel-test";
+  const serviceDate = futureDate();
   app.database.run(`INSERT INTO doctors(doctor_id,display_name,employee_number,password_hash,account_status,verification_notice,failed_login_count,locked_until,created_at) VALUES(:id,'退号测试医生','269901','unused','ACTIVE','测试',0,NULL,:now)`, { id: doctorId, now: new Date().toISOString() });
-  app.database.run(`INSERT INTO doctor_practices VALUES(:id,:doctor,:department,'2026-08-20','08:00','12:00',2,0,'ACTIVE',:now)`, { id: practiceId, doctor: doctorId, department: department.departmentId, now: new Date().toISOString() });
+  app.database.run(`INSERT INTO doctor_practices VALUES(:id,:doctor,:department,:serviceDate,'08:00','12:00',2,0,'ACTIVE',:now)`, { id: practiceId, doctor: doctorId, department: department.departmentId, serviceDate, now: new Date().toISOString() });
   const pending = await visitor.request("/api/patient/actions", { method: "POST", body: { actionType: "CREATE_APPOINTMENT", parameters: { practiceId } } });
   const booked = await visitor.request(`/api/patient/actions/${pending.payload.data.actionId}/confirm`, { method: "POST", body: {} });
   const appointmentId = booked.payload.data.result.appointmentId;
